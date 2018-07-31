@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/camera_preference_title" />
+    <Preference android:icon="@drawable/ic_battery" android:title="@string/battery_percentage_flash_title" android:key="tweaks_battery_flash_level" android:summary="@string/battery_percentage_flash_summary" android:defaultValue="5" />
+    <PreferenceCategory android:title="@string/biometrics_settings_preferences" />
+    <SwitchPreference android:icon="@drawable/ic_fingerprint" android:title="@string/tweaks_fingerprint_unlock_title" android:key="tweaks_fingerprint_unlock" android:summary="@string/tweaks_fingerprint_unlock_summary" android:defaultValue="false" android:summaryOn="@string/tweaks_fingerprint_unlock_summaryOn" />
+    <PreferenceCategory android:title="@string/lockscreen_preference_title" />
+    <SwitchPreference android:icon="@drawable/ic_clock" android:title="@string/tweaks_hide_lockscreen_clock_title" android:key="tweaks_hide_lockscreen_clock" android:summary="@string/visible" android:defaultValue="false" android:summaryOn="@string/hidden" />
+    <SwitchPreference android:icon="@drawable/ic_iris" android:title="@string/tweaks_hide_iris_title" android:key="tweaks_hide_iris" android:summary="@string/tweaks_hide_iris_summary" android:defaultValue="false" />
+    <SwitchPreference android:icon="@drawable/ic_lock" android:title="@string/tweaks_quick_unlock_title" android:key="tweaks_quick_unlock" android:summary="@string/tweaks_quick_unlock_summary" android:defaultValue="false" android:summaryOn="@string/enabled" />
+    <SwitchPreference android:icon="@drawable/ic_lock" android:title="@string/tweaks_scramble_pin_title" android:key="tweaks_scramble_pin" android:summary="@string/tweaks_scramble_pin_summary" android:defaultValue="false" />
+    <SwitchPreference android:icon="@drawable/ic_lock" android:title="@string/tweaks_lockscreen_rotation_title" android:key="tweaks_lockscreen_rotation" android:summary="@string/disabled" android:defaultValue="false" android:summaryOn="@string/enabled" />
+    <SwitchPreference android:icon="@drawable/ic_lock" android:title="@string/tweaks_lockscreen_guide_text_title" android:key="tweaks_lockscreen_guide_text" android:summary="@string/disabled" android:defaultValue="false" android:summaryOn="@string/tweaks_lockscreen_guide_text_summaryOn" />
+    <PreferenceCategory android:title="@string/misc_preference_title" />
+    <SwitchPreference android:icon="@drawable/ic_security" android:title="@string/tweaks_secure_window_title" android:key="tweaks_secure_window" android:summary="@string/tweaks_secure_window_summary" android:defaultValue="true" android:summaryOn="@string/tweaks_secure_window_summaryOn" />
+    <SwitchPreference android:icon="@drawable/ic_netflix" android:title="@string/tweaks_netflix_title" android:key="tweaks_netflix" android:summary="@string/disabled" android:defaultValue="false" android:summaryOn="@string/enabled" />
+</PreferenceScreen>

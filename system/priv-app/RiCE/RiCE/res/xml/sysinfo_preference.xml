@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:icon="@drawable/ic_rootstatus" android:title="@string/su_binary_present" android:key="root_Version" android:summary="" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <Preference android:icon="@drawable/ic_busybox" android:title="@string/busybox_version" android:key="rom_busybox" android:summary="" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <Preference android:icon="@drawable/ic_devicemodel" android:title="@string/device_model" android:key="device_model" android:summary="" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <Preference android:icon="@drawable/ic_androidversion" android:title="@string/android_version" android:key="android_Version" android:summary="" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <Preference android:icon="@drawable/ic_securitylevel" android:title="@string/android_security_patch" android:key="android_Security" android:summary="" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <Preference android:icon="@drawable/ic_devicemodel" android:title="@string/kernel_version" android:key="kernel_version" android:summary="" />
+</PreferenceScreen>

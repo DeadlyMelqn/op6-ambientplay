@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="volume_slient">靜音</string>
+    <string name="volume_vibrate">震動</string>
+    <string name="volume_no_disturb">勿擾</string>
+    <string name="volume_ring">響鈴</string>
+    <string name="oneplus_aod_settings">主動顯示</string>
+    <string name="oneplus_aod_title">顯示時鐘</string>
+    <string name="oneplus_aod_display_mode_title">顯示時機</string>
+    <string name="oneplus_aod_display_period_title">顯示時段</string>
+    <string name="oneplus_aod_clock_style_title">時鐘樣式</string>
+    <string name="oneplus_aod_display_text_title">個人簽名</string>
+    <string name="oneplus_aod_auto_wake_screen_title">新通知提醒</string>
+    <string name="oneplus_aod_auto_wake_screen_summary">收到新通知时亮屏顯示</string>
+    <string name="oneplus_aod_mode_always_on">永遠顯示</string>
+    <string name="oneplus_aod_mode_lift_up">抬手顯示</string>
+    <string name="oneplus_display_time_start">開始時間</string>
+    <string name="oneplus_display_time_end">結束時間</string>
+    <string name="oneplus_display_time_from">從</string>
+    <string name="oneplus_display_time_to">到</string>
+    <string name="aod_clock_select_action_bar_title">時鐘樣式</string>
+    <string name="aod_clock_preview_action_bar_title">預覽</string>
+    <string name="aod_clock_select_style_text">選擇時鐘樣式</string>
+    <string name="aod_clock_selected">已選擇</string>
+    <string name="aod_clock_default">默認</string>
+    <string name="aod_clock_classic">經典</string>
+    <string name="aod_clock_analog">類比</string>
+    <string name="aod_clock_digital">數字</string>
+    <string name="owner_info_settings_summary">無</string>
+    <string name="owner_info_settings_edit_text_hint">例如：Joe 的 Android。</string>
+    <string name="save">儲存</string>
+    <string name="cancel">取消</string>
+    <string name="time_format_12_mode">a h:mm</string>
+</resources>

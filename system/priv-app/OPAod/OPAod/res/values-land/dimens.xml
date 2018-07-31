@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="tab_layout_default_height_material">@dimen/oneplus_contorl_list_item_height_one_line1</item>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:layout="@layout/header_image" android:layout_width="fill_parent" android:layout_height="135.0dip" android:key="header_image" />
+    <com.ice.box.helpers.OPPreferenceDivider android:key="divider1" />
+    <Preference android:title="@string/current_lux_reading_title" android:key="current_lux_reading" />
+    <com.ice.box.helpers.OPPreferenceDivider android:key="divider2" />
+    <SwitchPreference android:title="@string/hbm_turnon_title" android:key="hbm_turnon" android:summary="@string/disabled" android:defaultValue="false" android:summaryOn="@string/enabled" />
+    <com.ice.box.helpers.OPPreferenceDivider android:key="divider3" />
+    <SwitchPreference android:title="@string/hbm_autostart_title" android:key="hbm_autostart" android:summary="@string/disabled" android:defaultValue="false" android:summaryOn="@string/enabled" />
+    <com.ice.box.helpers.OPPreferenceDivider android:key="divider4" />
+    <SwitchPreference android:title="@string/hbm_bootstart_title" android:key="hbm_bootstart" android:summary="@string/disabled" android:defaultValue="false" android:summaryOn="@string/enabled" />
+    <com.ice.box.helpers.OPPreferenceDivider android:key="divider5" />
+    <EditTextPreference android:hint="@string/hbm_threshold_hint" android:selectAllOnFocus="true" android:title="@string/hbm_threshold_title" android:key="hbm_threshold" android:inputType="number" />
+    <com.ice.box.helpers.OPPreferenceDivider android:key="divider6" />
+</PreferenceScreen>

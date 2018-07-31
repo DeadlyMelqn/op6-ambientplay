@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/statusbar_color_preference_title" />
+    <Preference android:title="@string/tweaks_stock_colors_title" android:key="tweaks_stock_statusbar_colors" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_global_statusbar_color" android:key="tweaks_global_statusbar_icon_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_dark_icon_color" android:key="tweaks_dark_icon_color" android:defaultValue="-1728053248" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <PreferenceCategory android:title="@string/tweaks_individual_colors" />
+    <Preference android:title="@string/tweaks_link_statusbar_colors_title" android:key="tweaks_link_statusbar_colors" android:summary="@string/tweaks_link_statusbar_colors_summary" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_statusbar_clock_color" android:key="tweaks_statusbar_clock_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_notification_icon_color" android:key="tweaks_notification_icon_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_battery_color" android:key="tweaks_battery_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_statusbar_battery_percent_color" android:key="tweaks_statusbar_battery_percent_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_bluetooth_icon_color" android:key="tweaks_bluetooth_icon_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_location_icon_color" android:key="tweaks_location_icon_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_volume_icon_color" android:key="tweaks_volume_icon_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_wifi_signal_color" android:key="tweaks_wifi_signal_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_wifi_activity_color" android:key="tweaks_wifi_activity_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_mobile_signal_color" android:key="tweaks_mobile_signal_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_mobile_type_color" android:key="tweaks_mobile_type_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_carrier_text_color" android:key="tweaks_carrier_text_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_netspeed_color" android:key="tweaks_netspeed_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <com.ice.box.customcolorpicker.ColorPreference android:title="@string/tweaks_misc_icon_color" android:key="tweaks_statusbar_icon_color" android:defaultValue="-1" app:cpv_showAlphaSlider="true" app:cpv_showColorShades="true" />
+</PreferenceScreen>

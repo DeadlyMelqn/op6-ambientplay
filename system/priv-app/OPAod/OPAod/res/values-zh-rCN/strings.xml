@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="back_button_label">上一步</string>
+    <string name="next_button_label">下一步</string>
+    <string name="skip_button_label">跳过</string>
+    <string name="searchview_description_search">搜索</string>
+    <string name="searchview_description_clear">清除查询</string>
+    <string name="searchview_description_submit">提交查询</string>
+    <string name="searchview_description_voice">语音搜索</string>
+    <string name="capital_on">开启</string>
+    <string name="capital_off">关闭</string>
+    <string name="volume_slient">静音</string>
+    <string name="volume_vibrate">振动</string>
+    <string name="volume_no_disturb">勿扰</string>
+    <string name="volume_ring">响铃</string>
+    <string name="oneplus_aod_settings">主动显示</string>
+    <string name="oneplus_aod_title">显示时钟</string>
+    <string name="oneplus_aod_display_mode_title">显示时机</string>
+    <string name="oneplus_aod_display_period_title">显示时段</string>
+    <string name="oneplus_aod_clock_style_title">时钟样式</string>
+    <string name="oneplus_aod_display_text_title">个人签名</string>
+    <string name="oneplus_aod_auto_wake_screen_title">新通知提醒</string>
+    <string name="oneplus_aod_auto_wake_screen_summary">收到新通知时亮屏显示</string>
+    <string name="oneplus_aod_mode_always_on">息屏常亮</string>
+    <string name="oneplus_aod_mode_lift_up">抬手显示</string>
+    <string name="oneplus_display_time_start">开始时间</string>
+    <string name="oneplus_display_time_end">结束时间</string>
+    <string name="oneplus_display_time_from">从</string>
+    <string name="oneplus_display_time_to">到</string>
+    <string name="aod_clock_select_action_bar_title">时钟样式</string>
+    <string name="aod_clock_preview_action_bar_title">预览</string>
+    <string name="aod_clock_select_style_text">选择时钟样式</string>
+    <string name="aod_clock_selected">已选择</string>
+    <string name="aod_clock_default">默认</string>
+    <string name="aod_clock_classic">经典</string>
+    <string name="aod_clock_analog">表盘</string>
+    <string name="aod_clock_digital">数字</string>
+    <string name="owner_info_settings_summary">无</string>
+    <string name="owner_info_settings_edit_text_hint">例如，小明的 Android 设备。</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="time_format_12_mode">a h:mm</string>
+</resources>

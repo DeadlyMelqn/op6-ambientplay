@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/status">
+        <Preference android:icon="@drawable/ic_license" android:key="license_status" />
+    </PreferenceCategory>
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <PreferenceCategory android:title="@string/subscription_category">
+        <Preference android:icon="@drawable/ic_key" android:title="@string/subscription_monthly_title" android:key="icebox.monthly" android:summary="@string/subscription_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <PreferenceCategory android:title="@string/donation_category">
+        <Preference android:icon="@drawable/ic_key" android:title="@string/icebox.donation2" android:key="icebox.donation2" android:defaultValue="false" />
+        <com.ice.box.helpers.OPPreferenceDivider />
+        <Preference android:icon="@drawable/ic_key" android:title="@string/icebox.donation5" android:key="icebox.donation5" android:defaultValue="false" />
+        <com.ice.box.helpers.OPPreferenceDivider />
+        <Preference android:icon="@drawable/ic_key" android:title="@string/icebox.donation10" android:key="icebox.donation10" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/legacy_category" android:key="icebox.oldice.category">
+        <Preference android:icon="@drawable/ic_license" android:title="@string/icebox_oldice_title" android:key="icebox.oldice" android:summary="@string/icebox_oldice_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

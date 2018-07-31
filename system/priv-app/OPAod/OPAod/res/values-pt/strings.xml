@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="volume_slient">Silêncio</string>
+    <string name="volume_vibrate">Vibrar</string>
+    <string name="volume_no_disturb">Não incomodar</string>
+    <string name="volume_ring">Tocar</string>
+    <string name="oneplus_aod_settings">Visualização ambiente</string>
+    <string name="oneplus_aod_title">Mostrar relógio</string>
+    <string name="oneplus_aod_display_mode_title">Quando mostrar</string>
+    <string name="oneplus_aod_display_period_title">Período de exibição</string>
+    <string name="oneplus_aod_clock_style_title">Estilo do relógio</string>
+    <string name="oneplus_aod_display_text_title">Apresentar mensagem</string>
+    <string name="oneplus_aod_auto_wake_screen_title">Novas notificações</string>
+    <string name="oneplus_aod_auto_wake_screen_summary">Ativar o ecrã quando receber notificações</string>
+    <string name="oneplus_aod_mode_always_on">Sempre ativado</string>
+    <string name="oneplus_aod_mode_lift_up">Apresentar ao levantar</string>
+    <string name="oneplus_display_time_start">Das</string>
+    <string name="oneplus_display_time_end">Às</string>
+    <string name="oneplus_display_time_from">Das</string>
+    <string name="oneplus_display_time_to">às</string>
+    <string name="aod_clock_select_action_bar_title">Estilo do relógio</string>
+    <string name="aod_clock_preview_action_bar_title">Pré-visualização</string>
+    <string name="aod_clock_select_style_text">Selecionar estilo do relógio</string>
+    <string name="aod_clock_selected">SELECIONADO</string>
+    <string name="aod_clock_default">Padrão</string>
+    <string name="aod_clock_classic">Clássico</string>
+    <string name="aod_clock_analog">Analógico</string>
+    <string name="aod_clock_digital">Digital</string>
+    <string name="owner_info_settings_summary">Nenhum</string>
+    <string name="owner_info_settings_edit_text_hint">Por exemplo, Joe’s Android.</string>
+    <string name="save">GUARDAR</string>
+    <string name="cancel">Cancelar</string>
+    <string name="time_format_12_mode">h:mm a</string>
+</resources>

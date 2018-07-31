@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/misc_preference_title" />
+    <Preference android:icon="@drawable/ic_csc" android:title="@string/tweaks_csc_selection_title" android:key="csc_selection" android:summary="@string/tweaks_csc_selection_summary" />
+    <SwitchPreference android:icon="@drawable/ic_usb" android:title="@string/tweaks_usb_wake_title" android:key="tweaks_usb_wake" android:summary="@string/disabled" android:defaultValue="true" android:summaryOn="@string/enabled" />
+    <ListPreference android:icon="@drawable/ic_storage" android:entries="@array/tweaks_install_location_entries" android:title="@string/tweaks_install_location_title" android:key="tweaks_install_location" android:summary="%s" android:defaultValue="0" android:entryValues="@array/tweaks_install_location_values" />
+    <PreferenceCategory android:title="@string/reboot_preference_title" android:key="reboot_menu" />
+    <SwitchPreference android:icon="@drawable/ic_powermenu_recovery" android:title="@string/tweaks_apm_recovery_title" android:key="tweaks_apm_recovery" android:summary="@string/disabled" android:defaultValue="true" android:summaryOn="@string/enabled" />
+    <SwitchPreference android:icon="@drawable/ic_powermenu_downloadmode" android:title="@string/tweaks_apm_download_title" android:key="tweaks_apm_download" android:summary="@string/disabled" android:defaultValue="true" android:summaryOn="@string/enabled" />
+    <SwitchPreference android:icon="@drawable/ic_powermenu_emergency" android:title="@string/tweaks_apm_emergencry_title" android:key="tweaks_apm_emergency" android:summary="@string/disabled" android:defaultValue="true" android:summaryOn="@string/enabled" />
+</PreferenceScreen>

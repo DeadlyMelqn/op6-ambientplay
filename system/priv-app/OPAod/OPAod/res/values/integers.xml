@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_activityDefaultDur">220</integer>
+    <integer name="config_activityShortDur">150</integer>
+    <integer name="config_toastDefaultGravity">0x00000051</integer>
+    <integer name="preferences_left_pane_weight">4</integer>
+    <integer name="preferences_right_pane_weight">6</integer>
+    <integer name="preference_fragment_scrollbarStyle">0x02000000</integer>
+    <integer name="preference_screen_header_scrollbarStyle">0x02000000</integer>
+    <integer name="button_pressed_animation_duration">100</integer>
+    <integer name="button_pressed_animation_delay">100</integer>
+    <integer name="op_date_picker_mode">1</integer>
+    <integer name="bottom_sheet_slide_duration">150</integer>
+    <integer name="app_bar_elevation_anim_duration">150</integer>
+    <integer name="doze_pickup_vibration_threshold">2000</integer>
+    <integer name="doze_pulse_duration_in">900</integer>
+    <integer name="doze_pulse_duration_in_pickup">130</integer>
+    <integer name="doze_notification_pulse_duration_visible">5000</integer>
+    <integer name="doze_three_key_pulse_duration_visible">3000</integer>
+    <integer name="doze_pulse_duration_out">600</integer>
+    <integer name="doze_lift_up_pulse_duration_visible">5000</integer>
+    <integer name="doze_pulse_duration_visible">5000</integer>
+    <integer name="doze_pulse_duration_invisible">30000</integer>
+    <integer name="doze_small_icon_alpha">222</integer>
+    <integer name="op_doze_pulse_duration_out">300</integer>
+</resources>

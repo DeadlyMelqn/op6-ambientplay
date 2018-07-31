@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general" android:key="general_header" />
+    <SwitchPreference android:title="@string/tweaks_secure_window_title" android:key="tweaks_secure_window" android:summary="@string/tweaks_secure_window_summary" android:defaultValue="true" android:summaryOn="@string/tweaks_secure_window_summaryOn" />
+    <com.ice.box.helpers.OPPreferenceDivider android:key="tweaks_secure_window_divider" />
+    <PreferenceCategory android:title="@string/lockscreen_preference_title" />
+    <SwitchPreference android:title="@string/tweaks_qs_lock_title" android:key="tweaks_qs_lock" android:summary="@string/tweaks_qs_lock_summary" android:defaultValue="false" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <SwitchPreference android:title="@string/tweaks_scramble_pin_title" android:key="tweaks_scramble_pin" android:summary="@string/tweaks_scramble_pin_summary_op" android:defaultValue="false" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <SwitchPreference android:title="@string/tweaks_hide_lockscreen_clockdate_title" android:key="tweaks_hide_lockscreen_clock" android:summary="@string/visible" android:defaultValue="false" android:summaryOn="@string/hidden" />
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.lib.preference.PreferenceScreen android:title="@string/oneplus_aod_settings" android:key="main_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.oneplus.lib.widget.preference.OPSwitchPreference android:persistent="false" android:title="@string/oneplus_aod_settings" android:key="aod_display_mode_switch" />
+    <com.oneplus.lib.widget.preference.OPListPreference android:persistent="true" android:title="@string/oneplus_aod_display_mode_title" android:key="aod_display_mode" />
+    <com.oneplus.lib.widget.preference.OPPreference android:persistent="true" android:title="@string/oneplus_aod_display_period_title" android:key="aod_display_period" />
+    <com.oneplus.lib.widget.preference.OPPreference android:persistent="true" android:title="@string/oneplus_aod_clock_style_title" android:key="aod_clock_style" />
+    <com.oneplus.lib.widget.preference.OPPreference android:persistent="true" android:title="@string/oneplus_aod_display_text_title" android:key="aod_display_text" android:summary="@string/owner_info_settings_summary" />
+    <com.oneplus.lib.widget.preference.OPPreference android:layout="@layout/preference_divider" android:title="divider" android:selectable="false" />
+    <com.oneplus.lib.widget.preference.OPSwitchPreference android:persistent="true" android:title="@string/oneplus_aod_auto_wake_screen_title" android:key="aod_auto_wake_screen" android:summary="@string/oneplus_aod_auto_wake_screen_summary" />
+</com.oneplus.lib.preference.PreferenceScreen>

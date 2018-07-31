@@ -1,0 +1,492 @@
+<html>
+  <head>
+    <style type='text/css'>
+      a            { color:#a0a0e0 }
+      div.title    {
+        color:#C0F0C0;
+        font-size:1.2em;
+        font-weight:bold;
+        margin-top:1em;
+        margin-bottom:0.5em;
+        text-align:center }
+      div.subtitle {
+        color:#C0F0C0;
+        font-size:0.8em;
+        margin-bottom:1em;
+        text-align:center }
+      div.freetext { color:#F0F0F0 }
+      div.list     { color:#C0C0F0 }
+    </style>
+  </head>
+  <body>
+      $ 2.1.6
+                  % Version 2.1.6
+                  _ 2018-07-25
+                  * OnePlus6 : Added option for carrier label text color
+                  * OnePlus6 : Added option for net speed text color
+      $ 2.1.5
+                  % Version 2.1.5
+                  _ 2018-07-23
+                  * improved code for OP6 statusbar colors
+      $ 2.1.4
+                  % Version 2.1.4
+                  _ 2018-07-22
+                  * improved device detection logic
+                  * rearranged OP6 color options
+      $ 2.1.3
+                  % Version 2.1.3
+                  _ 2018-07-20
+                  * update to accommodate safety net fixes for OP6
+      $ 2.1.2
+                  % Version 2.1.2
+                  _ 2018-07-20
+                  * fixed not showing options on S8/S9 bug introduced in previous version. If still doesn't show please clear app data.
+      $ 2.1.0
+                  % Version 2.1.0
+                  _ 2018-07-04
+                  * OnePlus6 : Added option to disable secure screenshots
+                  * OnePlus6 : Added option to enable 180 degree rotation
+      $ 2.0.9
+                  % Version 2.0.9
+                  _ 2018-06-23
+                  * OnePlus6 : Fixed Telegram Link
+      $ 2.0.8
+                  % Version 2.0.8
+                  _ 2018-06-22
+                  * OnePlus6 : Added option to enable miui style battery bar customizations (needs RiCE 3.2 or newer)
+                  * OnePlus6 : Added option to enable notification background blur effect (needs RiCE 3.2 or newer)
+      $ 2.0.7
+                  % Version 2.0.7
+                  _ 2018-06-20
+                  * OnePlus6 : Added option to launch custom app for all keys (needs RiCE 3.1 or newer)
+      $ 2.0.5
+                  % Version 2.0.5
+                  _ 2018-06-15
+                  * fixed app notifications on Oreo
+                  * fix for GalaxyS8: Bibxy not detecting license properly
+                  * cosmetic improvements to licensing
+                  * fix for OnePlus6: HBM not reading user threshold value after reboot
+                  * new for OnePlus6: Advanced DND mode
+                  * new for OnePlus6: Autostart Manager
+                  * other bugs squashed
+      $ 2.0.3
+                  % Version 2.0.3
+                  _ 2018-06-12
+                  * bug fixes and optimizations
+      $ 2.0.2
+                  % Version 2.0.2
+                  _ 2018-06-11
+                  * bug fixes and optimizations
+      $ 2.0.1
+                  % Version 2.0.1
+                  _ 2018-06-08
+                  * fixed link for xda
+      $ 2.0.0
+                  % Version 2.0.0
+                  _ 2018-06-08
+                  * increased qs column icons to 8
+      $ 1.9.9
+                  % Version 1.9.9
+                  _ 2018-06-07
+                  * added OnePlus6 Support
+                  * added high brightness mode for all ROOTED OP6
+      $ 1.9.7
+                  % Version 1.9.7
+                  _ 2018-05-29
+                  * fixed link in ROM Version, opens Stable Release Page now
+      $ 1.9.6
+                  % Version 1.9.6
+                  _ 2018-05-27
+                  * fixed S8 links for SoLdieR9312s ROM
+                  * fixed link in ROM Version, opens Stable Release Page now
+      $ 1.9.5
+                  % Version 1.9.5
+                  _ 2018-05-26
+                  * fixed links for SoLdieR9312s ROM
+      $ 1.9.3
+                  % Version 1.9.3
+                  _ 2018-05-13
+                  * Added hide lockscreen clock
+                  * Added hide lockscreen text
+                  * Added hide notification panel carrier label
+                  * Added notification panel carrier label color
+                  * Added statusbar carrier label color
+      $ 1.9.1
+                  % Version 1.9.1
+                  _ 2018-05-11
+                  * Bixby remap: Ring, Silent, Vibrate
+                  * removed Home screen Off remap
+      $ 1.9.0
+                  % Version 1.9.0
+                  _ 2018-05-09
+                  * fixed S9 nightlies link
+      $ 1.8.9
+                  % Version 1.8.9
+                  _ 2018-05-05
+                  * fixed S9 links
+      $ 1.8.7
+                  % Version 1.8.7
+                  _ 2018-05-03
+                  * Added s9 support
+                  * Added support for soldier's rom
+                  * Fixed default colors for battery views
+                  * Cleanups to code
+      $ 1.8.6
+                  % Version 1.8.6
+                  _ 2018-04-30
+                  * Added option to revert statusbar colors to stock
+      $ 1.8.5
+                  % Version 1.8.5
+                  _ 2018-04-19
+                  * hidden unavailable options
+      $ 1.8.4
+                  % Version 1.8.4
+                  _ 2018-04-19
+                  * fixed FC when accessing QuickSetting fragment
+      $ 1.8.3
+                  % Version 1.8.3
+                  _ 2018-04-17
+                  * added option to link app name/icon color to title text color
+                  * fixed wifi activity colors not linking to clock color
+      $ 1.8.2
+                  % Version 1.8.2
+                  _ 2018-04-16
+                  * updated to support latest tweaks from 10.0 ROM version
+      $ 1.8.1
+                  % Version 1.8.1
+                  _ 2018-03-15
+                  * added option for screen off bixby remap
+      $ 1.7.9
+                  % Version 1.7.9
+                  _ 2018-03-10
+                  * added the [GER] Telegram support chat
+                  * fixed the [INT] Telegram chat link
+      $ 1.7.8
+                % Version 1.7.8
+                _ 2018-03-08
+                * added back navbar icon color mod
+                * added per icon colors to the nav bar icons
+      $ 1.7.7
+                % Version 1.7.7
+                _ 2018-02-28
+                * all tweaks for ROM 9.0 release
+      $ 1.7.5
+                % Version 1.7.5
+                _ 2018-02-25
+                * re-enabled notification text colour tweaks
+                * fixed qs row/column tweaks resetting at boot (needs ROM revision r40 or above)
+      $ 1.7.3
+                % Version 1.7.3
+                _ 2018-02-20
+                * reworked some icons
+                * corrected Stable Build XDA URL
+      $ 1.7.2
+              % Version 1.7.2
+              _ 2018-02-16
+              * added icons for APM
+              * fixes and improvements
+      $ 1.7.1
+            % Version 1.7.1
+            _ 2018-02-11
+            * code cleanup, improved oreo support
+      $ 1.7.0
+          % Version 1.7.0
+          _ 2018-02-11
+          * changed the Oreo Stable SVN URL
+      $ 1.6.7
+          % Version 1.6.7
+          _ 2018-01-29
+          * Netflix workaround tweak added
+      $ 1.6.6
+          % Version 1.6.6
+          _ 2017-12-29
+          * Made the stock behaviour for fingerprint gestures available to all users
+          * Corrected the nighlies links
+      $ 1.6.4
+          % Version 1.6.4
+           _ 2017-12-07
+           * fixed recents button remap bug introduced in 1.6.3
+      $ 1.6.3
+          % Version 1.6.3
+           _ 2017-12-06
+           * fingerprint swipe remaps
+      $ 1.6.1
+          % Version 1.6.1
+           _ 2017-11-24
+           * tapping rom version will show you nightlies update time if you are on nightly
+      $ 1.6.0
+          % Version 1.6.0
+           _ 2017-11-22
+           * hide unavailable tweaks for OREO
+      $ 1.5.9
+          % Version 1.5.9
+           _ 2017-11-20
+           * fixed Note Port detection
+      $ 1.5.8
+          % Version 1.5.8
+           _ 2017-11-20
+           * Oreo ROM improvements
+      $ 1.5.7
+          % Version 1.5.7
+          _ 2017-11-19
+          * fixed button remaping for S8 base ROM
+      $ 1.5.6
+          % Version 1.5.6
+          _ 2017-11-07
+          * improved Oreo compatibility
+      $ 1.5.5
+          % Version 1.5.5
+          _ 2017-10-30
+          * fixed some issues with custom app remaping
+      $ 1.5.4
+          % Version 1.5.4
+          _ 2017-10-29
+          * fixes
+      $ 1.5.3
+          % Version 1.5.3
+          _ 2017-10-23
+          * added option to colour the data usage text in quicksettings
+      $ 1.5.2
+          % Version 1.5.2
+          _ 2017-10-20
+          * removed reboot notifications from colour tweaks
+          * added SystemUI reboot notification when a samsung theme is applied and you "return to stock colours"
+          * added seperate slider for notification panel background alpha
+      $ 1.5.1
+          % Version 1.5.1
+          _ 2017-10-11
+          * fixed hiding bixby on versions where it is supported
+          * fixed app selection for certain users
+          * added a message if old rom was detected and remaps aren't supported
+      $ 1.5.0
+          % Version 1.5.0
+          _ 2017-10-10
+          * bug fixes and improvements
+      $ 1.4.9
+          % Version 1.4.9
+          _ 2017-10-10
+          * reorganized button remapping
+          * improved button remapping
+          * added options for long press back and home
+      $ 1.4.8
+          % Version 1.4.8
+          _ 2017-10-09
+          * fixed some rare occurring app FC
+          * added option to check for app updates
+      $ 1.4.7
+          % Version 1.4.7
+          _ 2017-10-06
+          * fixes
+      $ 1.4.6
+          % Version 1.4.6
+          _ 2017-10-063
+          * bixby remap improvements
+      $ 1.4.5
+          % Version 1.4.5
+          _ 2017-10-04
+          * fixed animation speed default value (again)
+      $ 1.4.4
+          % Version 1.4.4
+          _ 2017-10-04
+          * fixed animation speed default value
+      $ 1.4.3
+          % Version 1.4.3
+          _ 2017-10-04
+          * improvements
+          * better app selector
+      $ 1.4.2
+          % Version 1.4.2
+          _ 2017-09-29
+          * improved InAppBilling
+          * updated German translations
+          * other fixes
+      $ 1.4.1
+          % Version 1.4.1
+          _ 2017-09-28
+          * suppress various errors
+      $ 1.4.0
+          % Version 1.4.0
+          _ 2017-09-27
+          * various fixes
+          * if you get FC please wipe app's data
+      $ 1.3.9
+          % Version 1.3.9
+          _ 2017-09-23
+          * finalized legacy licensing (Thanks @zafer61 @severance1 for working the server side)
+          * removed old app key license support, if you owned one legitimately follow the instructions in app on how to license your app again
+          * fixed clicking on license preference in home tab, now it opens licensing page
+          * added ADS for free version only (Sorry!)
+      $ 1.3.8
+          % Version 1.3.8
+          _ 2017-09-21
+          * updated English strings credit @ohayoubaka
+          * fixed background update checker and notification
+          * added Legacy License (will completely replace old key app licensing in next version)
+          * other fixes
+      $ 1.3.7
+          % Version 1.3.7
+          _ 2017-09-19
+          * more fixes
+      $ 1.3.6
+          % Version 1.3.6
+          _ 2017-09-19
+          * updated links to match new website
+          * fixed startup FC if no internet connection or website down
+          * Per Application Immersive mode selection (premium only)
+      $ 1.3.5
+        % Version 1.3.5
+        _ 2017-09-13
+        * various fixes
+      $ 1.3.4
+        % Version 1.3.4
+        _ 2017-09-11
+        * Select list for which applications to run in immersive mode
+      $ 1.3.3
+        % Version 1.3.3
+        _ 2017-08-23
+        * Updated app to match ROM tweaks
+        * G93x support
+      $ 1.3.2
+        % Version 1.3.2
+        _ 2017-08-08
+        * updated app to match rom tweaks
+      $ 1.3.1
+        % Version 1.3.1
+        _ 2017-08-02
+        * improvements
+      $ 1.3.0
+        % Version 1.3.0
+        _ 2017-07-20
+        * updated links to match the new website
+      $ 1.2.9
+        % Version 1.2.9
+        _ 2017-07-19
+        * fixed auto opening link on startup
+      $ 1.2.7
+        % Version 1.2.7
+        _ 2017-07-11
+        * Merged statusbar into SystemUI/Buttons fragment
+        * Fixed default values for list preferences
+        * Added tweak for low battery camera flash limit
+        * Added dynamic navigation bar color tweak
+      $ 1.2.6
+        % Version 1.2.6
+        _ 2017-07-05
+        * updated DE translations
+      $ 1.2.5
+        % Version 1.2.5
+        _ 2017-07-05
+        * fixed showing ROM Update notification even if the version were the same
+        * fixes in backgroud notification
+      $ 1.2.4
+        % Version 1.2.4
+        _ 2017-07-05
+        * fixed not showing correct installed nightly version
+      $ 1.2.3
+        % Version 1.2.3
+        _ 2017-07-05
+        * fixed changelog icon on dark theme
+        * fixed not disabling update notification
+      $ 1.2.2
+        % Version 1.2.2
+        _ 2017-07-05
+        * fixed FCs affecting some users
+        * reworked ROM updates code
+      $ 1.2.1
+        % Version 1.2.1
+        _ 2017-07-04
+        * bug fixes and improvements
+        * nightly detection + notification if newer nightly is available
+        * background notification for both stable and nightly
+      $ 1.2.0
+        % Version 1.2.0
+        _ 2017-06-20
+        * bug fixes and improvements
+      $ 1.1.9
+        % Version 1.1.9
+        _ 2017-06-14
+        * script fixes
+        * quick unlock, lock quicksettings on lockscreen tweaks
+      $ 1.1.8
+        % Version 1.1.8
+        _ 2017-06-06
+        * NavBar Icon Colors
+        * Reboot notification only for the tweaks that actually require it
+        * other fixes and improvement
+      $ 1.1.7
+        % Version 1.1.7
+        _ 2017-05-31
+        * UI Improvements
+        * Navbar Colors Switch
+        * code fixes
+      $ 1.1.6
+        % Version 1.1.6
+        _ 2017-05-25
+        * new UI
+        * some code improvements
+        * probably new bugs
+      $ 1.1.5
+        % Version 1.1.5
+        _ 2017-05-24
+        * added alpha channel selector for ColorPicker
+      $ 1.1.4
+        % Version 1.1.4
+        _ 2017-05-24
+        * removed ads for non premium users
+        * better colors management interface
+      $ 1.1.3
+        % Version 1.1.3
+        _ 2017-05-20
+        * added UI Animation Control within app
+      $ 1.1.2
+        % Version 1.1.2
+        _ 2017-05-16
+        * fixed scripts for color backup and restore
+      $ 1.1.1
+        % Version 1.1.1
+        _ 2017-05-15
+        * layout and style improvements
+        * added tweaks for number of quick qs toggles
+      $ 1.1.0
+        % Version 1.1.0
+        _ 2017-05-13
+        * fixed update service crash
+      $ 1.0.9
+        % Version 1.0.9
+        _ 2017-05-12
+        * color tab fixes
+      $ 1.0.8
+        % Version 1.0.8
+        _ 2017-05-10
+        * fixed rom version detection
+      $ 1.0.7
+        % Version 1.0.7
+        _ 2017-05-10
+        * fixed not recognizing licensing
+      $ 1.0.6
+        % Version 1.0.6
+        _ 2017-05-10
+        * changing clock position doesnt require reboot
+        * color changing requires full system reboot
+      $ 1.0.5
+        % Version 1.0.5
+        _ 2017-05-10
+        * functionality and UI improvements
+      $ 1.0.4
+        % Version 1.0.4
+        _ 2017-05-08
+        * enabled Immersive Mode Tweak / Quick Settings Tile
+        * removed app update related code
+      $ 1.0.3
+        % Version 1.0.3
+        _ 2017-05-08
+        * fixed app crash if app isn't system app
+        * fixed tweaks not taking effect (you need RenovateICE nightly r32 or newer) / Alternative push RiCE to /system/priv-app
+        * fixed Licensing (might need a few hours to properly work)
+      $ 1.0.0
+        % Version 1.0.0
+        _ 2017-05-02
+        * initial release
+      $ END_OF_CHANGE_LOG
+  </body>
+</html>

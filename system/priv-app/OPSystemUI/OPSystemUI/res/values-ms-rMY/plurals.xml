@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="other">Masukkan SIM PIN, anda mempunyai %d percubaan yang tinggal sebelum anda mesti menghubungi pembawa anda untuk membuka peranti anda.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="other">SIM lumpuh sekarang. Masukkan kod PUK untuk menyambung. Anda mempunyai %d percubaan yang tinggal sebelum SIM menjadi tidak boleh digunakan secara berterusan. Hubungi pembawa untuk butiran.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/black" android:visibility="gone" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/switching_users" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:theme="@android:style/Theme" android:layout_alignParentTop="true" layout="@layout/car_status_bar_header" />
+        <ProgressBar android:id="@id/countdown_progress" android:layout_width="fill_parent" android:layout_height="@dimen/car_user_switcher_progress_bar_height" android:layout_marginTop="@dimen/car_user_switcher_progress_bar_margin_top" android:layout_alignParentTop="true" style="@style/CarUserSwitcher.ProgressBar" />
+        <com.android.systemui.statusbar.car.UserGridView android:id="@id/user_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/car_margin" android:layout_marginRight="@dimen/car_margin" android:layout_centerInParent="true" />
+        <com.android.systemui.statusbar.car.PageIndicator android:id="@id/user_switcher_page_indicator" android:layout_width="fill_parent" android:layout_height="@dimen/car_page_indicator_dot_diameter" android:layout_marginTop="@dimen/car_page_indicator_margin_top" android:layout_below="@id/user_grid" />
+        <Button android:id="@id/start_driving" android:layout_width="wrap_content" android:layout_height="@dimen/car_start_driving_height" android:text="@string/start_driving" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/CarUserSwitcher.StartDrivingButton" />
+    </RelativeLayout>
+</FrameLayout>

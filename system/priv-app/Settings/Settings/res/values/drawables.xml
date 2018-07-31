@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="fp_enrollment_header_landscape">#ff009688</item>
+    <item type="drawable" name="oneplus_divider_color">@color/oneplus_settings_divider_color</item>
+    <item type="drawable" name="oneplus_starting_window_blank_background">@color/oneplus_contorl_bg_color_default</item>
+</resources>

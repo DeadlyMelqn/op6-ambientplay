@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="volume_slient">صامت</string>
+    <string name="volume_vibrate">اهتزاز</string>
+    <string name="volume_no_disturb">عدم الإزعاج</string>
+    <string name="volume_ring">رنين</string>
+    <string name="oneplus_aod_settings">الشاشة الخارجية</string>
+    <string name="oneplus_aod_title">إظهار الساعة</string>
+    <string name="oneplus_aod_display_mode_title">متى تظهر</string>
+    <string name="oneplus_aod_display_period_title">مدة العرض</string>
+    <string name="oneplus_aod_clock_style_title">نمط الساعة</string>
+    <string name="oneplus_aod_display_text_title">عرض الرسالة</string>
+    <string name="oneplus_aod_auto_wake_screen_title">إخطارات جديدة</string>
+    <string name="oneplus_aod_auto_wake_screen_summary">إيقاظ الشاشة عند تلقي إخطارات</string>
+    <string name="oneplus_aod_mode_always_on">تشغيل دائمًا</string>
+    <string name="oneplus_aod_mode_lift_up">شاشة الرفع</string>
+    <string name="oneplus_display_time_start">من</string>
+    <string name="oneplus_display_time_end">إلى</string>
+    <string name="oneplus_display_time_from">من</string>
+    <string name="oneplus_display_time_to">إلى</string>
+    <string name="aod_clock_select_action_bar_title">نمط الساعة</string>
+    <string name="aod_clock_preview_action_bar_title">معاينة</string>
+    <string name="aod_clock_select_style_text">حدد نمط الساعة</string>
+    <string name="aod_clock_selected">محدد</string>
+    <string name="aod_clock_default">افتراضي</string>
+    <string name="aod_clock_classic">كلاسيك</string>
+    <string name="aod_clock_analog">تناظري</string>
+    <string name="aod_clock_digital">رقمي</string>
+    <string name="owner_info_settings_summary">لا شيء</string>
+    <string name="owner_info_settings_edit_text_hint">E.g., Joe’s Android.</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="time_format_12_mode">ساعة:دقيقة صباحًا</string>
+</resources>

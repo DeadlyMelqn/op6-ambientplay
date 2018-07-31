@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="qs_detail_items_padding_top">16.0dip</dimen>
+    <dimen name="qs_lower_pager_height">208.0dip</dimen>
+    <dimen name="qs_upper_frame_height">298.0dip</dimen>
+    <dimen name="qs_upper_pager_height">292.0dip</dimen>
+</resources>

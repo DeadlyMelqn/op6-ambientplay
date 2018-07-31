@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="quick_settings_num_rows">2</integer>
+    <integer name="quick_settings_num_rows_lower">2</integer>
+    <integer name="quick_settings_num_rows_portrait">3</integer>
+</resources>

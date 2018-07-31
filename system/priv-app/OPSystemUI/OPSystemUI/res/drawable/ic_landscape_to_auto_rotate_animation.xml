@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/ic_landscape_to_auto_rotate"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="landscape" android:animation="@anim/ic_landscape_to_rotate_landscape_animation" />
+    <target android:name="arrows" android:animation="@anim/ic_landscape_to_rotate_arrows_animation" />
+    <target android:name="bottom_merged" android:animation="@anim/ic_landscape_to_rotate_bottom_merged_animation" />
+</animated-vector>

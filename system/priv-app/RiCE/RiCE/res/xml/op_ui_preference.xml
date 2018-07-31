@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/general" android:key="general_title" />
+    <SwitchPreference android:title="@string/tweaks_all_rotations_title" android:key="tweaks_all_rotations" android:defaultValue="false" />
+    <com.ice.box.helpers.OPPreferenceDivider android:key="tweaks_all_rotations_divider" />
+    <ListPreference android:entries="@array/tweaks_immersive_entries" android:title="@string/tweaks_immersive_title" android:key="tweaks_immersive_list" android:summary="%s" android:entryValues="@array/tweaks_immersive_values" />
+    <com.ice.box.helpers.OPPreferenceDivider android:key="bar_divider_6" />
+    <MultiSelectListPreference android:entries="@array/immersive_perapp_entries" android:title="@string/immersive_perapp_title" android:key="immersive_perapp" android:summary="@string/immersive_perapp_summary" android:dialogTitle="@string/immersive_perapp" android:entryValues="@array/immersive_perapp_values" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <PreferenceCategory android:title="@string/quick_settings_preference_title" android:key="qs_title" />
+    <ListPreference android:entries="@array/op_quick_qs_button_entries" android:title="@string/tweaks_quick_qs_buttons_title" android:key="tweaks_quick_qs_buttons" android:summary="%s" android:defaultValue="6" android:entryValues="@array/op_quick_qs_button_values" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <ListPreference android:entries="@array/qs_tile_row_entries" android:title="@string/tweaks_qs_rows_title" android:key="tweaks_qs_rows" android:summary="%s" android:defaultValue="3" android:entryValues="@array/qs_tile_row_values" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <ListPreference android:entries="@array/op_qs_tile_column_entries" android:title="@string/tweaks_qs_columns_title" android:key="tweaks_qs_columns" android:summary="%s" android:defaultValue="4" android:entryValues="@array/op_qs_tile_column_values" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <SwitchPreference android:title="@string/tweaks_qs_pulldown_title" android:key="tweaks_qs_pulldown" android:summary="@string/disabled" android:defaultValue="true" android:summaryOn="@string/tweaks_qs_pulldown_summary" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <SwitchPreference android:title="@string/tweaks_qs_pulldown_blur_title" android:key="tweaks_pulldown_blur" android:summary="@string/tweaks_qs_pulldown_blur_summary" android:defaultValue="false" />
+    <com.ice.box.helpers.OPPreferenceDivider android:key="tweaks_pulldown_blur_divider" />
+    <SwitchPreference android:title="@string/tweaks_qs_vibration_title" android:key="tweaks_qs_vibration" android:summary="@string/tweaks_qs_vibration_summary" android:defaultValue="false" />
+    <com.ice.box.helpers.OPPreferenceDivider android:key="tweaks_qs_vibration_divider" />
+    <PreferenceCategory android:title="@string/nav_statusbar" android:key="statusbar_title" />
+    <ListPreference android:entries="@array/op_tweaks_clock_position_entries" android:title="@string/clock_position" android:key="tweaks_clock_position" android:summary="%s" android:defaultValue="0" android:entryValues="@array/op_tweaks_clock_position_values" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <SwitchPreference android:title="@string/tweaks_clock_onclick_title" android:key="tweaks_clock_onclick" android:summary="@string/disabled" android:defaultValue="false" android:summaryOn="@string/tweaks_clock_onclick_summary" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <SwitchPreference android:title="@string/tweaks_clock_seconds_title" android:key="tweaks_clock_seconds" android:summary="@string/tweaks_clock_seconds_summary" android:defaultValue="false" />
+    <com.ice.box.helpers.OPPreferenceDivider android:key="tweaks_clock_seconds_divider" />
+    <SwitchPreference android:title="@string/tweaks_double_tap_sleep_title" android:key="tweaks_double_tap_sleep" android:summary="@string/tweaks_double_tap_sleep_summary" android:defaultValue="false" />
+</PreferenceScreen>

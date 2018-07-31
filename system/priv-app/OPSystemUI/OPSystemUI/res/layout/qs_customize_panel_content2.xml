@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:id="@id/toolbar_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Toolbar android:id="@android:id/KEYCODE_PICTSYMBOLS" android:layout_width="fill_parent" android:layout_height="@dimen/oneplus_contorl_list_item_height_one_line1" android:layout_marginTop="@dimen/qs_edit_header_padding_top" android:layout_marginBottom="5.0dip" android:titleTextAppearance="@style/oneplus_contorl_text_style_title" android:navigationContentDescription="@android:string/config_mms_user_agent_profile_url" style="?android:toolbarStyle" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/qs_upper_frame_height">
+        <com.android.systemui.qs.customize.QSEditViewPager android:layout_gravity="top" android:id="@id/upperPages" android:layout_width="fill_parent" android:layout_height="@dimen/qs_upper_pager_height" android:paddingStart="@dimen/qs_edit_panel_padding" android:paddingEnd="@dimen/qs_edit_panel_padding" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/upper_indicator_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/upperIndicator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="6.0dip" layout="@layout/qs_page_indicator" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textAppearance="@style/oneplus_contorl_text_style_subheading" android:textSize="14.0sp" android:gravity="center|left|top" android:id="@id/dragLabel" android:paddingTop="@dimen/qs_edit_drag_label_padding_top" android:layout_width="fill_parent" android:layout_height="@dimen/qs_edit_drag_label_height" android:text="@string/drag_to_add_tiles" android:paddingStart="22.0dip" android:paddingEnd="22.0dip" />
+    <com.android.systemui.qs.customize.QSEditViewPager android:id="@id/lowerPages" android:layout_width="fill_parent" android:layout_height="@dimen/qs_lower_pager_height" android:layout_marginTop="@dimen/margin_top2" android:paddingStart="@dimen/qs_edit_panel_padding" android:paddingEnd="@dimen/qs_edit_panel_padding" />
+    <Space android:id="@id/space" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include android:id="@id/lowerIndicator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/margin_bottom1" layout="@layout/qs_page_indicator" />
+    <View android:layout_gravity="bottom" android:id="@id/nav_bar_background" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="@dimen/navigation_bar_size" />
+</merge>

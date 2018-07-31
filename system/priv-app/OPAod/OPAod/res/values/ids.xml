@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="icon" />
+    <item type="id" name="list_primary_text" />
+    <item type="id" name="list_secondary_text" />
+    <item type="id" name="stamp" />
+    <item type="id" name="action_button" />
+    <item type="id" name="item_touch_helper_previous_elevation" />
+    <item type="id" name="view_offset_helper" />
+    <item type="id" name="custom_background_color" />
+    <item type="id" name="analog_clock_view">false</item>
+    <item type="id" name="analog_background">false</item>
+    <item type="id" name="analog_min">false</item>
+    <item type="id" name="analog_hour">false</item>
+    <item type="id" name="analog_center">false</item>
+    <item type="id" name="background">false</item>
+    <item type="id" name="aod_clock_default">false</item>
+    <item type="id" name="aod_clock_classic">false</item>
+    <item type="id" name="aod_clock_analog">false</item>
+    <item type="id" name="aod_clock_digital">false</item>
+    <item type="id" name="preview_image">false</item>
+    <item type="id" name="aod_clock">false</item>
+    <item type="id" name="aod_clock_img">false</item>
+    <item type="id" name="select_text">false</item>
+    <item type="id" name="aod_clock_description">false</item>
+    <item type="id" name="border">false</item>
+    <item type="id" name="main_view">false</item>
+    <item type="id" name="battery_empty_view">false</item>
+    <item type="id" name="battery_container">false</item>
+    <item type="id" name="percentage">false</item>
+    <item type="id" name="battery">false</item>
+    <item type="id" name="battery_dash_charge">false</item>
+    <item type="id" name="notification_icon_empty_view">false</item>
+    <item type="id" name="notification_icon_area_inner">false</item>
+    <item type="id" name="notificationIcons">false</item>
+    <item type="id" name="moreIcon">false</item>
+    <item type="id" name="owner_info">false</item>
+    <item type="id" name="single_notification_view">false</item>
+    <item type="id" name="notification_default">false</item>
+    <item type="id" name="header_container">false</item>
+    <item type="id" name="single_notification_icon">false</item>
+    <item type="id" name="single_notification_header">false</item>
+    <item type="id" name="single_notification_title">false</item>
+    <item type="id" name="single_notification_smallText">false</item>
+    <item type="id" name="notificaiton_custom">false</item>
+    <item type="id" name="three_key_view">false</item>
+    <item type="id" name="three_key_icon">false</item>
+    <item type="id" name="three_key_text">false</item>
+    <item type="id" name="aod_scrim">false</item>
+    <item type="id" name="breadcrumb_section">false</item>
+    <item type="id" name="custom_action_bar">false</item>
+    <item type="id" name="up">false</item>
+    <item type="id" name="back_button">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="menu">false</item>
+    <item type="id" name="date_time_view">false</item>
+    <item type="id" name="keyguard_clock_container">false</item>
+    <item type="id" name="clock_view">false</item>
+    <item type="id" name="date_view">false</item>
+    <item type="id" name="icon_frame">false</item>
+    <item type="id" name="buttonPanel">false</item>
+    <item type="id" name="spacer">false</item>
+    <item type="id" name="spacer2">false</item>
+    <item type="id" name="parentPanel">false</item>
+    <item type="id" name="contentPanel">false</item>
+    <item type="id" name="scrollView">false</item>
+    <item type="id" name="textSpacerNoButtons">false</item>
+    <item type="id" name="customPanel">false</item>
+    <item type="id" name="progress_percent">false</item>
+    <item type="id" name="progress_number">false</item>
+    <item type="id" name="topPanel">false</item>
+    <item type="id" name="title_template">false</item>
+    <item type="id" name="alertTitle">false</item>
+    <item type="id" name="numberPicker">false</item>
+    <item type="id" name="min">false</item>
+    <item type="id" name="seekbar">false</item>
+    <item type="id" name="opseekbar">false</item>
+    <item type="id" name="switchWidget">false</item>
+    <item type="id" name="body">false</item>
+    <item type="id" name="select_dialog_listview">false</item>
+    <item type="id" name="owner_info_edit_text">false</item>
+    <item type="id" name="secondary_icon">false</item>
+    <item type="id" name="edittext_container">false</item>
+    <item type="id" name="headers">false</item>
+    <item type="id" name="list_footer">false</item>
+    <item type="id" name="prefs_frame">false</item>
+    <item type="id" name="prefs">false</item>
+    <item type="id" name="button_bar">false</item>
+    <item type="id" name="skip_button">false</item>
+    <item type="id" name="next_button">false</item>
+    <item type="id" name="summary">false</item>
+    <item type="id" name="checked">false</item>
+    <item type="id" name="unchecked">false</item>
+    <item type="id" name="on">false</item>
+    <item type="id" name="off">false</item>
+    <item type="id" name="pressed">false</item>
+    <item type="id" name="unpressed">false</item>
+    <item type="id" name="aod_clock_menu">false</item>
+</resources>

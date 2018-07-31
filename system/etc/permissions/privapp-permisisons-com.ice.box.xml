@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+  <privapp-permissions package="com.ice.box">
+	<permission name="android.permission.WRITE_SETTINGS" />
+	<permission name="android.permission.WRITE_SECURE_SETTINGS" />
+	<permission name="android.permission.CHANGE_CONFIGURATION" />
+	<permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<permission name="android.permission.BIND_QUICK_SETTINGS_TILE" />
+	<permission name="android.permission.REBOOT" />
+	<permission name="android.permission.MODIFY_PHONE_STATE" />
+  </privapp-permissions>
+</permissions>

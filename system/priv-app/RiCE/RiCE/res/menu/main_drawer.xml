@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_home" android:id="@id/nav_about" android:visible="true" android:title="@string/nav_home" />
+    </group>
+    <item android:title="@string/nav_rom_options">
+        <menu>
+            <item android:icon="@drawable/ic_ui" android:id="@id/nav_ui" android:visible="false" android:title="@string/nav_ui" android:checkable="true" />
+            <item android:icon="@drawable/ic_application" android:id="@id/app" android:visible="false" android:title="@string/nav_app" android:checkable="true" />
+            <item android:icon="@drawable/ic_lightsensor_service" android:id="@id/nav_hbm" android:visible="false" android:title="@string/nav_hbm" android:checkable="true" />
+            <item android:icon="@drawable/ic_buttons" android:id="@id/nav_buttons" android:visible="false" android:title="@string/nav_buttons" android:checkable="true" />
+            <item android:icon="@drawable/ic_misc" android:id="@id/nav_misc" android:visible="false" android:title="@string/nav_misc" android:checkable="true" />
+            <item android:icon="@drawable/ic_remap" android:id="@id/nav_op6_remap" android:visible="false" android:title="@string/nav_op6_remap" android:checkable="true" />
+        </menu>
+    </item>
+    <item android:id="@id/colors_sub_menu" android:title="@string/nav_colors">
+        <menu>
+            <item android:icon="@drawable/ic_color" android:id="@id/nav_colors_statusbar" android:visible="false" android:title="@string/statusbar_color_preference_title" android:checkable="true" />
+            <item android:icon="@drawable/ic_color" android:id="@id/nav_colors_navbar" android:visible="false" android:title="@string/navbar_color_preference_title" android:checkable="true" />
+            <item android:icon="@drawable/ic_color" android:id="@id/nav_colors_header" android:visible="false" android:title="@string/header_color_preference_title" android:checkable="true" />
+            <item android:icon="@drawable/ic_color" android:id="@id/nav_colors_qs" android:visible="false" android:title="@string/quick_settings_preference_title" android:checkable="true" />
+            <item android:icon="@drawable/ic_color" android:id="@id/nav_colors_notifcation" android:visible="false" android:title="@string/notifications_color_preference_title" android:checkable="true" />
+            <item android:icon="@drawable/ic_color" android:id="@id/nav_colors_backuprestore" android:visible="false" android:title="@string/Backup_Restore" android:checkable="true" />
+        </menu>
+    </item>
+    <item android:title="@string/nav_system">
+        <menu>
+            <item android:icon="@drawable/ic_license" android:id="@id/nav_license" android:title="@string/settings_license" android:checkable="true" />
+            <item android:icon="@drawable/ic_settings" android:id="@id/nav_settings" android:title="@string/action_settings" android:checkable="true" />
+            <item android:icon="@drawable/ic_sysinfo" android:id="@id/nav_sys_info" android:title="@string/nav_system_info" android:checkable="true" />
+        </menu>
+    </item>
+</menu>

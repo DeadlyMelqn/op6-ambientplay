@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:layout="@layout/header_image" android:layout_width="fill_parent" android:layout_height="135.0dip" android:key="header_image" />
+    <PreferenceCategory android:title="@string/general_info">
+        <Preference android:icon="@drawable/ic_rom_version" android:clickable="false" android:title="@string/unsupported_device_home" android:key="rom_Version" android:summary="this is the summary" />
+        <Preference android:icon="@drawable/ic_rom_version" android:title="@string/rom_version" android:key="rom_Version" />
+    </PreferenceCategory>
+</PreferenceScreen>

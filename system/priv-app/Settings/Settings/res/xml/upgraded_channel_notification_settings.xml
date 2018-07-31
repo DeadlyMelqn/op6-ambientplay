@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <Preference android:title="@string/notification_importance_title" android:key="importance" />
+    <com.android.settings.notification.NotificationSoundPreference android:title="@string/notification_channel_sound_title" android:key="ringtone" android:dialogTitle="@string/notification_channel_sound_title" android:ringtoneType="notification" android:showDefault="true" android:showSilent="true" />
+    <com.oneplus.settings.ui.OPRestrictedSwitchPreference android:title="@string/notification_vibrate_title" android:key="vibrate" settings:useAdditionalSummary="true" />
+    <com.oneplus.settings.ui.OPRestrictedSwitchPreference android:title="@string/notification_channel_badge_title" android:key="badge" settings:useAdditionalSummary="true" settings:restrictedSwitchSummary="@string/enabled_by_admin" />
+    <com.oneplus.settings.ui.OPRestrictedSwitchPreference android:title="@string/notification_show_lights_title" android:key="lights" settings:useAdditionalSummary="true" />
+    <com.android.settings.notification.RestrictedDropDownPreference android:title="@string/app_notification_visibility_override_title" android:key="visibility_override" />
+    <com.oneplus.settings.ui.OPRestrictedSwitchPreference android:title="@string/app_notification_override_dnd_title" android:key="bypass_dnd" android:summary="@string/app_notification_override_dnd_summary" settings:useAdditionalSummary="true" />
+</PreferenceScreen>

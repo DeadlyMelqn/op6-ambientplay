@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:icon="@drawable/ic_install" android:title="@string/sysapp" android:key="sysapp" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <SwitchPreference android:icon="@drawable/ic_appupdate" android:title="@string/check_app_updates_title" android:key="check_app_updates" android:summary="@string/disabled" android:summaryOn="@string/enabled" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <SwitchPreference android:icon="@drawable/ic_language" android:title="@string/force_english_title" android:key="force_english" android:summary="@string/disabled" android:summaryOn="@string/enabled" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <SwitchPreference android:icon="@drawable/ic_theme" android:title="@string/theme" android:key="switch_theme" android:summary="@string/light_theme" android:summaryOn="@string/dark_theme" />
+    <PreferenceCategory android:title="@string/romupdate" android:key="romupdatescat" />
+    <SwitchPreference android:icon="@drawable/ic_update" android:title="@string/onstart" android:key="romupdate_start" android:summary="@string/disabled" android:summaryOn="@string/enabled" />
+    <SwitchPreference android:icon="@drawable/ic_update" android:title="@string/in_background" android:key="romupdate" android:summary="@string/disabled" android:summaryOn="@string/enabled" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <EditTextPreference android:icon="@drawable/ic_update" android:hint="@string/nightlyupdateinterval_hint" android:selectAllOnFocus="true" android:title="@string/nightlyupdateinterval_title" android:key="romupdateinterval" android:dependency="romupdate" android:inputType="number" />
+    <PreferenceCategory android:title="@string/romupdatenightly" android:key="romupdatesnightlycat" />
+    <SwitchPreference android:icon="@drawable/ic_update" android:title="@string/onstart" android:key="nightlyupdate_start" android:summary="@string/disabled" android:summaryOn="@string/enabled" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <SwitchPreference android:icon="@drawable/ic_update" android:title="@string/in_background" android:key="nightlyupdate" android:summary="@string/disabled" android:summaryOn="@string/enabled" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <EditTextPreference android:icon="@drawable/ic_update" android:hint="@string/nightlyupdateinterval_hint" android:selectAllOnFocus="true" android:title="@string/nightlyupdateinterval_title" android:key="nightlyupdateinterval" android:dependency="nightlyupdate" android:inputType="number" />
+</PreferenceScreen>

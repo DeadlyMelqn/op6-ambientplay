@@ -1,0 +1,22 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: OPAod.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '27'
+  targetSdkVersion: '27'
+sharedLibrary: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.1-dirty
+versionInfo:
+  versionCode: '27'
+  versionName: 0.0.1.180517162128.946a8d2

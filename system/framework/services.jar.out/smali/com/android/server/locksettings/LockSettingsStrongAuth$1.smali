@@ -1,0 +1,118 @@
+.class Lcom/android/server/locksettings/LockSettingsStrongAuth$1;
+.super Landroid/os/Handler;
+.source "LockSettingsStrongAuth.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/server/locksettings/LockSettingsStrongAuth;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/android/server/locksettings/LockSettingsStrongAuth;
+
+
+# direct methods
+.method constructor <init>(Lcom/android/server/locksettings/LockSettingsStrongAuth;)V
+    .locals 0
+    .param p1, "this$0"    # Lcom/android/server/locksettings/LockSettingsStrongAuth;
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Lcom/android/server/locksettings/LockSettingsStrongAuth$1;->this$0:Lcom/android/server/locksettings/LockSettingsStrongAuth;
+
+    .line 224
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
+
+    .line 1
+    return-void
+.end method
+
+
+# virtual methods
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 3
+    .param p1, "msg"    # Landroid/os/Message;
+
+    .prologue
+    .line 227
+    iget v0, p1, Landroid/os/Message;->what:I
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 244
+    :goto_0
+    return-void
+
+    .line 229
+    :pswitch_0
+    iget-object v1, p0, Lcom/android/server/locksettings/LockSettingsStrongAuth$1;->this$0:Lcom/android/server/locksettings/LockSettingsStrongAuth;
+
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast v0, Landroid/app/trust/IStrongAuthTracker;
+
+    invoke-static {v1, v0}, Lcom/android/server/locksettings/LockSettingsStrongAuth;->-wrap0(Lcom/android/server/locksettings/LockSettingsStrongAuth;Landroid/app/trust/IStrongAuthTracker;)V
+
+    goto :goto_0
+
+    .line 232
+    :pswitch_1
+    iget-object v1, p0, Lcom/android/server/locksettings/LockSettingsStrongAuth$1;->this$0:Lcom/android/server/locksettings/LockSettingsStrongAuth;
+
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast v0, Landroid/app/trust/IStrongAuthTracker;
+
+    invoke-static {v1, v0}, Lcom/android/server/locksettings/LockSettingsStrongAuth;->-wrap1(Lcom/android/server/locksettings/LockSettingsStrongAuth;Landroid/app/trust/IStrongAuthTracker;)V
+
+    goto :goto_0
+
+    .line 235
+    :pswitch_2
+    iget-object v0, p0, Lcom/android/server/locksettings/LockSettingsStrongAuth$1;->this$0:Lcom/android/server/locksettings/LockSettingsStrongAuth;
+
+    iget v1, p1, Landroid/os/Message;->arg1:I
+
+    iget v2, p1, Landroid/os/Message;->arg2:I
+
+    invoke-static {v0, v1, v2}, Lcom/android/server/locksettings/LockSettingsStrongAuth;->-wrap3(Lcom/android/server/locksettings/LockSettingsStrongAuth;II)V
+
+    goto :goto_0
+
+    .line 238
+    :pswitch_3
+    iget-object v0, p0, Lcom/android/server/locksettings/LockSettingsStrongAuth$1;->this$0:Lcom/android/server/locksettings/LockSettingsStrongAuth;
+
+    iget v1, p1, Landroid/os/Message;->arg1:I
+
+    invoke-static {v0, v1}, Lcom/android/server/locksettings/LockSettingsStrongAuth;->-wrap2(Lcom/android/server/locksettings/LockSettingsStrongAuth;I)V
+
+    goto :goto_0
+
+    .line 241
+    :pswitch_4
+    iget-object v0, p0, Lcom/android/server/locksettings/LockSettingsStrongAuth$1;->this$0:Lcom/android/server/locksettings/LockSettingsStrongAuth;
+
+    iget v1, p1, Landroid/os/Message;->arg1:I
+
+    invoke-static {v0, v1}, Lcom/android/server/locksettings/LockSettingsStrongAuth;->-wrap4(Lcom/android/server/locksettings/LockSettingsStrongAuth;I)V
+
+    goto :goto_0
+
+    .line 227
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_2
+        :pswitch_0
+        :pswitch_1
+        :pswitch_3
+        :pswitch_4
+    .end packed-switch
+.end method

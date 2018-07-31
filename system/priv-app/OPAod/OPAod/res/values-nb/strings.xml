@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="volume_slient">Stille</string>
+    <string name="volume_vibrate">Vibrer</string>
+    <string name="volume_no_disturb">Ikke forstyrr</string>
+    <string name="volume_ring">Ring</string>
+    <string name="oneplus_aod_settings">Ambient display</string>
+    <string name="oneplus_aod_title">Vis klokke</string>
+    <string name="oneplus_aod_display_mode_title">Når skal vises</string>
+    <string name="oneplus_aod_display_period_title">Visningsperiode</string>
+    <string name="oneplus_aod_clock_style_title">Klokkestil</string>
+    <string name="oneplus_aod_display_text_title">Vis melding</string>
+    <string name="oneplus_aod_auto_wake_screen_title">Nye varsler</string>
+    <string name="oneplus_aod_auto_wake_screen_summary">Vekk skjermen når du mottar varslinger</string>
+    <string name="oneplus_aod_mode_always_on">Alltid på</string>
+    <string name="oneplus_aod_mode_lift_up">Løft display</string>
+    <string name="oneplus_display_time_start">Fra</string>
+    <string name="oneplus_display_time_end">Til</string>
+    <string name="oneplus_display_time_from">Fra</string>
+    <string name="oneplus_display_time_to">til</string>
+    <string name="aod_clock_select_action_bar_title">Klokkestil</string>
+    <string name="aod_clock_preview_action_bar_title">Forhåndsvisning</string>
+    <string name="aod_clock_select_style_text">Velg klokkestil</string>
+    <string name="aod_clock_selected">VALGT</string>
+    <string name="aod_clock_default">Standard</string>
+    <string name="aod_clock_classic">Klassisk</string>
+    <string name="aod_clock_analog">Analog</string>
+    <string name="aod_clock_digital">Digital</string>
+    <string name="owner_info_settings_summary">Ingen</string>
+    <string name="owner_info_settings_edit_text_hint">F.eks. Joe’s Android.</string>
+    <string name="save">LAGRE</string>
+    <string name="cancel">Avbryt</string>
+    <string name="time_format_12_mode">h:mm a</string>
+</resources>

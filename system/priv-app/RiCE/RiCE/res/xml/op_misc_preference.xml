@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:title="@string/tweaks_alternative_brightness_title" android:key="tweaks_alternative_brightness" android:summary="@string/disabled" android:defaultValue="false" android:summaryOn="@string/enabled" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <Preference android:title="Autorun Manager" android:key="apps_autorun" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <Preference android:title="Advanced DND Schedule" android:key="advanced_dnd" />
+    <com.ice.box.helpers.OPPreferenceDivider />
+    <SwitchPreference android:title="@string/tweaks_avengers_clock_title" android:key="tweaks_avengers_clock" android:summary="@string/disabled" android:defaultValue="false" android:summaryOn="@string/enabled" />
+</PreferenceScreen>

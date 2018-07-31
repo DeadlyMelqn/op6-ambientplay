@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="volume_slient">Tahimik</string>
+    <string name="volume_vibrate">Mag-vibrate</string>
+    <string name="volume_no_disturb">Huwag istorbohin</string>
+    <string name="volume_ring">Mag-ring</string>
+    <string name="oneplus_aod_settings">Ambient display</string>
+    <string name="oneplus_aod_title">Ipakita ang orasan</string>
+    <string name="oneplus_aod_display_mode_title">Kailan ipapakita</string>
+    <string name="oneplus_aod_display_period_title">Ipakita ang panahon</string>
+    <string name="oneplus_aod_clock_style_title">Istilo ng orasan</string>
+    <string name="oneplus_aod_display_text_title">Mensaheng ipinapakita</string>
+    <string name="oneplus_aod_auto_wake_screen_title">Mga Bagong Notification</string>
+    <string name="oneplus_aod_auto_wake_screen_summary">I-wake ang screen kapag nakatanggap ka ng mga notification</string>
+    <string name="oneplus_aod_mode_always_on">Palaging naka-on</string>
+    <string name="oneplus_aod_mode_lift_up">Iangat ang display</string>
+    <string name="oneplus_display_time_start">Mula</string>
+    <string name="oneplus_display_time_end">Hanggang</string>
+    <string name="oneplus_display_time_from">Mula</string>
+    <string name="oneplus_display_time_to">hanggang</string>
+    <string name="aod_clock_select_action_bar_title">Istilo ng orasan</string>
+    <string name="aod_clock_preview_action_bar_title">I-preview</string>
+    <string name="aod_clock_select_style_text">Piliin ang istilo ng orasan</string>
+    <string name="aod_clock_selected">NAPILI</string>
+    <string name="aod_clock_default">Default</string>
+    <string name="aod_clock_classic">Classic</string>
+    <string name="aod_clock_analog">Analog</string>
+    <string name="aod_clock_digital">Digital</string>
+    <string name="owner_info_settings_summary">Wala</string>
+    <string name="owner_info_settings_edit_text_hint">Hal., Android ni Jose.</string>
+    <string name="save">I-SAVE</string>
+    <string name="cancel">Kanselahin</string>
+    <string name="time_format_12_mode">h:mm a</string>
+</resources>
