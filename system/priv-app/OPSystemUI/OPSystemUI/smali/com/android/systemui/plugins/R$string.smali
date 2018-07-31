@@ -577,6 +577,12 @@
 
 .field public static final always_use_device:I = 0x7f110118
 
+.field public static final ambient_play_notification_title:I = 0x7f11010a
+
+.field public static final ambient_play_recognition_channel:I = 0x7f11010b
+
+.field public static final ambient_play_track_information:I = 0x7f11010c
+
 .field public static final animator_duration_scale_title:I = 0x7f110119
 
 .field public static final apn_settings_not_available:I = 0x7f11011a

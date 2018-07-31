@@ -97,6 +97,10 @@
 
 .field public static final ALWAYS_ON_VPN_LOCKDOWN:Ljava/lang/String; = "always_on_vpn_lockdown"
 
+.field public static final AMBIENT_PLAY:Ljava/lang/String; = "ambient_play"
+
+.field public static final AMBIENT_PLAY_LOCKSCREEN:Ljava/lang/String; = "ambient_play_lockscreen"
+
 .field public static final ANDROID_ID:Ljava/lang/String; = "android_id"
 
 .field public static final ANR_SHOW_BACKGROUND:Ljava/lang/String; = "anr_show_background"

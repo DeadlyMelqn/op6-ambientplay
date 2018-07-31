@@ -105,6 +105,8 @@
 
 .field private mAmbientIndicationContainer:Landroid/view/View;
 
+.field private mAmbientPlaySettingsObserver:Lcom/android/systemui/statusbar/phone/StatusBar$AmbientPlaySettingsObserver;
+
 .field private final mAnimateCollapsePanels:Ljava/lang/Runnable;
 
 .field protected mAssistManager:Lcom/android/systemui/assist/AssistManager;
@@ -293,6 +295,8 @@
 .field mIconPolicy:Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
 
 .field private mInteractingWindows:I
+
+.field private mIsAmbientPlay:Z
 
 .field private mIsKeyguard:Z
 
@@ -495,6 +499,8 @@
 
 .field protected mRecents:Lcom/android/systemui/RecentsComponent;
 
+.field private mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
+
 .field private mReinflateNotificationsOnUserSwitched:Z
 
 .field protected mRemoteInputController:Lcom/android/systemui/statusbar/RemoteInputController;
@@ -511,6 +517,8 @@
 .end field
 
 .field private mReportRejectedTouch:Landroid/view/View;
+
+.field private mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
 
 .field private mScreenDecorUp:Landroid/widget/ImageView;
 
@@ -837,6 +845,23 @@
 
     return-object v0
 .end method
+
+.method static synthetic -get16(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
+    .locals 1
+    .param p0, "-this"    # Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    .prologue
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
+
+    return-object v0
+.end method
+
+.method static synthetic -get17(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;
+    .locals 1
+    .param p0, "-this"    # Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    .prologue
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mResult:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;
 
 .method static synthetic -get23(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
     .locals 1
@@ -6968,6 +6993,35 @@
     goto :goto_1
 .end method
 
+.method private startAmbientPlayRecognition()V
+    .locals 4
+
+    .prologue
+    .line 1481
+    new-instance v0, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
+
+    invoke-direct {v0, p0}, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;-><init>(Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Callback;)V
+
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
+
+    .line 1482
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
+
+    invoke-virtual {v0}, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;->startRecording()V
+
+    .line 1483
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStopRecognition:Ljava/lang/Runnable;
+
+    const-wide/16 v2, 0x4a38
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 1484
+    return-void
+.end method
+
 .method private startAppNotificationSettingsActivity(Ljava/lang/String;ILandroid/app/NotificationChannel;)V
     .locals 3
     .param p1, "packageName"    # Ljava/lang/String;
@@ -7053,6 +7107,26 @@
     invoke-interface {v0, v1}, Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout$OnChildLocationsChangedListener;->onChildLocationsChanged(Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout;)V
 
     .line 4699
+    return-void
+.end method
+
+.method private stopAmbientPlayRecognition()V
+    .locals 1
+
+    .prologue
+    .line 1487
+    new-instance v0, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
+
+    invoke-direct {v0, p0}, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;-><init>(Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Callback;)V
+
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
+
+    .line 1488
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
+
+    invoke-virtual {v0}, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;->stopRecording()V
+
+    .line 1489
     return-void
 .end method
 
@@ -7157,6 +7231,65 @@
 
     :cond_1
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mAutohideSuspended:Z
+
+    goto :goto_0
+.end method
+
+.method private updateAmbientPlayState()V
+    .locals 6
+
+    .prologue
+    .line 1450
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    .line 1451
+    const-string/jumbo v3, "ambient_play"
+
+    iget v4, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mCurrentUserId:I
+
+    const/4 v5, 0x1
+
+    .line 1450
+    invoke-static {v2, v3, v5, v4}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+
+    move-result v0
+
+    .line 1452
+    .local v0, "mAmbientPlay":I
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    .line 1453
+    const v3, 0x11200ab
+
+    .line 1452
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
+
+    move-result v1
+
+    .line 1454
+    .local v1, "mAmbientPlaySupported":Z
+    if-eqz v0, :cond_0
+
+    if-eqz v1, :cond_0
+
+    .line 1455
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->startAmbientPlayRecognition()V
+
+    .line 1463
+    :goto_0
+    return-void
+
+    .line 1461
+    :cond_0
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->stopAmbientPlayRecognition()V
 
     goto :goto_0
 .end method
@@ -22529,6 +22662,58 @@
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->updateNotifications()V
 
     .line 3326
+    return-void
+.end method
+
+.method public onResult(Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;)V
+    .locals 4
+    .param p1, "result"    # Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;
+
+    .prologue
+    .line 1509
+    iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mResult:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;
+
+    .line 1510
+    iget-object v0, p1, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;->TrackName:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p1, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;->ArtistName:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    .line 1511
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mSetTrackInfo:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->post(Ljava/lang/Runnable;)Z
+
+    .line 1513
+    :cond_0
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStartRecognition:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    .line 1514
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStopRecognition:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    .line 1515
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStartRecognition:Ljava/lang/Runnable;
+
+    const-wide/32 v2, 0xea60
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 1517
     return-void
 .end method
 

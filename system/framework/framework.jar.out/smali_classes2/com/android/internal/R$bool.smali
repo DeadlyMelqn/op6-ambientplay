@@ -325,6 +325,8 @@
 
 .field public static final config_strongAuthRequiredOnBoot:I = 0x11200a7
 
+.field public static final config_supportAmbientPlay:I = 0x11200ab
+
 .field public static final config_supportAudioSourceUnprocessed:I = 0x11200a8
 
 .field public static final config_supportAutoRotation:I = 0x11200a9
