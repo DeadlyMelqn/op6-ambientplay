@@ -1,0 +1,23 @@
+.class public final Landroid/support/v7/appcompat/R$style;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# static fields
+.field public static final Animation_AppCompat_Tooltip:I = 0x7f120005
+
+.field public static final Theme_AppCompat_CompactMenu:I = 0x7f120186
+
+.field public static final Theme_AppCompat_Light:I = 0x7f120192
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 16030
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
