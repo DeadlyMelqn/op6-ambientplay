@@ -18,6 +18,8 @@
 .implements Lcom/android/systemui/statusbar/phone/HighlightHintController$OnHighlightHintStateChangeListener;
 .implements Lcom/android/internal/colorextraction/ColorExtractor$OnColorsChangedListener;
 .implements Lcom/android/systemui/statusbar/policy/ConfigurationController$ConfigurationListener;
+.implements Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Callback;
+.implements Lcom/android/systemui/providers/OmniJawsClient$OmniJawsObserver;
 .implements Lcom/android/wubydax/GearContentObserver$OnContentChangedListener;
 
 
@@ -45,6 +47,10 @@
         Lcom/android/systemui/statusbar/phone/StatusBar$27;,
         Lcom/android/systemui/statusbar/phone/StatusBar$28;,
         Lcom/android/systemui/statusbar/phone/StatusBar$29;,
+        Lcom/android/systemui/statusbar/phone/StatusBar$53;,
+        Lcom/android/systemui/statusbar/phone/StatusBar$54;,
+        Lcom/android/systemui/statusbar/phone/StatusBar$55;,
+        Lcom/android/systemui/statusbar/phone/StatusBar$56;,
         Lcom/android/systemui/statusbar/phone/StatusBar$2;,
         Lcom/android/systemui/statusbar/phone/StatusBar$3;,
         Lcom/android/systemui/statusbar/phone/StatusBar$4;,
@@ -53,6 +59,7 @@
         Lcom/android/systemui/statusbar/phone/StatusBar$7;,
         Lcom/android/systemui/statusbar/phone/StatusBar$8;,
         Lcom/android/systemui/statusbar/phone/StatusBar$9;,
+        Lcom/android/systemui/statusbar/phone/StatusBar$AmbientPlaySettingsObserver;,
         Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;,
         Lcom/android/systemui/statusbar/phone/StatusBar$H;,
         Lcom/android/systemui/statusbar/phone/StatusBar$KeyLockMode;,
@@ -283,6 +290,8 @@
 .field protected mHideBackdropFront:Ljava/lang/Runnable;
 
 .field private mHideIconsForBouncer:Z
+
+.field private mHideTrackInfo:Ljava/lang/Runnable;
 
 .field private mHideNavBar:Z
 
@@ -518,7 +527,7 @@
 
 .field private mReportRejectedTouch:Landroid/view/View;
 
-.field private mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
+.field private mResult:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;
 
 .field private mScreenDecorUp:Landroid/widget/ImageView;
 
@@ -531,6 +540,8 @@
 .field protected mScrimController:Lcom/android/systemui/statusbar/phone/ScrimController;
 
 .field protected mScrimSrcModeEnabled:Z
+
+.field private mSetTrackInfo:Ljava/lang/Runnable;
 
 .field protected final mSettingsObserver:Landroid/database/ContentObserver;
 
@@ -547,6 +558,8 @@
 .field protected mSrcXferMode:Landroid/graphics/PorterDuffXfermode;
 
 .field protected mStackScroller:Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout;
+
+.field private mStartRecognition:Ljava/lang/Runnable;
 
 .field mStartTracing:Ljava/lang/Runnable;
 
@@ -567,6 +580,8 @@
 .field protected mStatusBarWindowManager:Lcom/android/systemui/statusbar/phone/StatusBarWindowManager;
 
 .field private mStatusBarWindowState:I
+
+.field private mStopRecognition:Ljava/lang/Runnable;
 
 .field mStopTracing:Ljava/lang/Runnable;
 
@@ -653,6 +668,12 @@
 .field mWakefulnessLifecycle:Lcom/android/systemui/keyguard/WakefulnessLifecycle;
 
 .field mWakefulnessObserver:Lcom/android/systemui/keyguard/WakefulnessLifecycle$Observer;
+
+.field private mWeatherClient:Lcom/android/systemui/providers/OmniJawsClient;
+
+.field private mWeatherData:Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;
+
+.field private mWeatherEnabled:Z
 
 .field private mWereIconsJustHidden:Z
 
@@ -973,6 +994,26 @@
     return v0
 .end method
 
+.method static synthetic -get33(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
+    .locals 1
+    .param p0, "-this"    # Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    .prologue
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
+
+    return-object v0
+.end method
+
+.method static synthetic -get34(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;
+    .locals 1
+    .param p0, "-this"    # Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    .prologue
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mResult:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;
+
+    return-object v0
+.end method
+
 .method static synthetic -get4(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
     .locals 1
     .param p0, "-this"    # Lcom/android/systemui/statusbar/phone/StatusBar;
@@ -1183,6 +1224,17 @@
 
     .prologue
     iput p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWhiteAccentColor:I
+
+    return p1
+.end method
+
+.method static synthetic -set21(Lcom/android/systemui/statusbar/phone/StatusBar;Z)Z
+    .locals 0
+    .param p0, "-this"    # Lcom/android/systemui/statusbar/phone/StatusBar;
+    .param p1, "-value"    # Z
+
+    .prologue
+    iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mIsAmbientPlay:Z
 
     return p1
 .end method
@@ -1409,6 +1461,28 @@
 
     .prologue
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->updateQsExpansionEnabled()V
+
+    return-void
+.end method
+
+.method static synthetic -wrap21(Lcom/android/systemui/statusbar/phone/StatusBar;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+    .param p0, "-this"    # Lcom/android/systemui/statusbar/phone/StatusBar;
+    .param p1, "trackName"    # Ljava/lang/String;
+    .param p2, "artistName"    # Ljava/lang/String;
+
+    .prologue
+    invoke-direct {p0, p1, p2}, Lcom/android/systemui/statusbar/phone/StatusBar;->showNowPlayingNotification(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method static synthetic -wrap22(Lcom/android/systemui/statusbar/phone/StatusBar;)V
+    .locals 0
+    .param p0, "-this"    # Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    .prologue
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->updateAmbientPlayState()V
 
     return-void
 .end method
@@ -2231,6 +2305,44 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mSwapNavKeysObserver:Landroid/database/ContentObserver;
 
     invoke-static {}, Lcom/android/systemui/util/Utils;->a()V
+
+
+    .line 6161
+    new-instance v0, Lcom/android/systemui/statusbar/phone/StatusBar$53;
+
+    invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/phone/StatusBar$53;-><init>(Lcom/android/systemui/statusbar/phone/StatusBar;)V
+
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStartRecognition:Ljava/lang/Runnable;
+
+    .line 6268
+    new-instance v0, Lcom/android/systemui/statusbar/phone/StatusBar$54;
+
+    invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/phone/StatusBar$54;-><init>(Lcom/android/systemui/statusbar/phone/StatusBar;)V
+
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStopRecognition:Ljava/lang/Runnable;
+
+    .line 6378
+    new-instance v0, Lcom/android/systemui/statusbar/phone/StatusBar$55;
+
+    invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/phone/StatusBar$55;-><init>(Lcom/android/systemui/statusbar/phone/StatusBar;)V
+
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mSetTrackInfo:Ljava/lang/Runnable;
+
+    .line 6488
+    new-instance v0, Lcom/android/systemui/statusbar/phone/StatusBar$56;
+
+    invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/phone/StatusBar$56;-><init>(Lcom/android/systemui/statusbar/phone/StatusBar;)V
+
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHideTrackInfo:Ljava/lang/Runnable;
+
+    .line 8856
+    new-instance v0, Lcom/android/systemui/statusbar/phone/StatusBar$AmbientPlaySettingsObserver;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    invoke-direct {v0, p0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$AmbientPlaySettingsObserver;-><init>(Lcom/android/systemui/statusbar/phone/StatusBar;Landroid/os/Handler;)V
+
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mAmbientPlaySettingsObserver:Lcom/android/systemui/statusbar/phone/StatusBar$AmbientPlaySettingsObserver;
 
     .line 280
     return-void
@@ -6993,23 +7105,211 @@
     goto :goto_1
 .end method
 
+.method private showNowPlayingNotification(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 11
+    .param p1, "trackName"    # Ljava/lang/String;
+    .param p2, "artistName"    # Ljava/lang/String;
+
+    .prologue
+    const v10, 0x7f11010c
+
+    const/4 v9, 0x2
+
+    const/4 v8, 0x0
+
+    const/4 v7, 0x1
+
+    .line 1567
+    new-instance v2, Landroid/app/Notification$Builder;
+
+    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
+
+    const-string/jumbo v5, "music_recognized_channel"
+
+    invoke-direct {v2, v4, v5}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 1668
+    .local v2, "mBuilder":Landroid/app/Notification$Builder;
+    const-string/jumbo v4, "android.substName"
+
+    .line 1669
+    iget-object v5, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v5
+
+    const v6, 0x7f11010a
+
+    invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 1674
+    invoke-static {v4, v5}, Landroid/os/Bundle;->forPair(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
+
+    move-result-object v1
+
+    .line 1675
+    .local v1, "extras":Landroid/os/Bundle;
+    const v4, 0x7f080178
+
+    invoke-virtual {v2, v4}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
+
+    .line 1679
+    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    new-array v5, v9, [Ljava/lang/Object;
+
+    .line 1680
+    aput-object p1, v5, v8
+
+    aput-object p2, v5, v7
+
+    .line 1681
+    invoke-static {v4, v5}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v4}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    .line 1682
+    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    const v5, 0x106015b
+
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v4
+
+    invoke-virtual {v2, v4}, Landroid/app/Notification$Builder;->setColor(I)Landroid/app/Notification$Builder;
+
+    .line 1684
+    invoke-virtual {v2, v8}, Landroid/app/Notification$Builder;->setAutoCancel(Z)Landroid/app/Notification$Builder;
+
+    .line 1699
+    invoke-virtual {v2, v7}, Landroid/app/Notification$Builder;->setVisibility(I)Landroid/app/Notification$Builder;
+
+    .line 1703
+    invoke-virtual {v2, v7}, Landroid/app/Notification$Builder;->setLocalOnly(Z)Landroid/app/Notification$Builder;
+
+    .line 1723
+    invoke-virtual {v2, v7}, Landroid/app/Notification$Builder;->setShowWhen(Z)Landroid/app/Notification$Builder;
+
+    .line 1724
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v4
+
+    invoke-virtual {v2, v4, v5}, Landroid/app/Notification$Builder;->setWhen(J)Landroid/app/Notification$Builder;
+
+    .line 1726
+    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    new-array v5, v9, [Ljava/lang/Object;
+
+    .line 1727
+    aput-object p1, v5, v8
+
+    aput-object p2, v5, v7
+
+    .line 1728
+    invoke-static {v4, v5}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v4}, Landroid/app/Notification$Builder;->setTicker(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    .line 1729
+    invoke-virtual {v2, v1}, Landroid/app/Notification$Builder;->setExtras(Landroid/os/Bundle;)Landroid/app/Notification$Builder;
+
+    .line 1730
+    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
+
+    const-string/jumbo v5, "notification"
+
+    invoke-virtual {v4, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/app/NotificationManager;
+
+    .line 1731
+    .local v3, "mNotificationManager":Landroid/app/NotificationManager;
+    new-instance v0, Landroid/app/NotificationChannel;
+
+    const-string/jumbo v4, "music_recognized_channel"
+
+    .line 1732
+    iget-object v5, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v5
+
+    const v6, 0x7f11010b
+
+    invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 1733
+    invoke-direct {v0, v4, v5, v7}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
+
+    .line 1734
+    .local v0, "channel":Landroid/app/NotificationChannel;
+    invoke-virtual {v3, v0}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
+
+    .line 1735
+    invoke-virtual {v2}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v4
+
+    const v5, 0x74a40e7
+
+    invoke-virtual {v3, v5, v4}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
+
+    .line 1736
+    return-void
+.end method
+
 .method private startAmbientPlayRecognition()V
     .locals 4
 
     .prologue
-    .line 1481
+    .line 1737
     new-instance v0, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
 
     invoke-direct {v0, p0}, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;-><init>(Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Callback;)V
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
 
-    .line 1482
+    .line 1738
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
 
     invoke-virtual {v0}, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;->startRecording()V
 
-    .line 1483
+    .line 1739
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStopRecognition:Ljava/lang/Runnable;
@@ -7018,7 +7318,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1484
+    .line 1740
     return-void
 .end method
 
@@ -7114,19 +7414,19 @@
     .locals 1
 
     .prologue
-    .line 1487
+    .line 4672
     new-instance v0, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
 
     invoke-direct {v0, p0}, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;-><init>(Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Callback;)V
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
 
-    .line 1488
+    .line 4674
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mRecognition:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
 
     invoke-virtual {v0}, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;->stopRecording()V
 
-    .line 1489
+    .line 4675
     return-void
 .end method
 
@@ -19323,6 +19623,25 @@
 
     iput-object v2, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mAmbientIndicationContainer:Landroid/view/View;
 
+    .line 1185
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mAmbientIndicationContainer:Landroid/view/View;
+
+    if-eqz v2, :cond_1
+
+    .line 1186
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mAmbientIndicationContainer:Landroid/view/View;
+
+    check-cast v2, Lcom/android/systemui/ambientmusic/AmbientIndicationContainer;
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v2, v0}, Lcom/android/systemui/ambientmusic/AmbientIndicationContainer;->initializeView(Lcom/android/systemui/statusbar/phone/StatusBar;)V
+
+    :cond_1
     .line 1308
     invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->setAreThereNotifications()V
 
@@ -20704,6 +21023,16 @@
 
     goto :goto_1
 .end method
+
+.method public onAudioLevel(F)V
+    .locals 0
+    .param p1, "level"    # F
+
+    .prologue
+    .line 1547
+    return-void
+.end method
+
 
 .method public onBackPressed()Z
     .locals 3
@@ -22170,6 +22499,44 @@
     return v5
 .end method
 
+.method public onError()V
+    .locals 4
+
+    .prologue
+    .line 1559
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStartRecognition:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    .line 1560
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStopRecognition:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    .line 1561
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHideTrackInfo:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->post(Ljava/lang/Runnable;)Z
+
+    .line 1562
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStartRecognition:Ljava/lang/Runnable;
+
+    const-wide/32 v2, 0xea60
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 1563
+    return-void
+.end method
+
 .method public onExpandClicked(Lcom/android/systemui/statusbar/NotificationData$Entry;Z)V
     .locals 2
     .param p1, "clickedEntry"    # Lcom/android/systemui/statusbar/NotificationData$Entry;
@@ -22623,6 +22990,44 @@
     return v0
 .end method
 
+.method public onNoMatch()V
+    .locals 4
+
+    .prologue
+    .line 1538
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStartRecognition:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    .line 1539
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStopRecognition:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    .line 1540
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHideTrackInfo:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->post(Ljava/lang/Runnable;)Z
+
+    .line 1541
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStartRecognition:Ljava/lang/Runnable;
+
+    const-wide/32 v2, 0xea60
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 1542
+    return-void
+.end method
+
 .method public onPanelLaidOut()V
     .locals 0
 
@@ -22651,6 +23056,58 @@
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/KeyguardIndicationController;->showTransientIndication(I)V
 
     .line 5757
+    return-void
+.end method
+
+.method public onResult(Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;)V
+    .locals 4
+    .param p1, "result"    # Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;
+
+    .prologue
+    .line 1509
+    iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mResult:Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;
+
+    .line 1510
+    iget-object v0, p1, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;->TrackName:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p1, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition$Results;->ArtistName:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    .line 1511
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mSetTrackInfo:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->post(Ljava/lang/Runnable;)Z
+
+    .line 1513
+    :cond_0
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStartRecognition:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    .line 1514
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStopRecognition:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    .line 1515
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStartRecognition:Ljava/lang/Runnable;
+
+    const-wide/32 v2, 0xea60
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 1517
     return-void
 .end method
 
@@ -23260,6 +23717,118 @@
 
     .line 7617
     return-void
+.end method
+
+.method public queryAndUpdateWeather()V
+    .locals 7
+
+    .prologue
+    .line 5106
+    :try_start_0
+    iget-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherEnabled:Z
+
+    if-eqz v1, :cond_0
+
+    iget-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mIsAmbientPlay:Z
+
+    xor-int/lit8 v1, v1, 0x1
+
+    if-eqz v1, :cond_0
+
+    .line 5107
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherClient:Lcom/android/systemui/providers/OmniJawsClient;
+
+    invoke-virtual {v1}, Lcom/android/systemui/providers/OmniJawsClient;->queryWeather()V
+
+    .line 5108
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherClient:Lcom/android/systemui/providers/OmniJawsClient;
+
+    invoke-virtual {v1}, Lcom/android/systemui/providers/OmniJawsClient;->getWeatherInfo()Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherData:Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;
+
+    .line 5109
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mAmbientIndicationContainer:Landroid/view/View;
+
+    check-cast v1, Lcom/android/systemui/ambientmusic/AmbientIndicationContainer;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v3, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherData:Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;
+
+    iget-object v3, v3, Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;->temp:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherData:Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;
+
+    iget-object v3, v3, Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;->tempUnits:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherData:Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;
+
+    iget-object v3, v3, Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;->condition:Ljava/lang/String;
+
+    .line 5110
+    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherData:Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;
+
+    iget-object v4, v4, Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;->city:Ljava/lang/String;
+
+    iget-object v5, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherClient:Lcom/android/systemui/providers/OmniJawsClient;
+
+    iget-object v6, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherData:Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;
+
+    iget v6, v6, Lcom/android/systemui/providers/OmniJawsClient$WeatherInfo;->conditionCode:I
+
+    invoke-virtual {v5, v6}, Lcom/android/systemui/providers/OmniJawsClient;->getWeatherConditionImage(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v5
+
+    .line 5109
+    invoke-virtual {v1, v2, v3, v4, v5}, Lcom/android/systemui/ambientmusic/AmbientIndicationContainer;->setWeatherIndication(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/drawable/Drawable;)V
+
+    .line 5111
+    const-string/jumbo v1, "StatusBar"
+
+    const-string/jumbo v2, "Ambient Weather indication set"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 5118
+    :goto_0
+    return-void
+
+    .line 5113
+    :cond_0
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mAmbientIndicationContainer:Landroid/view/View;
+
+    check-cast v1, Lcom/android/systemui/ambientmusic/AmbientIndicationContainer;
+
+    invoke-virtual {v1}, Lcom/android/systemui/ambientmusic/AmbientIndicationContainer;->hideWeatherIndication()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    .line 5115
+    :catch_0
+    move-exception v0
+
+    .local v0, "e":Ljava/lang/Exception;
+    goto :goto_0
 .end method
 
 .method public readyForKeyguardDone()V
@@ -28337,6 +28906,20 @@
 
     invoke-virtual {v2, v3}, Landroid/database/ContentObserver;->onChange(Z)V
 
+    .line 947
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mAmbientPlaySettingsObserver:Lcom/android/systemui/statusbar/phone/StatusBar$AmbientPlaySettingsObserver;
+
+    invoke-virtual {v2}, Lcom/android/systemui/statusbar/phone/StatusBar$AmbientPlaySettingsObserver;->observe()V
+
+    .line 948
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mAmbientPlaySettingsObserver:Lcom/android/systemui/statusbar/phone/StatusBar$AmbientPlaySettingsObserver;
+
+    invoke-virtual {v2}, Lcom/android/systemui/statusbar/phone/StatusBar$AmbientPlaySettingsObserver;->update()V
+
     .line 1030
     move-object/from16 v0, p0
 
@@ -29068,6 +29651,48 @@
 
     .line 1162
     invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->adjustStatusBarPadding()V
+
+
+    .line 1065
+    invoke-direct/range {p0 .. p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->updateAmbientPlayState()V
+
+    .line 1067
+    new-instance v2, Lcom/android/systemui/providers/OmniJawsClient;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
+
+    invoke-direct {v2, v3}, Lcom/android/systemui/providers/OmniJawsClient;-><init>(Landroid/content/Context;)V
+
+    move-object/from16 v0, p0
+
+    iput-object v2, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherClient:Lcom/android/systemui/providers/OmniJawsClient;
+
+    .line 1068
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherClient:Lcom/android/systemui/providers/OmniJawsClient;
+
+    invoke-virtual {v2}, Lcom/android/systemui/providers/OmniJawsClient;->isOmniJawsEnabled()Z
+
+    move-result v2
+
+    move-object/from16 v0, p0
+
+    iput-boolean v2, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherEnabled:Z
+
+    .line 1069
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWeatherClient:Lcom/android/systemui/providers/OmniJawsClient;
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v2, v0}, Lcom/android/systemui/providers/OmniJawsClient;->addObserver(Lcom/android/systemui/providers/OmniJawsClient$OmniJawsObserver;)V
+
+    .line 1071
+    invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->queryAndUpdateWeather()V
 
     .line 1164
     return-void
@@ -33465,5 +34090,25 @@
     .line 6244
     .end local v0    # "pm":Landroid/os/PowerManager;
     :cond_0
+    return-void
+.end method
+
+.method public weatherError(I)V
+    .locals 0
+    .param p1, "errorReason"    # I
+
+    .prologue
+    .line 5123
+    return-void
+.end method
+
+.method public weatherUpdated()V
+    .locals 0
+
+    .prologue
+    .line 5101
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->queryAndUpdateWeather()V
+
+    .line 5102
     return-void
 .end method
