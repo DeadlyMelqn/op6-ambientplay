@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$14;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 4226
+    .line 3312
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -40,44 +40,14 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 1
 
     .prologue
-    .line 4229
+    .line 3315
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$14;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->vibrate()V
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->animateCollapsePanels()V
 
-    .line 4230
-    const-wide/16 v0, 0xfa
-
-    invoke-static {v0, v1}, Landroid/os/SystemClock;->sleep(J)V
-
-    .line 4231
-    const-string/jumbo v0, "StatusBar"
-
-    const-string/jumbo v1, "startTracing"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 4232
-    const-string/jumbo v0, "/data/statusbar-traces/trace"
-
-    invoke-static {v0}, Landroid/os/Debug;->startMethodTracing(Ljava/lang/String;)V
-
-    .line 4233
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$14;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
-
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$14;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    iget-object v1, v1, Lcom/android/systemui/statusbar/phone/StatusBar;->mStopTracing:Ljava/lang/Runnable;
-
-    const-wide/16 v2, 0x2710
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .line 4234
+    .line 3316
     return-void
 .end method

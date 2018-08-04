@@ -462,31 +462,31 @@
 
     .line 465
     :pswitch_0
-    const v0, 0x7f0a0147
+    const v0, 0x7f0a014a
 
     return v0
 
     .line 466
     :pswitch_1
-    const v0, 0x7f0a0148
+    const v0, 0x7f0a014b
 
     return v0
 
     .line 467
     :pswitch_2
-    const v0, 0x7f0a0146
+    const v0, 0x7f0a0149
 
     return v0
 
     .line 468
     :pswitch_3
-    const v0, 0x7f0a014c
+    const v0, 0x7f0a014f
 
     return v0
 
     .line 469
     :pswitch_4
-    const v0, 0x7f0a014d
+    const v0, 0x7f0a0150
 
     return v0
 
@@ -1359,31 +1359,31 @@
 
     .line 477
     :pswitch_0
-    const v0, 0x7f0d004c
+    const v0, 0x7f0d004d
 
     return v0
 
     .line 478
     :pswitch_1
-    const v0, 0x7f0d004d
+    const v0, 0x7f0d004e
 
     return v0
 
     .line 479
     :pswitch_2
-    const v0, 0x7f0d004b
+    const v0, 0x7f0d004c
 
     return v0
 
     .line 480
     :pswitch_3
-    const v0, 0x7f0d004f
+    const v0, 0x7f0d0050
 
     return v0
 
     .line 481
     :pswitch_4
-    const v0, 0x7f0d0050
+    const v0, 0x7f0d0051
 
     return v0
 
@@ -1437,7 +1437,7 @@
 
     .prologue
     .line 166
-    const v0, 0x7f0a02c5
+    const v0, 0x7f0a02c8
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardSecurityContainer;->findViewById(I)Landroid/view/View;
 

@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$10;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 3142
+    .line 1473
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -43,11 +43,15 @@
     .locals 1
 
     .prologue
-    .line 3145
+    .line 1476
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$10;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->animateCollapsePanels()V
+    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get16(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;
 
-    .line 3146
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/systemui/ambientmusic/aoscp/AmbientPlayRecognition;->stopRecording()V
+
+    .line 1477
     return-void
 .end method

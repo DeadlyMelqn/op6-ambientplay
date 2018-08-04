@@ -220,11 +220,11 @@
     .param p1, "deactivated"    # Z
 
     .prologue
-    const v11, 0x7f0a0083
+    const v11, 0x7f0a0086
 
-    const v10, 0x7f0a0082
+    const v10, 0x7f0a0085
 
-    const v9, 0x7f0a0081
+    const v9, 0x7f0a0084
 
     const/4 v8, 0x0
 
@@ -467,7 +467,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a029d
+    const v2, 0x7f0a02a0
 
     invoke-virtual {v0, v2, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -487,7 +487,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a029e
+    const v2, 0x7f0a02a1
 
     invoke-virtual {v0, v2, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -1653,7 +1653,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a029f
+    const v2, 0x7f0a02a2
 
     invoke-virtual {v0, v2, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -1664,7 +1664,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a02a0
+    const v2, 0x7f0a02a3
 
     invoke-virtual {v0, v2, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -1675,7 +1675,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a029d
+    const v2, 0x7f0a02a0
 
     invoke-virtual {v0, v2, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -1686,7 +1686,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a029e
+    const v2, 0x7f0a02a1
 
     invoke-virtual {v0, v2, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -1875,7 +1875,7 @@
     .line 506
     iget-object v1, p0, Lcom/android/systemui/statusbar/notification/TransformState;->mTransformedView:Landroid/view/View;
 
-    const v2, 0x7f0a029d
+    const v2, 0x7f0a02a0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -1910,7 +1910,7 @@
     .line 511
     iget-object v1, p0, Lcom/android/systemui/statusbar/notification/TransformState;->mTransformedView:Landroid/view/View;
 
-    const v2, 0x7f0a029e
+    const v2, 0x7f0a02a1
 
     invoke-virtual {v1, v2}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -1945,7 +1945,7 @@
     .line 496
     iget-object v1, p0, Lcom/android/systemui/statusbar/notification/TransformState;->mTransformedView:Landroid/view/View;
 
-    const v2, 0x7f0a029f
+    const v2, 0x7f0a02a2
 
     invoke-virtual {v1, v2}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -1980,7 +1980,7 @@
     .line 501
     iget-object v1, p0, Lcom/android/systemui/statusbar/notification/TransformState;->mTransformedView:Landroid/view/View;
 
-    const v2, 0x7f0a02a0
+    const v2, 0x7f0a02a3
 
     invoke-virtual {v1, v2}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -2198,7 +2198,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a029f
+    const v2, 0x7f0a02a2
 
     invoke-virtual {v0, v2, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -2218,7 +2218,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a02a0
+    const v2, 0x7f0a02a3
 
     invoke-virtual {v0, v2, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 

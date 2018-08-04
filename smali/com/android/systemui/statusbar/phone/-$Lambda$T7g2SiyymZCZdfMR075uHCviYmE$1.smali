@@ -39,7 +39,7 @@
 
     check-cast v0, Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_61493(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-virtual {v0, p1, p2}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_62652(Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result v0
 

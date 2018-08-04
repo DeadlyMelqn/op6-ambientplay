@@ -112,7 +112,7 @@
 
     .prologue
     .line 74
-    const v0, 0x7f0d004a
+    const v0, 0x7f0d004b
 
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/keyguard/NumPadKey;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
@@ -240,7 +240,7 @@
     invoke-virtual {v1, p4, p0, v6}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     .line 100
-    const v4, 0x7f0a00bb
+    const v4, 0x7f0a00be
 
     invoke-virtual {p0, v4}, Lcom/android/keyguard/NumPadKey;->findViewById(I)Landroid/view/View;
 
@@ -262,7 +262,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 102
-    const v4, 0x7f0a0152
+    const v4, 0x7f0a0155
 
     invoke-virtual {p0, v4}, Lcom/android/keyguard/NumPadKey;->findViewById(I)Landroid/view/View;
 
@@ -354,7 +354,7 @@
     .line 121
     iget-object v4, p0, Lcom/android/keyguard/NumPadKey;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0802cc
+    const v5, 0x7f0802cd
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

@@ -220,7 +220,7 @@
 
     move-result v1
 
-    const v2, 0x7f0a0236
+    const v2, 0x7f0a0239
 
     if-eq v1, v2, :cond_0
 

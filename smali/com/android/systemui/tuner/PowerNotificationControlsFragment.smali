@@ -84,7 +84,7 @@
 
     .prologue
     .line 44
-    const v0, 0x7f0d00af
+    const v0, 0x7f0d00b0
 
     const/4 v1, 0x0
 
@@ -151,7 +151,7 @@
     invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 50
-    const v3, 0x7f0a0279
+    const v3, 0x7f0a027c
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -169,7 +169,7 @@
 
     .line 52
     .local v2, "switchWidget":Landroid/widget/Switch;
-    const v3, 0x7f0a027d
+    const v3, 0x7f0a0280
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

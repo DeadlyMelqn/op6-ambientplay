@@ -156,7 +156,7 @@
     if-eqz v2, :cond_0
 
     .line 139
-    const v3, 0x7f0a0140
+    const v3, 0x7f0a0143
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -182,7 +182,7 @@
     .line 144
     new-instance v4, Lcom/android/systemui/RoundedCorners$TunablePaddingTagListener;
 
-    const v5, 0x7f0a0273
+    const v5, 0x7f0a0276
 
     invoke-direct {v4, p1, v5}, Lcom/android/systemui/RoundedCorners$TunablePaddingTagListener;-><init>(II)V
 
@@ -195,7 +195,7 @@
     .line 146
     new-instance v4, Lcom/android/systemui/RoundedCorners$TunablePaddingTagListener;
 
-    const v5, 0x7f0a010b
+    const v5, 0x7f0a010e
 
     invoke-direct {v4, p1, v5}, Lcom/android/systemui/RoundedCorners$TunablePaddingTagListener;-><init>(II)V
 
@@ -219,9 +219,9 @@
     .locals 11
 
     .prologue
-    const v10, 0x7f0d00f6
+    const v10, 0x7f0d00f7
 
-    const v9, 0x7f0a0219
+    const v9, 0x7f0a021c
 
     const/4 v8, 0x1
 
@@ -326,7 +326,7 @@
     .line 87
     iget-object v3, p0, Lcom/android/systemui/RoundedCorners;->mBottomOverlay:Landroid/view/View;
 
-    const v4, 0x7f0a0175
+    const v4, 0x7f0a0178
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -456,9 +456,9 @@
     .param p2, "newValue"    # Ljava/lang/String;
 
     .prologue
-    const v5, 0x7f0a0219
+    const v5, 0x7f0a021c
 
-    const v4, 0x7f0a0175
+    const v4, 0x7f0a0178
 
     .line 172
     iget-object v2, p0, Lcom/android/systemui/RoundedCorners;->mOverlay:Landroid/view/View;

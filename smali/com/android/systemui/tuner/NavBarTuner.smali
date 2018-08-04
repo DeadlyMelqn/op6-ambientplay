@@ -33,7 +33,7 @@
     new-array v0, v0, [[I
 
     .line 75
-    const v1, 0x7f08019a
+    const v1, 0x7f08019b
 
     const v2, 0x7f1104d4
 
@@ -59,7 +59,7 @@
     aput-object v1, v0, v2
 
     .line 77
-    const v1, 0x7f0801cd
+    const v1, 0x7f0801ce
 
     const v2, 0x7f1104df
 
@@ -85,7 +85,7 @@
     aput-object v1, v0, v2
 
     .line 79
-    const v1, 0x7f0801cf
+    const v1, 0x7f0801d0
 
     const v2, 0x7f1104e3
 

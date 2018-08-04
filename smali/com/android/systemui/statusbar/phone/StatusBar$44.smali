@@ -3,12 +3,12 @@
 .source "StatusBar.java"
 
 # interfaces
-.implements Lcom/android/systemui/SwipeHelper$LongPressListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/statusbar/phone/StatusBar;->getNotificationLongClicker()Lcom/android/systemui/SwipeHelper$LongPressListener;
+    value = Lcom/android/systemui/statusbar/phone/StatusBar;->fadeKeyguardAfterLaunchTransition(Ljava/lang/Runnable;Ljava/lang/Runnable;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,9 +20,11 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
+.field final synthetic val$beforeFading:Ljava/lang/Runnable;
+
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/statusbar/phone/StatusBar;)V
+.method constructor <init>(Lcom/android/systemui/statusbar/phone/StatusBar;Ljava/lang/Runnable;)V
     .locals 0
     .param p1, "this$0"    # Lcom/android/systemui/statusbar/phone/StatusBar;
 
@@ -30,7 +32,9 @@
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 6735
+    iput-object p2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->val$beforeFading:Ljava/lang/Runnable;
+
+    .line 4692
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -39,140 +43,118 @@
 
 
 # virtual methods
-.method public onLongPress(Landroid/view/View;IILcom/android/systemui/plugins/statusbar/NotificationMenuRowPlugin$MenuItem;)Z
-    .locals 11
-    .param p1, "v"    # Landroid/view/View;
-    .param p2, "x"    # I
-    .param p3, "y"    # I
-    .param p4, "item"    # Lcom/android/systemui/plugins/statusbar/NotificationMenuRowPlugin$MenuItem;
+.method public run()V
+    .locals 7
 
     .prologue
-    const/4 v4, -0x1
-
-    const/4 v3, 0x1
-
     const/4 v1, 0x0
 
-    .line 6739
-    instance-of v0, p1, Lcom/android/systemui/statusbar/ExpandableNotificationRow;
+    const/4 v6, 0x1
 
-    if-nez v0, :cond_0
+    .line 4695
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 6740
-    return v1
+    iput-boolean v6, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mLaunchTransitionFadingAway:Z
 
-    .line 6742
+    .line 4696
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->val$beforeFading:Ljava/lang/Runnable;
+
+    if-eqz v0, :cond_0
+
+    .line 4697
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->val$beforeFading:Ljava/lang/Runnable;
+
+    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
+
+    .line 4699
     :cond_0
-    invoke-virtual {p1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mScrimController:Lcom/android/systemui/statusbar/phone/ScrimController;
+
+    invoke-virtual {v0, v6, v1}, Lcom/android/systemui/statusbar/phone/ScrimController;->forceHideScrims(ZZ)V
+
+    .line 4700
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    invoke-virtual {v0, v1, v6}, Lcom/android/systemui/statusbar/phone/StatusBar;->updateMediaMetaData(ZZ)V
+
+    .line 4701
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mNotificationPanel:Lcom/android/systemui/statusbar/phone/NotificationPanelView;
+
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->setAlpha(F)V
+
+    .line 4702
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStackScroller:Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout;
+
+    invoke-virtual {v0, v6}, Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout;->setParentNotFullyVisible(Z)V
+
+    .line 4703
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mNotificationPanel:Lcom/android/systemui/statusbar/phone/NotificationPanelView;
+
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
-    if-nez v0, :cond_1
+    .line 4704
+    const/4 v1, 0x0
 
-    .line 6743
-    const-string/jumbo v0, "StatusBar"
-
-    const-string/jumbo v2, "Trying to show notification guts, but not attached to window"
-
-    invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 6744
-    return v1
-
-    :cond_1
-    move-object v6, p1
-
-    .line 6747
-    check-cast v6, Lcom/android/systemui/statusbar/ExpandableNotificationRow;
-
-    .line 6748
-    .local v6, "row":Lcom/android/systemui/statusbar/ExpandableNotificationRow;
-    invoke-virtual {v6}, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->isDark()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 6749
-    return v1
-
-    .line 6751
-    :cond_2
-    invoke-virtual {p1, v1}, Landroid/view/View;->performHapticFeedback(I)Z
-
-    .line 6752
-    invoke-virtual {v6}, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->areGutsExposed()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    .line 6753
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    move v2, v1
-
-    move v5, v4
-
-    move v6, v3
-
-    invoke-virtual/range {v0 .. v6}, Lcom/android/systemui/statusbar/phone/StatusBar;->closeAndSaveGuts(ZZZIIZ)V
-
-    .line 6756
-    .end local v6    # "row":Lcom/android/systemui/statusbar/ExpandableNotificationRow;
-    return v1
-
-    .line 6758
-    .restart local v6    # "row":Lcom/android/systemui/statusbar/ExpandableNotificationRow;
-    :cond_3
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    invoke-static {v0, v6, p4}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap2(Lcom/android/systemui/statusbar/phone/StatusBar;Lcom/android/systemui/statusbar/ExpandableNotificationRow;Lcom/android/systemui/plugins/statusbar/NotificationMenuRowPlugin$MenuItem;)V
-
-    .line 6759
-    invoke-virtual {v6}, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->getGuts()Lcom/android/systemui/statusbar/NotificationGuts;
-
-    move-result-object v7
-
-    .line 6762
-    .local v7, "guts":Lcom/android/systemui/statusbar/NotificationGuts;
-    if-nez v7, :cond_4
-
-    .line 6764
-    return v1
-
-    .line 6767
-    :cond_4
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get13(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/internal/logging/MetricsLogger;
+    .line 4703
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
-    const/16 v1, 0xcc
+    .line 4705
+    const-wide/16 v2, 0x64
 
-    invoke-virtual {v0, v1}, Lcom/android/internal/logging/MetricsLogger;->action(I)V
+    .line 4703
+    invoke-virtual {v0, v2, v3}, Landroid/view/ViewPropertyAnimator;->setStartDelay(J)Landroid/view/ViewPropertyAnimator;
 
-    .line 6770
-    const/4 v0, 0x4
+    move-result-object v0
 
-    invoke-virtual {v7, v0}, Lcom/android/systemui/statusbar/NotificationGuts;->setVisibility(I)V
+    .line 4706
+    const-wide/16 v2, 0x12c
 
-    .line 6772
-    new-instance v4, Lcom/android/systemui/statusbar/phone/StatusBar$44$1;
+    .line 4703
+    invoke-virtual {v0, v2, v3}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 
-    move-object v5, p0
+    move-result-object v0
 
-    move v8, p2
+    invoke-virtual {v0}, Landroid/view/ViewPropertyAnimator;->withLayer()Landroid/view/ViewPropertyAnimator;
 
-    move v9, p3
+    move-result-object v0
 
-    move-object v10, p4
+    .line 4708
+    new-instance v1, Lcom/android/systemui/statusbar/phone/StatusBar$44$1;
 
-    invoke-direct/range {v4 .. v10}, Lcom/android/systemui/statusbar/phone/StatusBar$44$1;-><init>(Lcom/android/systemui/statusbar/phone/StatusBar$44;Lcom/android/systemui/statusbar/ExpandableNotificationRow;Lcom/android/systemui/statusbar/NotificationGuts;IILcom/android/systemui/plugins/statusbar/NotificationMenuRowPlugin$MenuItem;)V
+    invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/phone/StatusBar$44$1;-><init>(Lcom/android/systemui/statusbar/phone/StatusBar$44;)V
 
-    invoke-virtual {v7, v4}, Lcom/android/systemui/statusbar/NotificationGuts;->post(Ljava/lang/Runnable;)Z
+    .line 4703
+    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->withEndAction(Ljava/lang/Runnable;)Landroid/view/ViewPropertyAnimator;
 
-    .line 6810
-    return v3
+    .line 4714
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$44;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    iget-object v1, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mCommandQueue:Lcom/android/systemui/statusbar/CommandQueue;
+
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+
+    move-result-wide v2
+
+    .line 4715
+    const-wide/16 v4, 0x78
+
+    .line 4714
+    invoke-virtual/range {v1 .. v6}, Lcom/android/systemui/statusbar/CommandQueue;->appTransitionStarting(JJZ)V
+
+    .line 4716
+    return-void
 .end method

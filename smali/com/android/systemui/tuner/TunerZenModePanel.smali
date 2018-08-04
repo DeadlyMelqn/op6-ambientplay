@@ -168,7 +168,7 @@
     .param p1, "zenModeController"    # Lcom/android/systemui/statusbar/policy/ZenModeController;
 
     .prologue
-    const v4, 0x7f0a02af
+    const v4, 0x7f0a02b2
 
     const/4 v3, 0x0
 
@@ -210,7 +210,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     .line 61
-    const v1, 0x7f0a02ef
+    const v1, 0x7f0a02f2
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/tuner/TunerZenModePanel;->findViewById(I)Landroid/view/View;
 
@@ -226,7 +226,7 @@
     invoke-virtual {v1, p1}, Lcom/android/systemui/volume/ZenModePanel;->init(Lcom/android/systemui/statusbar/policy/ZenModeController;)V
 
     .line 63
-    const v1, 0x7f0a02ad
+    const v1, 0x7f0a02b0
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/tuner/TunerZenModePanel;->findViewById(I)Landroid/view/View;
 
@@ -302,7 +302,7 @@
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 74
-    const v1, 0x7f0a00c8
+    const v1, 0x7f0a00cb
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/tuner/TunerZenModePanel;->findViewById(I)Landroid/view/View;
 

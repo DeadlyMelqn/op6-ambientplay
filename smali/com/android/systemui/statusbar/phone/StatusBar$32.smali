@@ -3,12 +3,12 @@
 .source "StatusBar.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/statusbar/phone/StatusBar;->updateNotificationShade()V
+    value = Lcom/android/systemui/statusbar/phone/StatusBar;->inflateDismissView()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$32;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 2016
+    .line 1662
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -39,15 +39,27 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 1
+.method public onClick(Landroid/view/View;)V
+    .locals 2
+    .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 2019
+    .line 1665
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$32;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap18(Lcom/android/systemui/statusbar/phone/StatusBar;)V
+    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get13(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/internal/logging/MetricsLogger;
 
-    .line 2020
+    move-result-object v0
+
+    const/16 v1, 0x94
+
+    invoke-virtual {v0, v1}, Lcom/android/internal/logging/MetricsLogger;->action(I)V
+
+    .line 1666
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$32;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->clearAllNotifications()V
+
+    .line 1667
     return-void
 .end method

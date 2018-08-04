@@ -135,7 +135,7 @@
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
     .line 51
-    const v0, 0x7f0a020b
+    const v0, 0x7f0a020e
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/QSContainerImpl;->findViewById(I)Landroid/view/View;
 
@@ -144,7 +144,7 @@
     iput-object v0, p0, Lcom/android/systemui/qs/QSContainerImpl;->mQSPanel:Landroid/view/View;
 
     .line 52
-    const v0, 0x7f0a0201
+    const v0, 0x7f0a0204
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/QSContainerImpl;->findViewById(I)Landroid/view/View;
 
@@ -153,7 +153,7 @@
     iput-object v0, p0, Lcom/android/systemui/qs/QSContainerImpl;->mQSDetail:Landroid/view/View;
 
     .line 53
-    const v0, 0x7f0a010b
+    const v0, 0x7f0a010e
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/QSContainerImpl;->findViewById(I)Landroid/view/View;
 
@@ -162,7 +162,7 @@
     iput-object v0, p0, Lcom/android/systemui/qs/QSContainerImpl;->mHeader:Landroid/view/View;
 
     .line 54
-    const v0, 0x7f0a0200
+    const v0, 0x7f0a0203
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/QSContainerImpl;->findViewById(I)Landroid/view/View;
 
@@ -173,7 +173,7 @@
     iput-object v0, p0, Lcom/android/systemui/qs/QSContainerImpl;->mQSCustomizer:Lcom/android/systemui/qs/customize/QSCustomizer;
 
     .line 55
-    const v0, 0x7f0a0204
+    const v0, 0x7f0a0207
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/QSContainerImpl;->findViewById(I)Landroid/view/View;
 

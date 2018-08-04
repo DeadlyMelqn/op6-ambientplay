@@ -100,7 +100,7 @@
     iget-object v0, p0, Lcom/android/systemui/statusbar/SettingConfirmationSnackbarViewCreator;->mContext:Landroid/content/Context;
 
     .line 45
-    const v1, 0x7f0d0102
+    const v1, 0x7f0d0103
 
     .line 44
     invoke-static {v0, v1, v2}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;

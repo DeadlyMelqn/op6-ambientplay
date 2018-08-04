@@ -19,7 +19,7 @@
     invoke-direct {p0, p1}, Landroid/support/v7/preference/CheckBoxPreference;-><init>(Landroid/content/Context;)V
 
     .line 29
-    const v0, 0x7f0d00c3
+    const v0, 0x7f0d00c4
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/tuner/SelectablePreference;->setWidgetLayoutResource(I)V
 

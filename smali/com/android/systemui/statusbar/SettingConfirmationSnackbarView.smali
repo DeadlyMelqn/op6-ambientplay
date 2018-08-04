@@ -266,7 +266,7 @@
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/SettingConfirmationSnackbarView;->setVisibility(I)V
 
     .line 151
-    const v0, 0x7f0a028c
+    const v0, 0x7f0a028f
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/SettingConfirmationSnackbarView;->findViewById(I)Landroid/view/View;
 
@@ -277,7 +277,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/SettingConfirmationSnackbarView;->mTitle:Landroid/widget/TextView;
 
     .line 152
-    const v0, 0x7f0a00ab
+    const v0, 0x7f0a00ae
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/SettingConfirmationSnackbarView;->findViewById(I)Landroid/view/View;
 

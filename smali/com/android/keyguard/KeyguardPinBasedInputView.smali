@@ -290,7 +290,7 @@
     invoke-virtual {v0, v1}, Lcom/android/keyguard/PasswordTextView;->setUserActivityListener(Lcom/android/keyguard/PasswordTextView$UserActivityListener;)V
 
     .line 187
-    const v0, 0x7f0a0135
+    const v0, 0x7f0a0138
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->findViewById(I)Landroid/view/View;
 
@@ -332,7 +332,7 @@
 
     .line 201
     :cond_0
-    const v0, 0x7f0a00a9
+    const v0, 0x7f0a00ac
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->findViewById(I)Landroid/view/View;
 
@@ -371,7 +371,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
     .line 225
-    const v0, 0x7f0a012b
+    const v0, 0x7f0a012e
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->findViewById(I)Landroid/view/View;
 
@@ -380,7 +380,7 @@
     iput-object v0, p0, Lcom/android/keyguard/KeyguardPinBasedInputView;->mButton0:Landroid/view/View;
 
     .line 226
-    const v0, 0x7f0a012c
+    const v0, 0x7f0a012f
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->findViewById(I)Landroid/view/View;
 
@@ -389,7 +389,7 @@
     iput-object v0, p0, Lcom/android/keyguard/KeyguardPinBasedInputView;->mButton1:Landroid/view/View;
 
     .line 227
-    const v0, 0x7f0a012d
+    const v0, 0x7f0a0130
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->findViewById(I)Landroid/view/View;
 
@@ -398,7 +398,7 @@
     iput-object v0, p0, Lcom/android/keyguard/KeyguardPinBasedInputView;->mButton2:Landroid/view/View;
 
     .line 228
-    const v0, 0x7f0a012e
+    const v0, 0x7f0a0131
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->findViewById(I)Landroid/view/View;
 
@@ -407,7 +407,7 @@
     iput-object v0, p0, Lcom/android/keyguard/KeyguardPinBasedInputView;->mButton3:Landroid/view/View;
 
     .line 229
-    const v0, 0x7f0a012f
+    const v0, 0x7f0a0132
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->findViewById(I)Landroid/view/View;
 
@@ -416,7 +416,7 @@
     iput-object v0, p0, Lcom/android/keyguard/KeyguardPinBasedInputView;->mButton4:Landroid/view/View;
 
     .line 230
-    const v0, 0x7f0a0130
+    const v0, 0x7f0a0133
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->findViewById(I)Landroid/view/View;
 
@@ -425,7 +425,7 @@
     iput-object v0, p0, Lcom/android/keyguard/KeyguardPinBasedInputView;->mButton5:Landroid/view/View;
 
     .line 231
-    const v0, 0x7f0a0131
+    const v0, 0x7f0a0134
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->findViewById(I)Landroid/view/View;
 
@@ -434,7 +434,7 @@
     iput-object v0, p0, Lcom/android/keyguard/KeyguardPinBasedInputView;->mButton6:Landroid/view/View;
 
     .line 232
-    const v0, 0x7f0a0132
+    const v0, 0x7f0a0135
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->findViewById(I)Landroid/view/View;
 
@@ -443,7 +443,7 @@
     iput-object v0, p0, Lcom/android/keyguard/KeyguardPinBasedInputView;->mButton7:Landroid/view/View;
 
     .line 233
-    const v0, 0x7f0a0133
+    const v0, 0x7f0a0136
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->findViewById(I)Landroid/view/View;
 
@@ -452,7 +452,7 @@
     iput-object v0, p0, Lcom/android/keyguard/KeyguardPinBasedInputView;->mButton8:Landroid/view/View;
 
     .line 234
-    const v0, 0x7f0a0134
+    const v0, 0x7f0a0137
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->findViewById(I)Landroid/view/View;
 

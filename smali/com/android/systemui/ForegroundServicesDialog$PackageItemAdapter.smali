@@ -38,7 +38,7 @@
 
     .prologue
     .line 166
-    const v0, 0x7f0d0031
+    const v0, 0x7f0d0032
 
     invoke-direct {p0, p1, v0}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I)V
 
@@ -84,7 +84,7 @@
     .line 193
     iget-object v3, p0, Lcom/android/systemui/ForegroundServicesDialog$PackageItemAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v4, 0x7f0d0031
+    const v4, 0x7f0d0032
 
     const/4 v5, 0x0
 
@@ -95,7 +95,7 @@
     .line 198
     .local v2, "view":Landroid/view/View;
     :goto_0
-    const v3, 0x7f0a0041
+    const v3, 0x7f0a0044
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -120,7 +120,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 201
-    const v3, 0x7f0a0044
+    const v3, 0x7f0a0047
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

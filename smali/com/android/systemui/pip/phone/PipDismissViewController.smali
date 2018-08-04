@@ -155,7 +155,7 @@
 
     .line 72
     .local v10, "inflater":Landroid/view/LayoutInflater;
-    const v1, 0x7f0d00ac
+    const v1, 0x7f0d00ad
 
     invoke-virtual {v10, v1, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -182,7 +182,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f08029f
+    const v4, 0x7f0802a0
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -202,7 +202,7 @@
     .line 82
     iget-object v1, p0, Lcom/android/systemui/pip/phone/PipDismissViewController;->mDismissView:Landroid/view/View;
 
-    const v4, 0x7f0a01ea
+    const v4, 0x7f0a01ed
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

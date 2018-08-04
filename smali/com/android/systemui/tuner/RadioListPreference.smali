@@ -144,7 +144,7 @@
 
     .line 71
     .local v3, "v":Landroid/view/View;
-    const v4, 0x7f0a0090
+    const v4, 0x7f0a0093
 
     invoke-virtual {v3, v4}, Landroid/view/View;->setId(I)V
 
@@ -223,7 +223,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v3, 0x7f0a0090
+    const v3, 0x7f0a0093
 
     .line 89
     invoke-super {p0, p1, p2, p3}, Lcom/android/systemui/tuner/CustomListPreference;->onDialogStateRestored(Landroid/app/DialogFragment;Landroid/app/Dialog;Landroid/os/Bundle;)V

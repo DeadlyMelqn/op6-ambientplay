@@ -813,7 +813,7 @@
     invoke-direct {v4, v5, v6}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 279
-    const v5, 0x7f080184
+    const v5, 0x7f080185
 
     .line 278
     invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
@@ -1010,7 +1010,7 @@
     invoke-direct {v2, v3, v4}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 223
-    const v3, 0x7f080185
+    const v3, 0x7f080186
 
     .line 222
     invoke-virtual {v2, v3}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
@@ -1293,7 +1293,7 @@
     invoke-direct {v4, v5, v6}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 243
-    const v5, 0x7f080185
+    const v5, 0x7f080186
 
     .line 242
     invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;

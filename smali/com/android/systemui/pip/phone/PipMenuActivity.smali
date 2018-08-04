@@ -1023,7 +1023,7 @@
     const/4 v10, 0x0
 
     .line 453
-    const v9, 0x7f0a00d7
+    const v9, 0x7f0a00da
 
     invoke-virtual {p0, v9}, Lcom/android/systemui/pip/phone/PipMenuActivity;->findViewById(I)Landroid/view/View;
 
@@ -1104,7 +1104,7 @@
     .line 469
     iget-object v9, p0, Lcom/android/systemui/pip/phone/PipMenuActivity;->mActionsGroup:Landroid/widget/LinearLayout;
 
-    const v11, 0x7f0d00ad
+    const v11, 0x7f0d00ae
 
     .line 468
     invoke-virtual {v6, v11, v9, v10}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
@@ -2012,7 +2012,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 190
-    const v0, 0x7f0d00ae
+    const v0, 0x7f0d00af
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/pip/phone/PipMenuActivity;->setContentView(I)V
 
@@ -2031,7 +2031,7 @@
     invoke-virtual {v0, v6}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
     .line 194
-    const v0, 0x7f0a0051
+    const v0, 0x7f0a0054
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/pip/phone/PipMenuActivity;->findViewById(I)Landroid/view/View;
 
@@ -2047,7 +2047,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 196
-    const v0, 0x7f0a018e
+    const v0, 0x7f0a0191
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/pip/phone/PipMenuActivity;->findViewById(I)Landroid/view/View;
 
@@ -2070,7 +2070,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 221
-    const v0, 0x7f0a00bd
+    const v0, 0x7f0a00c0
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/pip/phone/PipMenuActivity;->findViewById(I)Landroid/view/View;
 
@@ -2119,7 +2119,7 @@
     iput v0, p0, Lcom/android/systemui/pip/phone/PipMenuActivity;->mBetweenActionPaddingLand:I
 
     .line 229
-    const v0, 0x7f0a00d6
+    const v0, 0x7f0a00d9
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/pip/phone/PipMenuActivity;->findViewById(I)Landroid/view/View;
 

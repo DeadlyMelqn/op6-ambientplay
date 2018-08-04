@@ -65,7 +65,7 @@
     move-result-object v5
 
     .line 54
-    const v6, 0x7f0d00de
+    const v6, 0x7f0d00df
 
     const/4 v7, 0x0
 
@@ -79,7 +79,7 @@
     invoke-virtual {p0, v3}, Lcom/android/systemui/settings/BrightnessDialog;->setContentView(Landroid/view/View;)V
 
     .line 57
-    const v5, 0x7f0a0061
+    const v5, 0x7f0a0064
 
     invoke-virtual {p0, v5}, Lcom/android/systemui/settings/BrightnessDialog;->findViewById(I)Landroid/view/View;
 
@@ -89,7 +89,7 @@
 
     .line 58
     .local v0, "icon":Landroid/widget/ImageView;
-    const v5, 0x7f0a0065
+    const v5, 0x7f0a0068
 
     invoke-virtual {p0, v5}, Lcom/android/systemui/settings/BrightnessDialog;->findViewById(I)Landroid/view/View;
 

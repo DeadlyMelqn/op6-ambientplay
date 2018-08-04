@@ -119,7 +119,7 @@
     iput-object p2, p0, Lcom/android/systemui/statusbar/policy/BrightnessMirrorController;->mStatusBarWindow:Lcom/android/systemui/statusbar/phone/StatusBarWindowView;
 
     .line 61
-    const v0, 0x7f0a0063
+    const v0, 0x7f0a0066
 
     invoke-virtual {p2, v0}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->findViewById(I)Landroid/view/View;
 
@@ -131,7 +131,7 @@
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/BrightnessMirrorController;->setPadding()V
 
     .line 63
-    const v0, 0x7f0a01d4
+    const v0, 0x7f0a01d7
 
     invoke-virtual {p2, v0}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->findViewById(I)Landroid/view/View;
 
@@ -140,7 +140,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessMirrorController;->mNotificationPanel:Landroid/view/View;
 
     .line 65
-    const v0, 0x7f0a01d9
+    const v0, 0x7f0a01dc
 
     .line 64
     invoke-virtual {p2, v0}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->findViewById(I)Landroid/view/View;
@@ -157,7 +157,7 @@
     .line 67
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessMirrorController;->mBrightnessMirror:Landroid/view/View;
 
-    const v1, 0x7f0a0061
+    const v1, 0x7f0a0064
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -276,7 +276,7 @@
     .line 146
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/BrightnessMirrorController;->mStatusBarWindow:Lcom/android/systemui/statusbar/phone/StatusBarWindowView;
 
-    const v4, 0x7f0d0020
+    const v4, 0x7f0d0021
 
     const/4 v5, 0x0
 
@@ -423,7 +423,7 @@
     :goto_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/BrightnessMirrorController;->mBrightnessMirror:Landroid/view/View;
 
-    const v4, 0x7f0a0061
+    const v4, 0x7f0a0064
 
     invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -470,7 +470,7 @@
     if-eqz v0, :cond_4
 
     .line 192
-    const v2, 0x7f080193
+    const v2, 0x7f080194
 
     .line 191
     :goto_3
@@ -503,7 +503,7 @@
 
     .line 193
     :cond_4
-    const v2, 0x7f080190
+    const v2, 0x7f080191
 
     goto :goto_3
 .end method

@@ -20,7 +20,7 @@
     .locals 1
 
     .prologue
-    invoke-static {}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_56003()Lcom/android/systemui/plugins/qs/QS;
+    invoke-static {}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_57100()Lcom/android/systemui/plugins/qs/QS;
 
     move-result-object v0
 
@@ -31,7 +31,7 @@
     .locals 1
 
     .prologue
-    invoke-static {}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_56071()Lcom/android/systemui/plugins/qs/QS;
+    invoke-static {}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_57168()Lcom/android/systemui/plugins/qs/QS;
 
     move-result-object v0
 

@@ -1,5 +1,5 @@
 .class Lcom/android/systemui/statusbar/phone/StatusBar$24;
-.super Landroid/content/BroadcastReceiver;
+.super Landroid/database/ContentObserver;
 .source "StatusBar.java"
 
 
@@ -19,16 +19,17 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/statusbar/phone/StatusBar;)V
+.method constructor <init>(Lcom/android/systemui/statusbar/phone/StatusBar;Landroid/os/Handler;)V
     .locals 0
     .param p1, "this$0"    # Lcom/android/systemui/statusbar/phone/StatusBar;
+    .param p2, "$anonymous0"    # Landroid/os/Handler;
 
     .prologue
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$24;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 6364
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    .line 6228
+    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     .line 1
     return-void
@@ -36,104 +37,41 @@
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+.method public onChange(Z)V
     .locals 4
-    .param p1, "context"    # Landroid/content/Context;
-    .param p2, "intent"    # Landroid/content/Intent;
+    .param p1, "selfChange"    # Z
 
     .prologue
-    .line 6367
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    .line 6231
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$24;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    move-result-object v0
+    iget-object v1, v1, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
 
-    .line 6368
-    .local v0, "action":Ljava/lang/String;
-    const-string/jumbo v2, "android.intent.extra.user_handle"
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    const/16 v3, -0x2710
+    move-result-object v1
 
-    invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    .line 6232
+    const-string/jumbo v2, "zen_mode"
 
-    move-result v1
+    const/4 v3, 0x0
 
-    .line 6370
-    .local v1, "userId":I
-    const-string/jumbo v2, "android.app.action.DEVICE_POLICY_MANAGER_STATE_CHANGED"
+    .line 6231
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v0
 
-    move-result v2
+    .line 6233
+    .local v0, "mode":I
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$24;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    if-eqz v2, :cond_1
+    invoke-virtual {v1, v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->setZenMode(I)V
 
-    .line 6371
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$24;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+    .line 6235
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$24;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/StatusBar$24;->getSendingUserId()I
+    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap19(Lcom/android/systemui/statusbar/phone/StatusBar;)V
 
-    move-result v3
-
-    invoke-virtual {v2, v3}, Lcom/android/systemui/statusbar/phone/StatusBar;->isCurrentProfile(I)Z
-
-    move-result v2
-
-    .line 6370
-    if-eqz v2, :cond_1
-
-    .line 6372
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$24;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    invoke-static {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get20(Lcom/android/systemui/statusbar/phone/StatusBar;)Landroid/util/SparseBooleanArray;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/util/SparseBooleanArray;->clear()V
-
-    .line 6373
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$24;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    invoke-static {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap17(Lcom/android/systemui/statusbar/phone/StatusBar;)V
-
-    .line 6374
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$24;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    invoke-virtual {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->updateNotifications()V
-
-    .line 6380
-    :cond_0
-    :goto_0
+    .line 6236
     return-void
-
-    .line 6375
-    :cond_1
-    const-string/jumbo v2, "android.intent.action.DEVICE_LOCKED_CHANGED"
-
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 6376
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$24;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    iget v2, v2, Lcom/android/systemui/statusbar/phone/StatusBar;->mCurrentUserId:I
-
-    if-eq v1, v2, :cond_0
-
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$24;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    invoke-virtual {v2, v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->isCurrentProfile(I)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 6377
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$24;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    invoke-virtual {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->onWorkChallengeChanged()V
-
-    goto :goto_0
 .end method

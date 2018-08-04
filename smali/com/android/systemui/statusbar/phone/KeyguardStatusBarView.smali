@@ -485,7 +485,7 @@
     .line 221
     new-instance v2, Lcom/android/systemui/statusbar/phone/StatusBarIconController$TintedIconManager;
 
-    const v1, 0x7f0a0272
+    const v1, 0x7f0a0275
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->findViewById(I)Landroid/view/View;
 
@@ -878,7 +878,7 @@
     invoke-super {p0}, Landroid/widget/RelativeLayout;->onFinishInflate()V
 
     .line 88
-    const v0, 0x7f0a0282
+    const v0, 0x7f0a0285
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->findViewById(I)Landroid/view/View;
 
@@ -887,7 +887,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mSystemIconsSuperContainer:Landroid/view/View;
 
     .line 89
-    const v0, 0x7f0a0281
+    const v0, 0x7f0a0284
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->findViewById(I)Landroid/view/View;
 
@@ -896,7 +896,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mSystemIconsContainer:Landroid/view/View;
 
     .line 90
-    const v0, 0x7f0a01b7
+    const v0, 0x7f0a01ba
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->findViewById(I)Landroid/view/View;
 
@@ -907,7 +907,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mMultiUserSwitch:Lcom/android/systemui/statusbar/phone/MultiUserSwitch;
 
     .line 91
-    const v0, 0x7f0a01b6
+    const v0, 0x7f0a01b9
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->findViewById(I)Landroid/view/View;
 
@@ -918,7 +918,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mMultiUserAvatar:Landroid/widget/ImageView;
 
     .line 92
-    const v0, 0x7f0a013c
+    const v0, 0x7f0a013f
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->findViewById(I)Landroid/view/View;
 
@@ -931,7 +931,7 @@
     .line 93
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mSystemIconsContainer:Landroid/view/View;
 
-    const v1, 0x7f0a005a
+    const v1, 0x7f0a005d
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1036,17 +1036,17 @@
 
     .line 347
     .local v3, "tintArea":Landroid/graphics/Rect;
-    const v4, 0x7f0a0264
+    const v4, 0x7f0a0267
 
     invoke-direct {p0, v4, v3, v1, v0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->applyDarkness(ILandroid/graphics/Rect;FI)V
 
     .line 348
-    const v4, 0x7f0a005a
+    const v4, 0x7f0a005d
 
     invoke-direct {p0, v4, v3, v1, v0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->applyDarkness(ILandroid/graphics/Rect;FI)V
 
     .line 349
-    const v4, 0x7f0a0084
+    const v4, 0x7f0a0087
 
     invoke-direct {p0, v4, v3, v1, v0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->applyDarkness(ILandroid/graphics/Rect;FI)V
 

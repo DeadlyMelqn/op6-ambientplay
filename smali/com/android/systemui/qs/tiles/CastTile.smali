@@ -603,7 +603,7 @@
 
     if-eqz v4, :cond_5
 
-    const v4, 0x7f080199
+    const v4, 0x7f08019a
 
     :goto_2
     invoke-static {v4}, Lcom/android/systemui/qs/tileimpl/QSTileImpl$ResourceIcon;->get(I)Lcom/android/systemui/plugins/qs/QSTile$Icon;
@@ -674,7 +674,7 @@
 
     .line 180
     :cond_5
-    const v4, 0x7f080198
+    const v4, 0x7f080199
 
     goto :goto_2
 .end method

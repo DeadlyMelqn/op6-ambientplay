@@ -268,7 +268,7 @@
     .line 99
     iget-object v2, p0, Lcom/android/systemui/qs/tiles/NfcTile;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0801a6
+    const v3, 0x7f0801a7
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -278,7 +278,7 @@
     .local v1, "mEnable":Landroid/graphics/drawable/Drawable;
     iget-object v2, p0, Lcom/android/systemui/qs/tiles/NfcTile;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0801a5
+    const v3, 0x7f0801a6
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

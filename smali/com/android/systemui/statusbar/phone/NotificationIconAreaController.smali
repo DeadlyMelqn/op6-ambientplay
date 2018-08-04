@@ -821,7 +821,7 @@
     .line 280
     sget-object v3, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    const v4, 0x7f0a011a
+    const v4, 0x7f0a011d
 
     invoke-virtual {p1, v4}, Lcom/android/systemui/statusbar/StatusBarIconView;->getTag(I)Ljava/lang/Object;
 
@@ -910,7 +910,7 @@
 
     .prologue
     .line 56
-    const v0, 0x7f0d00a8
+    const v0, 0x7f0d00a9
 
     const/4 v1, 0x0
 
@@ -946,7 +946,7 @@
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mNotificationIconArea:Landroid/view/View;
 
     .line 68
-    const v2, 0x7f0a01ca
+    const v2, 0x7f0a01cd
 
     .line 67
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;

@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$5;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 650
+    .line 658
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -44,11 +44,11 @@
     .param p1, "stackScrollLayout"    # Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout;
 
     .prologue
-    .line 653
+    .line 661
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$5;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->userActivity()V
 
-    .line 654
+    .line 662
     return-void
 .end method

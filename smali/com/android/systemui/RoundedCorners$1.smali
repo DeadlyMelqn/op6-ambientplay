@@ -45,9 +45,9 @@
     .param p2, "observedChange"    # Z
 
     .prologue
-    const v4, 0x7f0a0219
+    const v4, 0x7f0a021c
 
-    const v3, 0x7f0a0175
+    const v3, 0x7f0a0178
 
     .line 105
     if-eqz p1, :cond_0

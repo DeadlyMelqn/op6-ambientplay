@@ -177,7 +177,7 @@
     check-cast p1, Ljava/lang/Boolean;
 
     .end local p1    # "arg0":Ljava/lang/Object;
-    invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_54265(Ljava/lang/Boolean;)V
+    invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_55362(Ljava/lang/Boolean;)V
 
     return-void
 .end method

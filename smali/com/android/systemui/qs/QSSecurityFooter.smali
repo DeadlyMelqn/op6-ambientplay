@@ -242,7 +242,7 @@
     move-result-object v0
 
     .line 78
-    const v2, 0x7f0d00df
+    const v2, 0x7f0d00e0
 
     const/4 v3, 0x0
 
@@ -261,7 +261,7 @@
     .line 80
     iget-object v0, p0, Lcom/android/systemui/qs/QSSecurityFooter;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0a00e4
+    const v2, 0x7f0a00e7
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -274,7 +274,7 @@
     .line 81
     iget-object v0, p0, Lcom/android/systemui/qs/QSSecurityFooter;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0a00e3
+    const v2, 0x7f0a00e6
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -496,7 +496,7 @@
     move-result-object v5
 
     .line 259
-    const v6, 0x7f0d00e0
+    const v6, 0x7f0d00e1
 
     const/4 v7, 0x0
 
@@ -544,7 +544,7 @@
     if-nez v20, :cond_0
 
     .line 267
-    const v5, 0x7f0a00b8
+    const v5, 0x7f0a00bb
 
     invoke-virtual {v10, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -571,7 +571,7 @@
     if-nez v11, :cond_1
 
     .line 280
-    const v5, 0x7f0a0072
+    const v5, 0x7f0a0075
 
     invoke-virtual {v10, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -596,7 +596,7 @@
     if-nez v21, :cond_2
 
     .line 292
-    const v5, 0x7f0a01c0
+    const v5, 0x7f0a01c3
 
     invoke-virtual {v10, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -627,7 +627,7 @@
     if-nez v23, :cond_3
 
     .line 304
-    const v5, 0x7f0a02d4
+    const v5, 0x7f0a02d7
 
     invoke-virtual {v10, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -699,7 +699,7 @@
     .end local v21    # "networkLoggingMessage":Ljava/lang/CharSequence;
     .end local v23    # "vpnMessage":Ljava/lang/CharSequence;
     :cond_0
-    const v5, 0x7f0a00b8
+    const v5, 0x7f0a00bb
 
     invoke-virtual {v10, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -710,7 +710,7 @@
     invoke-virtual {v5, v6}, Landroid/view/View;->setVisibility(I)V
 
     .line 271
-    const v5, 0x7f0a00ba
+    const v5, 0x7f0a00bd
 
     invoke-virtual {v10, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -745,7 +745,7 @@
     .end local v13    # "deviceManagementWarning":Landroid/widget/TextView;
     .restart local v11    # "caCertsMessage":Ljava/lang/CharSequence;
     :cond_1
-    const v5, 0x7f0a0072
+    const v5, 0x7f0a0075
 
     invoke-virtual {v10, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -756,7 +756,7 @@
     invoke-virtual {v5, v6}, Landroid/view/View;->setVisibility(I)V
 
     .line 283
-    const v5, 0x7f0a0074
+    const v5, 0x7f0a0077
 
     invoke-virtual {v10, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -781,7 +781,7 @@
     .end local v12    # "caCertsWarning":Landroid/widget/TextView;
     .restart local v21    # "networkLoggingMessage":Ljava/lang/CharSequence;
     :cond_2
-    const v5, 0x7f0a01c0
+    const v5, 0x7f0a01c3
 
     invoke-virtual {v10, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -792,7 +792,7 @@
     invoke-virtual {v5, v6}, Landroid/view/View;->setVisibility(I)V
 
     .line 296
-    const v5, 0x7f0a01c2
+    const v5, 0x7f0a01c5
 
     invoke-virtual {v10, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -814,7 +814,7 @@
     .end local v22    # "networkLoggingWarning":Landroid/widget/TextView;
     .restart local v23    # "vpnMessage":Ljava/lang/CharSequence;
     :cond_3
-    const v5, 0x7f0a02d4
+    const v5, 0x7f0a02d7
 
     invoke-virtual {v10, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -825,7 +825,7 @@
     invoke-virtual {v5, v6}, Landroid/view/View;->setVisibility(I)V
 
     .line 307
-    const v5, 0x7f0a02d6
+    const v5, 0x7f0a02d9
 
     invoke-virtual {v10, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1064,7 +1064,7 @@
 
     .line 157
     :cond_2
-    const v11, 0x7f0801be
+    const v11, 0x7f0801bf
 
     .line 159
     .local v11, "footerIconId":I
@@ -1190,7 +1190,7 @@
     if-eqz p2, :cond_5
 
     .line 344
-    const v1, 0x7f0a0073
+    const v1, 0x7f0a0076
 
     invoke-virtual {p5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1203,7 +1203,7 @@
     if-eqz p3, :cond_6
 
     .line 347
-    const v1, 0x7f0a01c1
+    const v1, 0x7f0a01c4
 
     invoke-virtual {p5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1216,7 +1216,7 @@
     if-eqz p4, :cond_7
 
     .line 350
-    const v1, 0x7f0a02d5
+    const v1, 0x7f0a02d8
 
     invoke-virtual {p5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

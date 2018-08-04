@@ -91,7 +91,7 @@
     invoke-virtual {p0, v0}, Lcom/android/systemui/tuner/PluginFragment$PluginPreference;->setChecked(Z)V
 
     .line 153
-    const v0, 0x7f0d0117
+    const v0, 0x7f0d0118
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/tuner/PluginFragment$PluginPreference;->setWidgetLayoutResource(I)V
 
@@ -294,7 +294,7 @@
     .param p1, "holder"    # Landroid/support/v7/preference/PreferenceViewHolder;
 
     .prologue
-    const v4, 0x7f0a0258
+    const v4, 0x7f0a025b
 
     const/16 v2, 0x8
 
@@ -318,7 +318,7 @@
     invoke-virtual {v3, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 190
-    const v0, 0x7f0a00c0
+    const v0, 0x7f0a00c3
 
     invoke-virtual {p1, v0}, Landroid/support/v7/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

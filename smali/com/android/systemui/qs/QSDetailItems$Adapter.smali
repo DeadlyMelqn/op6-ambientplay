@@ -134,7 +134,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d00d2
+    const v7, 0x7f0d00d3
 
     .line 184
     const/4 v8, 0x0
@@ -313,7 +313,7 @@
     if-eqz v6, :cond_7
 
     .line 216
-    const v6, 0x7f080196
+    const v6, 0x7f080197
 
     invoke-virtual {v0, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 

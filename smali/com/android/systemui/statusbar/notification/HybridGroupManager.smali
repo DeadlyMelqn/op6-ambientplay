@@ -175,7 +175,7 @@
     .local v1, "inflater":Landroid/view/LayoutInflater;
     iget-object v2, p0, Lcom/android/systemui/statusbar/notification/HybridGroupManager;->mParent:Landroid/view/ViewGroup;
 
-    const v3, 0x7f0d0038
+    const v3, 0x7f0d0039
 
     const/4 v4, 0x0
 
@@ -215,7 +215,7 @@
     .local v0, "inflater":Landroid/view/LayoutInflater;
     iget-object v2, p0, Lcom/android/systemui/statusbar/notification/HybridGroupManager;->mParent:Landroid/view/ViewGroup;
 
-    const v3, 0x7f0d0039
+    const v3, 0x7f0d003a
 
     const/4 v4, 0x0
 

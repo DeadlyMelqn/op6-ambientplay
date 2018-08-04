@@ -65,9 +65,9 @@
     .param p1, "expanded"    # Z
 
     .prologue
-    const v1, 0x7f08020e
+    const v1, 0x7f08020f
 
-    const v0, 0x7f08020c
+    const v0, 0x7f08020d
 
     .line 59
     iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/ExpandableIndicator;->mIsDefaultDirection:Z

@@ -57,10 +57,10 @@
     .line 40
     new-instance v0, Lcom/android/systemui/qs/tileimpl/QSTileImpl$AnimationIcon;
 
-    const v1, 0x7f080183
+    const v1, 0x7f080184
 
     .line 41
-    const v2, 0x7f080180
+    const v2, 0x7f080181
 
     .line 40
     invoke-direct {v0, v1, v2}, Lcom/android/systemui/qs/tileimpl/QSTileImpl$AnimationIcon;-><init>(II)V
@@ -71,10 +71,10 @@
     .line 43
     new-instance v0, Lcom/android/systemui/qs/tileimpl/QSTileImpl$AnimationIcon;
 
-    const v1, 0x7f080181
+    const v1, 0x7f080182
 
     .line 44
-    const v2, 0x7f080182
+    const v2, 0x7f080183
 
     .line 43
     invoke-direct {v0, v1, v2}, Lcom/android/systemui/qs/tileimpl/QSTileImpl$AnimationIcon;-><init>(II)V

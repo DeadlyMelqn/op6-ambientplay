@@ -18,7 +18,7 @@
 
     check-cast v0, Ljava/lang/Runnable;
 
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_279258(Ljava/lang/Runnable;)Z
+    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_288667(Ljava/lang/Runnable;)Z
 
     move-result v0
 

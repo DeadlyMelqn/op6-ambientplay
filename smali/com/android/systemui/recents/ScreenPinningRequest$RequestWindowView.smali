@@ -139,7 +139,7 @@
     .param p1, "rotation"    # I
 
     .prologue
-    const v8, 0x7f0a0233
+    const v8, 0x7f0a0236
 
     const/4 v7, 0x3
 
@@ -155,7 +155,7 @@
 
     if-ne p1, v3, :cond_0
 
-    const v3, 0x7f0d00fc
+    const v3, 0x7f0d00fd
 
     .line 210
     :goto_0
@@ -185,7 +185,7 @@
     .line 216
     iget-object v3, p0, Lcom/android/systemui/recents/ScreenPinningRequest$RequestWindowView;->mLayout:Landroid/view/ViewGroup;
 
-    const v4, 0x7f0a023a
+    const v4, 0x7f0a023d
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -196,7 +196,7 @@
     .line 218
     iget-object v3, p0, Lcom/android/systemui/recents/ScreenPinningRequest$RequestWindowView;->mLayout:Landroid/view/ViewGroup;
 
-    const v4, 0x7f0a0232
+    const v4, 0x7f0a0235
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -224,7 +224,7 @@
     :goto_1
     iget-object v3, p0, Lcom/android/systemui/recents/ScreenPinningRequest$RequestWindowView;->mLayout:Landroid/view/ViewGroup;
 
-    const v4, 0x7f0a0236
+    const v4, 0x7f0a0239
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -274,7 +274,7 @@
     .local v2, "touchExplorationEnabled":Z
     iget-object v3, p0, Lcom/android/systemui/recents/ScreenPinningRequest$RequestWindowView;->mLayout:Landroid/view/ViewGroup;
 
-    const v4, 0x7f0a0234
+    const v4, 0x7f0a0237
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -302,7 +302,7 @@
     :goto_4
     iget-object v3, p0, Lcom/android/systemui/recents/ScreenPinningRequest$RequestWindowView;->mLayout:Landroid/view/ViewGroup;
 
-    const v4, 0x7f0a022f
+    const v4, 0x7f0a0232
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -313,7 +313,7 @@
     .line 243
     iget-object v3, p0, Lcom/android/systemui/recents/ScreenPinningRequest$RequestWindowView;->mLayout:Landroid/view/ViewGroup;
 
-    const v4, 0x7f0a0230
+    const v4, 0x7f0a0233
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -342,13 +342,13 @@
     :cond_0
     if-ne p1, v6, :cond_1
 
-    const v3, 0x7f0d00fb
+    const v3, 0x7f0d00fc
 
     goto/16 :goto_0
 
     .line 209
     :cond_1
-    const v3, 0x7f0d00f7
+    const v3, 0x7f0d00f8
 
     goto/16 :goto_0
 

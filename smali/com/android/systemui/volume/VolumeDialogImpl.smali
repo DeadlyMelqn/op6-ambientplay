@@ -1358,7 +1358,7 @@
     .locals 12
 
     .prologue
-    const v11, 0x7f080207
+    const v11, 0x7f080208
 
     const/16 v2, 0x30
 
@@ -1502,14 +1502,14 @@
     .line 223
     iget-object v0, p0, Lcom/android/systemui/volume/VolumeDialogImpl;->mDialog:Lcom/android/systemui/volume/VolumeDialogImpl$CustomDialog;
 
-    const v1, 0x7f0d011f
+    const v1, 0x7f0d0120
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/volume/VolumeDialogImpl$CustomDialog;->setContentView(I)V
 
     .line 224
     iget-object v0, p0, Lcom/android/systemui/volume/VolumeDialogImpl;->mDialog:Lcom/android/systemui/volume/VolumeDialogImpl$CustomDialog;
 
-    const v1, 0x7f0a02c6
+    const v1, 0x7f0a02c9
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/volume/VolumeDialogImpl$CustomDialog;->findViewById(I)Landroid/view/View;
 
@@ -1531,7 +1531,7 @@
     .line 236
     iget-object v0, p0, Lcom/android/systemui/volume/VolumeDialogImpl;->mDialog:Lcom/android/systemui/volume/VolumeDialogImpl$CustomDialog;
 
-    const v1, 0x7f0a02c7
+    const v1, 0x7f0a02ca
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/volume/VolumeDialogImpl$CustomDialog;->findViewById(I)Landroid/view/View;
 
@@ -1544,7 +1544,7 @@
     .line 237
     iget-object v0, p0, Lcom/android/systemui/volume/VolumeDialogImpl;->mDialogContentView:Landroid/view/ViewGroup;
 
-    const v1, 0x7f0a02c8
+    const v1, 0x7f0a02cb
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1560,7 +1560,7 @@
     .line 239
     iget-object v0, p0, Lcom/android/systemui/volume/VolumeDialogImpl;->mDialogView:Landroid/view/ViewGroup;
 
-    const v1, 0x7f0a02c9
+    const v1, 0x7f0a02cc
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1635,9 +1635,9 @@
     const/4 v0, 0x3
 
     .line 265
-    const v1, 0x7f08020f
+    const v1, 0x7f080210
 
-    const v2, 0x7f080212
+    const v2, 0x7f080213
 
     .line 264
     invoke-direct {p0, v0, v1, v2, v9}, Lcom/android/systemui/volume/VolumeDialogImpl;->addRow(IIIZ)V
@@ -1652,9 +1652,9 @@
     if-nez v0, :cond_0
 
     .line 268
-    const v0, 0x7f080217
+    const v0, 0x7f080218
 
-    const v1, 0x7f080218
+    const v1, 0x7f080219
 
     .line 267
     invoke-direct {p0, v10, v0, v1, v9}, Lcom/android/systemui/volume/VolumeDialogImpl;->addRow(IIIZ)V
@@ -1663,9 +1663,9 @@
     const/4 v0, 0x5
 
     .line 270
-    const v1, 0x7f080213
+    const v1, 0x7f080214
 
-    const v2, 0x7f080214
+    const v2, 0x7f080215
 
     .line 269
     invoke-direct {p0, v0, v1, v2, v9}, Lcom/android/systemui/volume/VolumeDialogImpl;->addRow(IIIZ)V
@@ -1674,17 +1674,17 @@
     const/4 v0, 0x4
 
     .line 272
-    const v1, 0x7f080208
+    const v1, 0x7f080209
 
-    const v2, 0x7f080209
+    const v2, 0x7f08020a
 
     .line 271
     invoke-direct {p0, v0, v1, v2, v8}, Lcom/android/systemui/volume/VolumeDialogImpl;->addRow(IIIZ)V
 
     .line 274
-    const v0, 0x7f08021c
+    const v0, 0x7f08021d
 
-    const v1, 0x7f08021c
+    const v1, 0x7f08021d
 
     .line 273
     invoke-direct {p0, v8, v0, v1, v8}, Lcom/android/systemui/volume/VolumeDialogImpl;->addRow(IIIZ)V
@@ -1693,17 +1693,17 @@
     const/4 v0, 0x6
 
     .line 276
-    const v1, 0x7f08020a
+    const v1, 0x7f08020b
 
-    const v2, 0x7f08020a
+    const v2, 0x7f08020b
 
     .line 275
     invoke-direct {p0, v0, v1, v2, v8}, Lcom/android/systemui/volume/VolumeDialogImpl;->addRow(IIIZ)V
 
     .line 278
-    const v0, 0x7f08021a
+    const v0, 0x7f08021b
 
-    const v1, 0x7f08021b
+    const v1, 0x7f08021c
 
     .line 277
     invoke-direct {p0, v9, v0, v1, v8}, Lcom/android/systemui/volume/VolumeDialogImpl;->addRow(IIIZ)V
@@ -1727,7 +1727,7 @@
     .line 286
     iget-object v0, p0, Lcom/android/systemui/volume/VolumeDialogImpl;->mDialog:Lcom/android/systemui/volume/VolumeDialogImpl$CustomDialog;
 
-    const v1, 0x7f0a02cf
+    const v1, 0x7f0a02d2
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/volume/VolumeDialogImpl$CustomDialog;->findViewById(I)Landroid/view/View;
 
@@ -1747,7 +1747,7 @@
     .line 288
     iget-object v0, p0, Lcom/android/systemui/volume/VolumeDialogImpl;->mDialog:Lcom/android/systemui/volume/VolumeDialogImpl$CustomDialog;
 
-    const v1, 0x7f0a02ae
+    const v1, 0x7f0a02b1
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/volume/VolumeDialogImpl$CustomDialog;->findViewById(I)Landroid/view/View;
 
@@ -1822,7 +1822,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0120
+    const v1, 0x7f0d0121
 
     invoke-virtual {v0, v1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -1853,7 +1853,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a02cb
+    const v1, 0x7f0a02ce
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1881,7 +1881,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a02cd
+    const v1, 0x7f0a02d0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1921,7 +1921,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a02cc
+    const v1, 0x7f0a02cf
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2136,9 +2136,9 @@
     if-nez v0, :cond_2
 
     .line 712
-    const v2, 0x7f080215
+    const v2, 0x7f080216
 
-    const v3, 0x7f080216
+    const v3, 0x7f080217
 
     move-object v0, p0
 
@@ -3031,7 +3031,7 @@
 
     if-eqz v3, :cond_4
 
-    const v2, 0x7f08020c
+    const v2, 0x7f08020d
 
     .line 613
     .local v2, "res":I
@@ -3137,7 +3137,7 @@
 
     .line 612
     :cond_4
-    const v2, 0x7f08020e
+    const v2, 0x7f08020f
 
     .restart local v2    # "res":I
     goto :goto_1
@@ -3146,7 +3146,7 @@
     :cond_5
     iget-object v3, p0, Lcom/android/systemui/volume/VolumeDialogImpl;->mExpandButton:Landroid/widget/ImageButton;
 
-    const v5, 0x7f080217
+    const v5, 0x7f080218
 
     invoke-virtual {v3, v5}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -4079,7 +4079,7 @@
     .line 808
     if-eqz v15, :cond_21
 
-    const v6, 0x7f080219
+    const v6, 0x7f08021a
 
     .line 815
     .local v6, "iconRes":I
@@ -4127,7 +4127,7 @@
 
     .line 823
     :cond_8
-    const v24, 0x7f080219
+    const v24, 0x7f08021a
 
     move/from16 v0, v24
 
@@ -4493,7 +4493,7 @@
 
     if-eqz v24, :cond_24
 
-    const v6, 0x7f080211
+    const v6, 0x7f080212
 
     .restart local v6    # "iconRes":I
     goto/16 :goto_10
@@ -4501,7 +4501,7 @@
     .line 812
     .end local v6    # "iconRes":I
     :cond_24
-    const v6, 0x7f080210
+    const v6, 0x7f080211
 
     .restart local v6    # "iconRes":I
     goto/16 :goto_10
@@ -4561,7 +4561,7 @@
 
     .line 824
     :cond_28
-    const v24, 0x7f080211
+    const v24, 0x7f080212
 
     move/from16 v0, v24
 
@@ -4583,7 +4583,7 @@
 
     .line 826
     :cond_2a
-    const v24, 0x7f080210
+    const v24, 0x7f080211
 
     move/from16 v0, v24
 

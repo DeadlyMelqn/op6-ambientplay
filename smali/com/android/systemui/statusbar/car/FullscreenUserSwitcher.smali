@@ -83,7 +83,7 @@
     .line 54
     iget-object v2, p0, Lcom/android/systemui/statusbar/car/FullscreenUserSwitcher;->mParent:Landroid/view/View;
 
-    const v3, 0x7f0a008d
+    const v3, 0x7f0a0090
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -94,7 +94,7 @@
     .line 55
     iget-object v2, p0, Lcom/android/systemui/statusbar/car/FullscreenUserSwitcher;->mContainer:Landroid/view/View;
 
-    const v3, 0x7f0a02bd
+    const v3, 0x7f0a02c0
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -123,7 +123,7 @@
     .line 63
     iget-object v2, p0, Lcom/android/systemui/statusbar/car/FullscreenUserSwitcher;->mContainer:Landroid/view/View;
 
-    const v3, 0x7f0a02c0
+    const v3, 0x7f0a02c3
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -140,7 +140,7 @@
     .line 66
     iget-object v2, p0, Lcom/android/systemui/statusbar/car/FullscreenUserSwitcher;->mContainer:Landroid/view/View;
 
-    const v3, 0x7f0a009e
+    const v3, 0x7f0a00a1
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -188,7 +188,7 @@
     .line 72
     iget-object v2, p0, Lcom/android/systemui/statusbar/car/FullscreenUserSwitcher;->mContainer:Landroid/view/View;
 
-    const v3, 0x7f0a0271
+    const v3, 0x7f0a0274
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -223,7 +223,7 @@
     .line 86
     iget-object v2, p0, Lcom/android/systemui/statusbar/car/FullscreenUserSwitcher;->mParent:Landroid/view/View;
 
-    const v3, 0x7f0a027e
+    const v3, 0x7f0a0281
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

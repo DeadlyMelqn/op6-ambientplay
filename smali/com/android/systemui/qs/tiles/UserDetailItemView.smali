@@ -25,7 +25,7 @@
 
     .prologue
     .line 43
-    const v0, 0x7f0d00dd
+    const v0, 0x7f0d00de
 
     sput v0, Lcom/android/systemui/qs/tiles/UserDetailItemView;->layoutResId:I
 
@@ -337,7 +337,7 @@
 
     .prologue
     .line 120
-    const v0, 0x7f0a02bf
+    const v0, 0x7f0a02c2
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/tiles/UserDetailItemView;->findViewById(I)Landroid/view/View;
 
@@ -348,7 +348,7 @@
     iput-object v0, p0, Lcom/android/systemui/qs/tiles/UserDetailItemView;->mAvatar:Lcom/android/systemui/statusbar/phone/UserAvatarView;
 
     .line 121
-    const v0, 0x7f0a02be
+    const v0, 0x7f0a02c1
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/tiles/UserDetailItemView;->findViewById(I)Landroid/view/View;
 
@@ -392,7 +392,7 @@
     invoke-direct {p0}, Lcom/android/systemui/qs/tiles/UserDetailItemView;->updateTypeface()V
 
     .line 129
-    const v0, 0x7f0a0218
+    const v0, 0x7f0a021b
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/tiles/UserDetailItemView;->findViewById(I)Landroid/view/View;
 

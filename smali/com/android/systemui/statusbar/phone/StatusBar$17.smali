@@ -1,9 +1,6 @@
 .class Lcom/android/systemui/statusbar/phone/StatusBar$17;
-.super Ljava/lang/Object;
+.super Landroid/content/BroadcastReceiver;
 .source "StatusBar.java"
-
-# interfaces
-.implements Lcom/android/systemui/keyguard/ScreenLifecycle$Observer;
 
 
 # annotations
@@ -30,8 +27,8 @@
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 5506
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 4093
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     .line 1
     return-void
@@ -39,115 +36,118 @@
 
 
 # virtual methods
-.method public onScreenTurnedOff()V
-    .locals 1
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 7
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 5528
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get7(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/systemui/classifier/FalsingManager;
+    .line 4097
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/systemui/classifier/FalsingManager;->onScreenOff()V
+    .line 4098
+    .local v0, "action":Ljava/lang/String;
+    const-string/jumbo v4, "com.android.systemui.demo"
 
-    .line 5531
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->isPulsing()Z
+    move-result v4
 
-    move-result v0
+    if-eqz v4, :cond_1
 
-    if-nez v0, :cond_0
+    .line 4099
+    invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
-    .line 5532
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+    move-result-object v1
 
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap1(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
+    .line 4100
+    .local v1, "bundle":Landroid/os/Bundle;
+    if-eqz v1, :cond_0
 
-    .line 5534
+    .line 4101
+    const-string/jumbo v4, "command"
+
+    const-string/jumbo v5, ""
+
+    invoke-virtual {v1, v4, v5}, Landroid/os/Bundle;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 4102
+    .local v2, "command":Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    if-lez v4, :cond_0
+
+    .line 4104
+    :try_start_0
+    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    invoke-virtual {v4, v2, v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->dispatchDemoCommand(Ljava/lang/String;Landroid/os/Bundle;)V
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 4115
+    .end local v1    # "bundle":Landroid/os/Bundle;
+    .end local v2    # "command":Ljava/lang/String;
     :cond_0
+    :goto_0
     return-void
-.end method
 
-.method public onScreenTurnedOn()V
-    .locals 1
+    .line 4105
+    .restart local v1    # "bundle":Landroid/os/Bundle;
+    .restart local v2    # "command":Ljava/lang/String;
+    :catch_0
+    move-exception v3
 
-    .prologue
-    .line 5522
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+    .line 4106
+    .local v3, "t":Ljava/lang/Throwable;
+    const-string/jumbo v4, "StatusBar"
 
-    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mScrimController:Lcom/android/systemui/statusbar/phone/ScrimController;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/ScrimController;->wakeUpFromAod()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 5523
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+    const-string/jumbo v6, "Error running demo command, intent="
 
-    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDozeScrimController:Lcom/android/systemui/statusbar/phone/DozeScrimController;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/DozeScrimController;->onScreenTurnedOn()V
+    move-result-object v5
 
-    .line 5524
-    return-void
-.end method
+    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-.method public onScreenTurningOn()V
-    .locals 3
+    move-result-object v5
 
-    .prologue
-    const/4 v2, 0x0
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 5509
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+    move-result-object v5
 
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get7(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/systemui/classifier/FalsingManager;
+    invoke-static {v4, v5, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    move-result-object v0
+    goto :goto_0
 
-    invoke-virtual {v0}, Lcom/android/systemui/classifier/FalsingManager;->onScreenTurningOn()V
+    .line 4110
+    .end local v1    # "bundle":Landroid/os/Bundle;
+    .end local v2    # "command":Ljava/lang/String;
+    .end local v3    # "t":Ljava/lang/Throwable;
+    :cond_1
+    const-string/jumbo v4, "fake_artwork"
 
-    .line 5510
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mNotificationPanel:Lcom/android/systemui/statusbar/phone/NotificationPanelView;
+    move-result v4
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->onScreenTurningOn()V
-
-    .line 5512
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap7(Lcom/android/systemui/statusbar/phone/StatusBar;)V
-
-    .line 5514
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get11(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 5515
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mNotificationPanel:Lcom/android/systemui/statusbar/phone/NotificationPanelView;
-
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get8(Lcom/android/systemui/statusbar/phone/StatusBar;)I
-
-    move-result v1
-
-    invoke-virtual {v0, v2, v1}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->launchCamera(ZI)V
-
-    .line 5516
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    invoke-static {v0, v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->-set4(Lcom/android/systemui/statusbar/phone/StatusBar;Z)Z
-
-    .line 5518
-    :cond_0
-    return-void
+    goto :goto_0
 .end method

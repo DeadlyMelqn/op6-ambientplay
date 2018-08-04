@@ -61,7 +61,7 @@
     invoke-direct {p0, p1}, Lcom/android/systemui/qs/tileimpl/QSIconViewImpl;-><init>(Landroid/content/Context;)V
 
     .line 48
-    const v0, 0x7f0801b9
+    const v0, 0x7f0801ba
 
     invoke-direct {p0, v0}, Lcom/android/systemui/qs/SignalTileView;->addTrafficView(I)Landroid/widget/ImageView;
 
@@ -70,7 +70,7 @@
     iput-object v0, p0, Lcom/android/systemui/qs/SignalTileView;->mIn:Landroid/widget/ImageView;
 
     .line 49
-    const v0, 0x7f0801bd
+    const v0, 0x7f0801be
 
     invoke-direct {p0, v0}, Lcom/android/systemui/qs/SignalTileView;->addTrafficView(I)Landroid/widget/ImageView;
 

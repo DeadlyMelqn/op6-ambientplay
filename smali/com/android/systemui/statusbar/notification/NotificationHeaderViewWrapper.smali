@@ -371,7 +371,7 @@
     .param p1, "row"    # Lcom/android/systemui/statusbar/ExpandableNotificationRow;
 
     .prologue
-    const v7, 0x7f0a011d
+    const v7, 0x7f0a0120
 
     .line 136
     invoke-super {p0, p1}, Lcom/android/systemui/statusbar/notification/NotificationViewWrapper;->onContentUpdated(Lcom/android/systemui/statusbar/ExpandableNotificationRow;)V

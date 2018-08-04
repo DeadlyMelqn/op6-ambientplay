@@ -63,31 +63,31 @@
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 717
+    .line 725
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 719
+    .line 727
     new-instance v0, Landroid/util/ArraySet;
 
     invoke-direct {v0}, Landroid/util/ArraySet;-><init>()V
 
-    .line 718
+    .line 726
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpNewlyVisibleNotifications:Landroid/util/ArraySet;
 
-    .line 721
+    .line 729
     new-instance v0, Landroid/util/ArraySet;
 
     invoke-direct {v0}, Landroid/util/ArraySet;-><init>()V
 
-    .line 720
+    .line 728
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpCurrentlyVisibleNotifications:Landroid/util/ArraySet;
 
-    .line 723
+    .line 731
     new-instance v0, Landroid/util/ArraySet;
 
     invoke-direct {v0}, Landroid/util/ArraySet;-><init>()V
 
-    .line 722
+    .line 730
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpNoLongerVisibleNotifications:Landroid/util/ArraySet;
 
     .line 1
@@ -100,23 +100,23 @@
     .locals 12
 
     .prologue
-    .line 727
+    .line 735
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v10
 
-    invoke-static {v9, v10, v11}, Lcom/android/systemui/statusbar/phone/StatusBar;->-set2(Lcom/android/systemui/statusbar/phone/StatusBar;J)J
+    invoke-static {v9, v10, v11}, Lcom/android/systemui/statusbar/phone/StatusBar;->-set3(Lcom/android/systemui/statusbar/phone/StatusBar;J)J
 
-    .line 728
+    .line 736
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-virtual {v9}, Lcom/android/systemui/statusbar/phone/StatusBar;->getCurrentMediaNotificationKey()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 738
+    .line 746
     .local v6, "mediaKey":Ljava/lang/String;
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
@@ -126,13 +126,13 @@
 
     move-result-object v1
 
-    .line 739
+    .line 747
     .local v1, "activeNotifications":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/systemui/statusbar/NotificationData$Entry;>;"
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
-    .line 740
+    .line 748
     .local v0, "N":I
     const/4 v3, 0x0
 
@@ -140,14 +140,14 @@
     :goto_0
     if-ge v3, v0, :cond_2
 
-    .line 741
+    .line 749
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/android/systemui/statusbar/NotificationData$Entry;
 
-    .line 742
+    .line 750
     .local v2, "entry":Lcom/android/systemui/statusbar/NotificationData$Entry;
     iget-object v9, v2, Lcom/android/systemui/statusbar/NotificationData$Entry;->notification:Landroid/service/notification/StatusBarNotification;
 
@@ -155,7 +155,7 @@
 
     move-result-object v5
 
-    .line 743
+    .line 751
     .local v5, "key":Ljava/lang/String;
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
@@ -167,13 +167,13 @@
 
     move-result v4
 
-    .line 744
+    .line 752
     .local v4, "isVisible":Z
     invoke-static {v5, v3, v4}, Lcom/android/internal/statusbar/NotificationVisibility;->obtain(Ljava/lang/String;IZ)Lcom/android/internal/statusbar/NotificationVisibility;
 
     move-result-object v8
 
-    .line 745
+    .line 753
     .local v8, "visObj":Lcom/android/internal/statusbar/NotificationVisibility;
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
@@ -185,37 +185,37 @@
 
     move-result v7
 
-    .line 746
+    .line 754
     .local v7, "previouslyVisible":Z
     if-eqz v4, :cond_1
 
-    .line 748
+    .line 756
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpCurrentlyVisibleNotifications:Landroid/util/ArraySet;
 
     invoke-virtual {v9, v8}, Landroid/util/ArraySet;->add(Ljava/lang/Object;)Z
 
-    .line 749
+    .line 757
     if-nez v7, :cond_0
 
-    .line 750
+    .line 758
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpNewlyVisibleNotifications:Landroid/util/ArraySet;
 
     invoke-virtual {v9, v8}, Landroid/util/ArraySet;->add(Ljava/lang/Object;)Z
 
-    .line 740
+    .line 748
     :cond_0
     :goto_1
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 754
+    .line 762
     :cond_1
     invoke-virtual {v8}, Lcom/android/internal/statusbar/NotificationVisibility;->recycle()V
 
     goto :goto_1
 
-    .line 757
+    .line 765
     .end local v2    # "entry":Lcom/android/systemui/statusbar/NotificationData$Entry;
     .end local v4    # "isVisible":Z
     .end local v5    # "key":Ljava/lang/String;
@@ -232,25 +232,25 @@
 
     invoke-virtual {v9, v10}, Landroid/util/ArraySet;->addAll(Landroid/util/ArraySet;)V
 
-    .line 758
+    .line 766
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpNoLongerVisibleNotifications:Landroid/util/ArraySet;
 
     iget-object v10, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpCurrentlyVisibleNotifications:Landroid/util/ArraySet;
 
     invoke-virtual {v9, v10}, Landroid/util/ArraySet;->removeAll(Landroid/util/ArraySet;)Z
 
-    .line 760
+    .line 768
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 761
+    .line 769
     iget-object v10, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpNewlyVisibleNotifications:Landroid/util/ArraySet;
 
     iget-object v11, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpNoLongerVisibleNotifications:Landroid/util/ArraySet;
 
-    .line 760
+    .line 768
     invoke-static {v9, v10, v11}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap6(Lcom/android/systemui/statusbar/phone/StatusBar;Ljava/util/Collection;Ljava/util/Collection;)V
 
-    .line 763
+    .line 771
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v10, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
@@ -261,7 +261,7 @@
 
     invoke-static {v9, v10}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap11(Lcom/android/systemui/statusbar/phone/StatusBar;Landroid/util/ArraySet;)V
 
-    .line 764
+    .line 772
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v9}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get3(Lcom/android/systemui/statusbar/phone/StatusBar;)Landroid/util/ArraySet;
@@ -272,28 +272,28 @@
 
     invoke-virtual {v9, v10}, Landroid/util/ArraySet;->addAll(Landroid/util/ArraySet;)V
 
-    .line 766
+    .line 774
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v10, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpNoLongerVisibleNotifications:Landroid/util/ArraySet;
 
     invoke-static {v9, v10}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap11(Lcom/android/systemui/statusbar/phone/StatusBar;Landroid/util/ArraySet;)V
 
-    .line 767
+    .line 775
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpCurrentlyVisibleNotifications:Landroid/util/ArraySet;
 
     invoke-virtual {v9}, Landroid/util/ArraySet;->clear()V
 
-    .line 768
+    .line 776
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpNewlyVisibleNotifications:Landroid/util/ArraySet;
 
     invoke-virtual {v9}, Landroid/util/ArraySet;->clear()V
 
-    .line 769
+    .line 777
     iget-object v9, p0, Lcom/android/systemui/statusbar/phone/StatusBar$7;->mTmpNoLongerVisibleNotifications:Landroid/util/ArraySet;
 
     invoke-virtual {v9}, Landroid/util/ArraySet;->clear()V
 
-    .line 770
+    .line 778
     return-void
 .end method

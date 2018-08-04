@@ -26,19 +26,19 @@
     new-array v0, v8, [[I
 
     .line 23
-    const v1, 0x7f08030d
+    const v1, 0x7f08030e
 
     .line 24
-    const v2, 0x7f08030f
+    const v2, 0x7f080310
 
     .line 25
-    const v3, 0x7f080311
+    const v3, 0x7f080312
 
     .line 26
-    const v4, 0x7f080313
+    const v4, 0x7f080314
 
     .line 27
-    const v5, 0x7f080315
+    const v5, 0x7f080316
 
     .line 23
     filled-new-array {v1, v2, v3, v4, v5}, [I
@@ -48,19 +48,19 @@
     aput-object v1, v0, v6
 
     .line 28
-    const v1, 0x7f08030e
+    const v1, 0x7f08030f
 
     .line 29
-    const v2, 0x7f080310
+    const v2, 0x7f080311
 
     .line 30
-    const v3, 0x7f080312
+    const v3, 0x7f080313
 
     .line 31
-    const v4, 0x7f080314
+    const v4, 0x7f080315
 
     .line 32
-    const v5, 0x7f080316
+    const v5, 0x7f080317
 
     .line 28
     filled-new-array {v1, v2, v3, v4, v5}, [I
@@ -76,19 +76,19 @@
     new-array v0, v8, [[I
 
     .line 36
-    const v1, 0x7f0801bf
+    const v1, 0x7f0801c0
 
     .line 37
-    const v2, 0x7f0801c0
+    const v2, 0x7f0801c1
 
     .line 38
-    const v3, 0x7f0801c1
+    const v3, 0x7f0801c2
 
     .line 39
-    const v4, 0x7f0801c2
+    const v4, 0x7f0801c3
 
     .line 40
-    const v5, 0x7f0801c3
+    const v5, 0x7f0801c4
 
     .line 36
     filled-new-array {v1, v2, v3, v4, v5}, [I
@@ -98,19 +98,19 @@
     aput-object v1, v0, v6
 
     .line 41
-    const v1, 0x7f0801c7
+    const v1, 0x7f0801c8
 
     .line 42
-    const v2, 0x7f0801c8
+    const v2, 0x7f0801c9
 
     .line 43
-    const v3, 0x7f0801c9
+    const v3, 0x7f0801ca
 
     .line 44
-    const v4, 0x7f0801ca
+    const v4, 0x7f0801cb
 
     .line 45
-    const v5, 0x7f0801cb
+    const v5, 0x7f0801cc
 
     .line 41
     filled-new-array {v1, v2, v3, v4, v5}, [I

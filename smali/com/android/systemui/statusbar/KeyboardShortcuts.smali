@@ -1624,7 +1624,7 @@
 
     .line 574
     .local v1, "inflater":Landroid/view/LayoutInflater;
-    const v4, 0x7f0d0040
+    const v4, 0x7f0d0041
 
     .line 573
     invoke-virtual {v1, v4, v6}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -1633,7 +1633,7 @@
 
     .line 576
     .local v2, "keyboardShortcutsView":Landroid/view/View;
-    const v4, 0x7f0a0136
+    const v4, 0x7f0a0139
 
     .line 575
     invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -3146,7 +3146,7 @@
 
     .line 596
     .local v15, "keyboardShortcutGroupsSize":I
-    const v31, 0x7f0d003f
+    const v31, 0x7f0d0040
 
     const/16 v32, 0x0
 
@@ -3220,7 +3220,7 @@
 
     .line 607
     .local v8, "group":Landroid/view/KeyboardShortcutGroup;
-    const v31, 0x7f0d003c
+    const v31, 0x7f0d003d
 
     const/16 v32, 0x0
 
@@ -3277,7 +3277,7 @@
     invoke-virtual {v0, v7}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 615
-    const v31, 0x7f0d003d
+    const v31, 0x7f0d003e
 
     const/16 v32, 0x0
 
@@ -3378,7 +3378,7 @@
     .restart local v18    # "shortcutContainer":Landroid/widget/LinearLayout;
     .restart local v25    # "shortcutKeys":Ljava/util/List;, "Ljava/util/List<Lcom/android/systemui/statusbar/KeyboardShortcuts$StringDrawableContainer;>;"
     :cond_1
-    const v31, 0x7f0d003a
+    const v31, 0x7f0d003b
 
     .line 626
     const/16 v32, 0x0
@@ -3403,7 +3403,7 @@
     if-eqz v31, :cond_2
 
     .line 630
-    const v31, 0x7f0a0137
+    const v31, 0x7f0a013a
 
     .line 629
     move-object/from16 v0, v29
@@ -3440,7 +3440,7 @@
     .line 636
     .end local v19    # "shortcutIcon":Landroid/widget/ImageView;
     :cond_2
-    const v31, 0x7f0a0139
+    const v31, 0x7f0a013c
 
     .line 635
     move-object/from16 v0, v29
@@ -3499,7 +3499,7 @@
     .line 646
     .end local v16    # "lp":Landroid/widget/RelativeLayout$LayoutParams;
     :cond_3
-    const v31, 0x7f0a0138
+    const v31, 0x7f0a013b
 
     .line 645
     move-object/from16 v0, v29
@@ -3548,7 +3548,7 @@
     if-eqz v31, :cond_5
 
     .line 652
-    const v31, 0x7f0d003e
+    const v31, 0x7f0d003f
 
     .line 653
     const/16 v32, 0x0
@@ -3701,7 +3701,7 @@
     if-eqz v31, :cond_4
 
     .line 669
-    const v31, 0x7f0d003f
+    const v31, 0x7f0d0040
 
     .line 670
     const/16 v32, 0x0
@@ -3810,7 +3810,7 @@
     if-ge v9, v0, :cond_8
 
     .line 684
-    const v31, 0x7f0d003b
+    const v31, 0x7f0d003c
 
     .line 685
     const/16 v32, 0x0

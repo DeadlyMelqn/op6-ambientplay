@@ -772,7 +772,7 @@
     move-result-object v14
 
     .line 441
-    const v15, 0x7f0801d1
+    const v15, 0x7f0801d2
 
     .line 440
     invoke-virtual {v4, v15, v14, v8}, Landroid/app/Notification$Builder;->addAction(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
@@ -787,7 +787,7 @@
     move-result-object v15
 
     .line 443
-    const v16, 0x7f0801d0
+    const v16, 0x7f0801d1
 
     .line 440
     move/from16 v0, v16
@@ -1158,7 +1158,7 @@
     if-eqz v5, :cond_1
 
     .line 264
-    const v8, 0x7f08017e
+    const v8, 0x7f08017f
 
     .line 266
     .local v8, "togglePointerIconId":I
@@ -1222,7 +1222,7 @@
 
     .line 265
     :cond_1
-    const v8, 0x7f08017f
+    const v8, 0x7f080180
 
     .restart local v8    # "togglePointerIconId":I
     goto :goto_1

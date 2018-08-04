@@ -509,7 +509,7 @@
     .locals 3
 
     .prologue
-    const v2, 0x7f0a01bb
+    const v2, 0x7f0a01be
 
     .line 407
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mButtonDispatchers:Landroid/util/SparseArray;
@@ -769,7 +769,7 @@
     if-eqz v12, :cond_5
 
     .line 326
-    const v12, 0x7f0d0036
+    const v12, 0x7f0d0037
 
     const/4 v13, 0x0
 
@@ -797,7 +797,7 @@
     if-eqz v12, :cond_6
 
     .line 328
-    const v12, 0x7f0d001e
+    const v12, 0x7f0d001f
 
     const/4 v13, 0x0
 
@@ -824,7 +824,7 @@
     if-eqz v12, :cond_7
 
     .line 330
-    const v12, 0x7f0d00e3
+    const v12, 0x7f0d00e4
 
     const/4 v13, 0x0
 
@@ -851,7 +851,7 @@
     if-eqz v12, :cond_8
 
     .line 332
-    const v12, 0x7f0d0092
+    const v12, 0x7f0d0093
 
     const/4 v13, 0x0
 
@@ -878,7 +878,7 @@
     if-eqz v12, :cond_9
 
     .line 334
-    const v12, 0x7f0d009e
+    const v12, 0x7f0d009f
 
     const/4 v13, 0x0
 
@@ -905,7 +905,7 @@
     if-eqz v12, :cond_a
 
     .line 336
-    const v12, 0x7f0d0029
+    const v12, 0x7f0d002a
 
     const/4 v13, 0x0
 
@@ -944,7 +944,7 @@
 
     .line 340
     .local v3, "code":I
-    const v12, 0x7f0d002b
+    const v12, 0x7f0d002c
 
     const/4 v13, 0x0
 
@@ -1259,7 +1259,7 @@
     .line 126
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d00a3
+    const v1, 0x7f0d00a4
 
     invoke-virtual {v0, v1, p0, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -1272,7 +1272,7 @@
     .line 127
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mRot0:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a021b
+    const v1, 0x7f0a021e
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setId(I)V
 
@@ -1284,7 +1284,7 @@
     .line 129
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d00a4
+    const v1, 0x7f0d00a5
 
     invoke-virtual {v0, v1, p0, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -1297,7 +1297,7 @@
     .line 131
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mRot90:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a021c
+    const v1, 0x7f0a021f
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setId(I)V
 
@@ -1318,9 +1318,9 @@
     .param p1, "buttonDispatcher"    # Lcom/android/systemui/statusbar/phone/ButtonDispatcher;
 
     .prologue
-    const v2, 0x7f0a00cf
+    const v2, 0x7f0a00d2
 
-    const v1, 0x7f0a007b
+    const v1, 0x7f0a007e
 
     .line 197
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mRot0:Landroid/widget/FrameLayout;
@@ -1374,9 +1374,9 @@
     .locals 3
 
     .prologue
-    const v2, 0x7f0a00cf
+    const v2, 0x7f0a00d2
 
-    const v1, 0x7f0a007b
+    const v1, 0x7f0a007e
 
     .line 184
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mRot0:Landroid/widget/FrameLayout;
@@ -1580,13 +1580,13 @@
     .param p1, "newLayout"    # Ljava/lang/String;
 
     .prologue
-    const v9, 0x7f0a007b
+    const v9, 0x7f0a007e
 
     const/4 v8, 0x1
 
     const/4 v7, 0x0
 
-    const v6, 0x7f0a00cf
+    const v6, 0x7f0a00d2
 
     .line 217
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mCurrentLayout:Ljava/lang/String;

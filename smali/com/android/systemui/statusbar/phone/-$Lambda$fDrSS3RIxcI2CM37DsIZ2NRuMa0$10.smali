@@ -20,7 +20,7 @@
     .prologue
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/-$Lambda$fDrSS3RIxcI2CM37DsIZ2NRuMa0$10;->-$f0:Ljava/lang/Object;
 
-    check-cast v0, Lcom/android/systemui/statusbar/phone/StatusBar$25;
+    check-cast v0, Lcom/android/systemui/statusbar/phone/StatusBar$29;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/-$Lambda$fDrSS3RIxcI2CM37DsIZ2NRuMa0$10;->-$f1:Ljava/lang/Object;
 
@@ -30,7 +30,7 @@
 
     check-cast v2, Landroid/service/notification/NotificationListenerService$RankingMap;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/systemui/statusbar/phone/StatusBar$25;->lambda$-com_android_systemui_statusbar_phone_StatusBar$25_268483(Ljava/lang/String;Landroid/service/notification/NotificationListenerService$RankingMap;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/systemui/statusbar/phone/StatusBar$29;->lambda$-com_android_systemui_statusbar_phone_StatusBar$29_277892(Ljava/lang/String;Landroid/service/notification/NotificationListenerService$RankingMap;)V
 
     return-void
 .end method

@@ -123,7 +123,7 @@
     .line 80
     iget-object v1, p0, Lcom/android/systemui/statusbar/car/ConnectedDeviceSignalController;->mSignalsView:Landroid/view/View;
 
-    const v2, 0x7f0a008a
+    const v2, 0x7f0a008d
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -236,7 +236,7 @@
     if-nez v0, :cond_0
 
     .line 173
-    const v3, 0x7f080306
+    const v3, 0x7f080307
 
     invoke-direct {p0, v3}, Lcom/android/systemui/statusbar/car/ConnectedDeviceSignalController;->setNetworkSignalIcon(I)V
 

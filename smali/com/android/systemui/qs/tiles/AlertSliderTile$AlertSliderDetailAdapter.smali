@@ -410,7 +410,7 @@
     iput-object v2, p0, Lcom/android/systemui/qs/tiles/AlertSliderTile$AlertSliderDetailAdapter;->mMessageBox:Landroid/widget/RelativeLayout;
 
     .line 257
-    const v2, 0x7f0a02eb
+    const v2, 0x7f0a02ee
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -421,7 +421,7 @@
     iput-object v2, p0, Lcom/android/systemui/qs/tiles/AlertSliderTile$AlertSliderDetailAdapter;->mZenPriorityIntroduction:Landroid/widget/RelativeLayout;
 
     .line 258
-    const v2, 0x7f0a02ec
+    const v2, 0x7f0a02ef
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -441,7 +441,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 265
-    const v2, 0x7f0a02ed
+    const v2, 0x7f0a02f0
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -461,7 +461,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 273
-    const v2, 0x7f0a027b
+    const v2, 0x7f0a027e
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -481,7 +481,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 283
-    const v2, 0x7f0a0296
+    const v2, 0x7f0a0299
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -501,7 +501,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 294
-    const v2, 0x7f0a027a
+    const v2, 0x7f0a027d
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -521,7 +521,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 304
-    const v2, 0x7f0a0295
+    const v2, 0x7f0a0298
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

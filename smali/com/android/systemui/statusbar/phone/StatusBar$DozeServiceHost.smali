@@ -75,19 +75,19 @@
     .param p1, "this$0"    # Lcom/android/systemui/statusbar/phone/StatusBar;
 
     .prologue
-    .line 5704
+    .line 5900
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5705
+    .line 5901
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->mCallbacks:Ljava/util/ArrayList;
 
-    .line 5704
+    .line 5900
     return-void
 .end method
 
@@ -109,12 +109,12 @@
     .param p3, "y"    # F
 
     .prologue
-    .line 5889
+    .line 6085
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v4
 
-    .line 5890
+    .line 6086
     .local v4, "now":J
     const/4 v6, 0x0
 
@@ -128,7 +128,7 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->dispatchTouchEvent(Landroid/view/View;FFJI)V
 
-    .line 5891
+    .line 6087
     const/4 v6, 0x1
 
     move-object v0, p0
@@ -141,7 +141,7 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->dispatchTouchEvent(Landroid/view/View;FFJI)V
 
-    .line 5892
+    .line 6088
     return-void
 .end method
 
@@ -154,7 +154,7 @@
     .param p6, "action"    # I
 
     .prologue
-    .line 5895
+    .line 6091
     const/4 v7, 0x0
 
     move-wide v0, p4
@@ -171,14 +171,14 @@
 
     move-result-object v8
 
-    .line 5896
+    .line 6092
     .local v8, "ev":Landroid/view/MotionEvent;
     invoke-virtual {p1, v8}, Landroid/view/View;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 5897
+    .line 6093
     invoke-virtual {v8}, Landroid/view/MotionEvent;->recycle()V
 
-    .line 5898
+    .line 6094
     return-void
 .end method
 
@@ -186,7 +186,7 @@
     .locals 1
 
     .prologue
-    .line 5901
+    .line 6097
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->mAnimateWakeup:Z
 
     return v0
@@ -199,12 +199,12 @@
     .param p1, "callback"    # Lcom/android/systemui/doze/DozeHost$Callback;
 
     .prologue
-    .line 5728
+    .line 5924
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->mCallbacks:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 5729
+    .line 5925
     return-void
 .end method
 
@@ -214,7 +214,7 @@
     .param p2, "viewY"    # F
 
     .prologue
-    .line 5884
+    .line 6080
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get0(Lcom/android/systemui/statusbar/phone/StatusBar;)Landroid/view/View;
@@ -223,7 +223,7 @@
 
     invoke-direct {p0, v0, p1, p2}, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->dispatchTap(Landroid/view/View;FF)V
 
-    .line 5885
+    .line 6081
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get0(Lcom/android/systemui/statusbar/phone/StatusBar;)Landroid/view/View;
@@ -232,7 +232,7 @@
 
     invoke-direct {p0, v0, p1, p2}, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->dispatchTap(Landroid/view/View;FF)V
 
-    .line 5886
+    .line 6082
     return-void
 .end method
 
@@ -240,14 +240,14 @@
     .locals 1
 
     .prologue
-    .line 5805
+    .line 6001
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mNotificationPanel:Lcom/android/systemui/statusbar/phone/NotificationPanelView;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->refreshTime()V
 
-    .line 5806
+    .line 6002
     return-void
 .end method
 
@@ -255,14 +255,14 @@
     .locals 1
 
     .prologue
-    .line 5846
+    .line 6042
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDozeScrimController:Lcom/android/systemui/statusbar/phone/DozeScrimController;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/DozeScrimController;->extendPulse()V
 
-    .line 5847
+    .line 6043
     return-void
 .end method
 
@@ -270,7 +270,7 @@
     .locals 3
 
     .prologue
-    .line 5721
+    .line 5917
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->mCallbacks:Ljava/util/ArrayList;
 
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -291,13 +291,13 @@
 
     check-cast v0, Lcom/android/systemui/doze/DozeHost$Callback;
 
-    .line 5722
+    .line 5918
     .local v0, "callback":Lcom/android/systemui/doze/DozeHost$Callback;
     invoke-interface {v0}, Lcom/android/systemui/doze/DozeHost$Callback;->onNotificationHeadsUp()V
 
     goto :goto_0
 
-    .line 5724
+    .line 5920
     .end local v0    # "callback":Lcom/android/systemui/doze/DozeHost$Callback;
     :cond_0
     return-void
@@ -308,7 +308,7 @@
     .param p1, "active"    # Z
 
     .prologue
-    .line 5715
+    .line 5911
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->mCallbacks:Ljava/util/ArrayList;
 
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -329,13 +329,13 @@
 
     check-cast v0, Lcom/android/systemui/doze/DozeHost$Callback;
 
-    .line 5716
+    .line 5912
     .local v0, "callback":Lcom/android/systemui/doze/DozeHost$Callback;
     invoke-interface {v0, p1}, Lcom/android/systemui/doze/DozeHost$Callback;->onPowerSaveChanged(Z)V
 
     goto :goto_0
 
-    .line 5718
+    .line 5914
     .end local v0    # "callback":Lcom/android/systemui/doze/DozeHost$Callback;
     :cond_0
     return-void
@@ -345,7 +345,7 @@
     .locals 2
 
     .prologue
-    .line 5827
+    .line 6023
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mFingerprintUnlockController:Lcom/android/systemui/statusbar/phone/FingerprintUnlockController;
@@ -356,19 +356,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 5828
+    .line 6024
     const-string/jumbo v0, "StatusBar"
 
     const-string/jumbo v1, "Blocking AOD because fingerprint has authenticated"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5829
+    .line 6025
     const/4 v0, 0x1
 
     return v0
 
-    .line 5831
+    .line 6027
     :cond_0
     const/4 v0, 0x0
 
@@ -379,7 +379,7 @@
     .locals 1
 
     .prologue
-    .line 5810
+    .line 6006
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get1(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/systemui/statusbar/policy/BatteryController;
@@ -397,7 +397,7 @@
     .locals 1
 
     .prologue
-    .line 5821
+    .line 6017
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get4(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/systemui/statusbar/policy/DeviceProvisionedController;
@@ -410,7 +410,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 5822
+    .line 6018
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get4(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/systemui/statusbar/policy/DeviceProvisionedController;
@@ -421,7 +421,7 @@
 
     move-result v0
 
-    .line 5821
+    .line 6017
     :goto_0
     return v0
 
@@ -437,7 +437,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 5815
+    .line 6011
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/phone/StatusBar;->mFingerprintUnlockController:Lcom/android/systemui/statusbar/phone/FingerprintUnlockController;
@@ -467,7 +467,7 @@
 
     const/4 v4, 0x0
 
-    .line 5861
+    .line 6057
     cmpl-float v2, p1, v4
 
     if-lez v2, :cond_0
@@ -484,7 +484,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 5862
+    .line 6058
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get0(Lcom/android/systemui/statusbar/phone/StatusBar;)Landroid/view/View;
@@ -497,7 +497,7 @@
 
     if-nez v2, :cond_0
 
-    .line 5863
+    .line 6059
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get0(Lcom/android/systemui/statusbar/phone/StatusBar;)Landroid/view/View;
@@ -506,16 +506,16 @@
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-static {v3}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get16(Lcom/android/systemui/statusbar/phone/StatusBar;)[I
+    invoke-static {v3}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get18(Lcom/android/systemui/statusbar/phone/StatusBar;)[I
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Landroid/view/View;->getLocationOnScreen([I)V
 
-    .line 5864
+    .line 6060
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-static {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get16(Lcom/android/systemui/statusbar/phone/StatusBar;)[I
+    invoke-static {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get18(Lcom/android/systemui/statusbar/phone/StatusBar;)[I
 
     move-result-object v2
 
@@ -525,11 +525,11 @@
 
     sub-float v0, p1, v2
 
-    .line 5865
+    .line 6061
     .local v0, "viewX":F
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-static {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get16(Lcom/android/systemui/statusbar/phone/StatusBar;)[I
+    invoke-static {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get18(Lcom/android/systemui/statusbar/phone/StatusBar;)[I
 
     move-result-object v2
 
@@ -541,7 +541,7 @@
 
     sub-float v1, p2, v2
 
-    .line 5866
+    .line 6062
     .local v1, "viewY":F
     cmpg-float v2, v4, v0
 
@@ -563,7 +563,7 @@
 
     if-gtz v2, :cond_0
 
-    .line 5867
+    .line 6063
     cmpg-float v2, v4, v1
 
     if-gtz v2, :cond_0
@@ -584,10 +584,10 @@
 
     if-gtz v2, :cond_0
 
-    .line 5868
+    .line 6064
     invoke-virtual {p0, v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->dispatchDoubleTap(FF)V
 
-    .line 5871
+    .line 6067
     .end local v0    # "viewX":F
     .end local v1    # "viewY":F
     :cond_0
@@ -599,23 +599,23 @@
     .param p1, "ignore"    # Z
 
     .prologue
-    .line 5794
+    .line 5990
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->mIgnoreTouchWhilePulsing:Z
 
     if-eq p1, v0, :cond_0
 
-    .line 5795
+    .line 5991
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
 
     invoke-static {v0, p1}, Lcom/android/systemui/doze/DozeLog;->tracePulseTouchDisabledByProx(Landroid/content/Context;Z)V
 
-    .line 5797
+    .line 5993
     :cond_0
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->mIgnoreTouchWhilePulsing:Z
 
-    .line 5798
+    .line 5994
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->isDozing()Z
@@ -626,14 +626,14 @@
 
     if-eqz p1, :cond_1
 
-    .line 5799
+    .line 5995
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStatusBarWindow:Lcom/android/systemui/statusbar/phone/StatusBarWindowView;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->cancelCurrentTouch()V
 
-    .line 5801
+    .line 5997
     :cond_1
     return-void
 .end method
@@ -644,12 +644,12 @@
     .param p2, "reason"    # I
 
     .prologue
-    .line 5748
+    .line 5944
     const/4 v0, 0x5
 
     if-ne p2, v0, :cond_0
 
-    .line 5749
+    .line 5945
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mPowerManager:Landroid/os/PowerManager;
@@ -662,7 +662,7 @@
 
     invoke-virtual {v0, v2, v3, v1}, Landroid/os/PowerManager;->wakeUp(JLjava/lang/String;)V
 
-    .line 5750
+    .line 5946
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     new-instance v1, Landroid/os/Bundle;
@@ -671,10 +671,10 @@
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->startAssist(Landroid/os/Bundle;)V
 
-    .line 5751
+    .line 5947
     return-void
 
-    .line 5754
+    .line 5950
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
@@ -686,7 +686,7 @@
 
     invoke-virtual {v0, v1, p2}, Lcom/android/systemui/statusbar/phone/DozeScrimController;->pulse(Lcom/android/systemui/doze/DozeHost$PulseCallback;I)V
 
-    .line 5781
+    .line 5977
     return-void
 .end method
 
@@ -695,12 +695,12 @@
     .param p1, "callback"    # Lcom/android/systemui/doze/DozeHost$Callback;
 
     .prologue
-    .line 5733
+    .line 5929
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->mCallbacks:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 5734
+    .line 5930
     return-void
 .end method
 
@@ -709,7 +709,7 @@
     .param p1, "animateWakeup"    # Z
 
     .prologue
-    .line 5851
+    .line 6047
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWakefulnessLifecycle:Lcom/android/systemui/keyguard/WakefulnessLifecycle;
@@ -722,7 +722,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 5852
+    .line 6048
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mWakefulnessLifecycle:Lcom/android/systemui/keyguard/WakefulnessLifecycle;
@@ -735,15 +735,15 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 5854
+    .line 6050
     :cond_0
     return-void
 
-    .line 5856
+    .line 6052
     :cond_1
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->mAnimateWakeup:Z
 
-    .line 5857
+    .line 6053
     return-void
 .end method
 
@@ -752,14 +752,14 @@
     .param p1, "scrimOpacity"    # F
 
     .prologue
-    .line 5880
+    .line 6076
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mDozeScrimController:Lcom/android/systemui/statusbar/phone/DozeScrimController;
 
     invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/phone/DozeScrimController;->setAodDimmingScrim(F)V
 
-    .line 5881
+    .line 6077
     return-void
 .end method
 
@@ -768,14 +768,14 @@
     .param p1, "value"    # I
 
     .prologue
-    .line 5875
+    .line 6071
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStatusBarWindowManager:Lcom/android/systemui/statusbar/phone/StatusBarWindowManager;
 
     invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/phone/StatusBarWindowManager;->setDozeScreenBrightness(I)V
 
-    .line 5876
+    .line 6072
     return-void
 .end method
 
@@ -783,7 +783,7 @@
     .locals 2
 
     .prologue
-    .line 5738
+    .line 5934
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get6(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
@@ -792,14 +792,14 @@
 
     if-nez v0, :cond_0
 
-    .line 5739
+    .line 5935
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-set0(Lcom/android/systemui/statusbar/phone/StatusBar;Z)Z
 
-    .line 5740
+    .line 5936
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
@@ -810,17 +810,17 @@
 
     invoke-static {v0, v1}, Lcom/android/systemui/doze/DozeLog;->traceDozing(Landroid/content/Context;Z)V
 
-    .line 5741
+    .line 5937
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap16(Lcom/android/systemui/statusbar/phone/StatusBar;)V
+    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap18(Lcom/android/systemui/statusbar/phone/StatusBar;)V
 
-    .line 5742
+    .line 5938
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap1(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
 
-    .line 5744
+    .line 5940
     :cond_0
     return-void
 .end method
@@ -829,7 +829,7 @@
     .locals 2
 
     .prologue
-    .line 5785
+    .line 5981
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get6(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
@@ -838,14 +838,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 5786
+    .line 5982
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-set0(Lcom/android/systemui/statusbar/phone/StatusBar;Z)Z
 
-    .line 5787
+    .line 5983
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
@@ -856,12 +856,12 @@
 
     invoke-static {v0, v1}, Lcom/android/systemui/doze/DozeLog;->traceDozing(Landroid/content/Context;Z)V
 
-    .line 5788
+    .line 5984
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap16(Lcom/android/systemui/statusbar/phone/StatusBar;)V
+    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap18(Lcom/android/systemui/statusbar/phone/StatusBar;)V
 
-    .line 5790
+    .line 5986
     :cond_0
     return-void
 .end method
@@ -870,7 +870,7 @@
     .locals 2
 
     .prologue
-    .line 5711
+    .line 5907
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

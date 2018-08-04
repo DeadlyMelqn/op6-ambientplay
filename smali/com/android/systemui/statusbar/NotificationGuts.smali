@@ -560,7 +560,7 @@
     .line 186
     iget-object v0, p0, Lcom/android/systemui/statusbar/NotificationGuts;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f080298
+    const v1, 0x7f080299
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

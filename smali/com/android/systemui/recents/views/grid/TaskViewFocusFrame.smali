@@ -73,7 +73,7 @@
     iget-object v0, p0, Lcom/android/systemui/recents/views/grid/TaskViewFocusFrame;->mContext:Landroid/content/Context;
 
     .line 49
-    const v1, 0x7f0802bd
+    const v1, 0x7f0802be
 
     .line 48
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;

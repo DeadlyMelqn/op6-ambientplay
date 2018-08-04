@@ -139,14 +139,14 @@
     :cond_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/ScrimController$1;->val$scrim:Landroid/view/View;
 
-    const v1, 0x7f0a023c
+    const v1, 0x7f0a023f
 
     invoke-virtual {v0, v1, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 548
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/ScrimController$1;->val$scrim:Landroid/view/View;
 
-    const v1, 0x7f0a0241
+    const v1, 0x7f0a0244
 
     invoke-virtual {v0, v1, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 

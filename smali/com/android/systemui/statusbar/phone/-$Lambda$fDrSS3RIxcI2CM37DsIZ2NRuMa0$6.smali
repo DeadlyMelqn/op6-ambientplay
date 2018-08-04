@@ -25,7 +25,7 @@
 
     check-cast v1, Landroid/os/UserHandle;
 
-    invoke-virtual {v0, v1, p1}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_278865(Landroid/os/UserHandle;Ljava/lang/Runnable;)V
+    invoke-virtual {v0, v1, p1}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_288274(Landroid/os/UserHandle;Ljava/lang/Runnable;)V
 
     return-void
 .end method

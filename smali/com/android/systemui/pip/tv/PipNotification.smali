@@ -618,7 +618,7 @@
     iput-object v1, p0, Lcom/android/systemui/pip/tv/PipNotification;->mDefaultTitle:Ljava/lang/String;
 
     .line 177
-    const v1, 0x7f0802a1
+    const v1, 0x7f0802a2
 
     iput v1, p0, Lcom/android/systemui/pip/tv/PipNotification;->mDefaultIconResId:I
 

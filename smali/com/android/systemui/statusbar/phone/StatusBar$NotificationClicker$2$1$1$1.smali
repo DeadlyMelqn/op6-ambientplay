@@ -34,7 +34,7 @@
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1$1$1;->val$parentToCancelFinal:Landroid/service/notification/StatusBarNotification;
 
-    .line 7332
+    .line 7560
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -47,7 +47,7 @@
     .locals 2
 
     .prologue
-    .line 7335
+    .line 7563
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1$1$1;->this$4:Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1$1;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1$1;->this$3:Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1;
@@ -62,6 +62,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->performRemoveNotification(Landroid/service/notification/StatusBarNotification;)V
 
-    .line 7336
+    .line 7564
     return-void
 .end method

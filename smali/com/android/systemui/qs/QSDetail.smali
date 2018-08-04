@@ -1066,7 +1066,7 @@
     iput-object v1, p0, Lcom/android/systemui/qs/QSDetail;->mDetailDoneButton:Landroid/widget/TextView;
 
     .line 100
-    const v1, 0x7f0a0202
+    const v1, 0x7f0a0205
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/qs/QSDetail;->findViewById(I)Landroid/view/View;
 
@@ -1101,7 +1101,7 @@
     iput-object v1, p0, Lcom/android/systemui/qs/QSDetail;->mQsDetailHeaderSwitch:Landroid/widget/Switch;
 
     .line 103
-    const v1, 0x7f0a0203
+    const v1, 0x7f0a0206
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/qs/QSDetail;->findViewById(I)Landroid/view/View;
 

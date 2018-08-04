@@ -188,7 +188,7 @@
     sput-object v0, Lcom/android/systemui/qs/tiles/DndTile;->ZEN_PRIORITY_SETTINGS:Landroid/content/Intent;
 
     .line 74
-    const v0, 0x7f0801a0
+    const v0, 0x7f0801a1
 
     invoke-static {v0}, Lcom/android/systemui/qs/tileimpl/QSTileImpl$ResourceIcon;->get(I)Lcom/android/systemui/plugins/qs/QSTile$Icon;
 
@@ -678,7 +678,7 @@
     .param p2, "arg"    # Ljava/lang/Object;
 
     .prologue
-    const v7, 0x7f08019e
+    const v7, 0x7f08019f
 
     const/4 v6, 0x0
 
@@ -875,7 +875,7 @@
 
     .line 188
     :pswitch_0
-    const v3, 0x7f08019f
+    const v3, 0x7f0801a0
 
     invoke-static {v3}, Lcom/android/systemui/qs/tileimpl/QSTileImpl$ResourceIcon;->get(I)Lcom/android/systemui/plugins/qs/QSTile$Icon;
 

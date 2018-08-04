@@ -250,7 +250,7 @@
     sput-object v0, Lcom/android/systemui/qs/tiles/AlertSliderTile;->ZEN_PRIORITY_SETTINGS:Landroid/content/Intent;
 
     .line 68
-    const v0, 0x7f0801a0
+    const v0, 0x7f0801a1
 
     invoke-static {v0}, Lcom/android/systemui/qs/tileimpl/QSTileImpl$ResourceIcon;->get(I)Lcom/android/systemui/plugins/qs/QSTile$Icon;
 
@@ -260,7 +260,7 @@
     sput-object v0, Lcom/android/systemui/qs/tiles/AlertSliderTile;->TOTAL_SILENCE:Lcom/android/systemui/plugins/qs/QSTile$Icon;
 
     .line 71
-    const v0, 0x7f08019e
+    const v0, 0x7f08019f
 
     invoke-static {v0}, Lcom/android/systemui/qs/tileimpl/QSTileImpl$ResourceIcon;->get(I)Lcom/android/systemui/plugins/qs/QSTile$Icon;
 
@@ -270,7 +270,7 @@
     sput-object v0, Lcom/android/systemui/qs/tiles/AlertSliderTile;->ALARMS_ONLY:Lcom/android/systemui/plugins/qs/QSTile$Icon;
 
     .line 74
-    const v0, 0x7f08019f
+    const v0, 0x7f0801a0
 
     invoke-static {v0}, Lcom/android/systemui/qs/tileimpl/QSTileImpl$ResourceIcon;->get(I)Lcom/android/systemui/plugins/qs/QSTile$Icon;
 
@@ -280,7 +280,7 @@
     sput-object v0, Lcom/android/systemui/qs/tiles/AlertSliderTile;->PRIORITY_ONLY:Lcom/android/systemui/plugins/qs/QSTile$Icon;
 
     .line 77
-    const v0, 0x7f08019d
+    const v0, 0x7f08019e
 
     invoke-static {v0}, Lcom/android/systemui/qs/tileimpl/QSTileImpl$ResourceIcon;->get(I)Lcom/android/systemui/plugins/qs/QSTile$Icon;
 

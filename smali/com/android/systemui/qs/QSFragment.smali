@@ -823,7 +823,7 @@
     move-result-object p1
 
     .line 71
-    const v0, 0x7f0d00d9
+    const v0, 0x7f0d00da
 
     const/4 v1, 0x0
 
@@ -900,7 +900,7 @@
     invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 77
-    const v4, 0x7f0a020b
+    const v4, 0x7f0a020e
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -911,7 +911,7 @@
     iput-object v4, p0, Lcom/android/systemui/qs/QSFragment;->mQSPanel:Lcom/android/systemui/qs/QSPanel;
 
     .line 78
-    const v4, 0x7f0a0201
+    const v4, 0x7f0a0204
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -922,7 +922,7 @@
     iput-object v4, p0, Lcom/android/systemui/qs/QSFragment;->mQSDetail:Lcom/android/systemui/qs/QSDetail;
 
     .line 79
-    const v4, 0x7f0a010b
+    const v4, 0x7f0a010e
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -933,7 +933,7 @@
     iput-object v4, p0, Lcom/android/systemui/qs/QSFragment;->mHeader:Lcom/android/systemui/qs/QuickStatusBarHeader;
 
     .line 80
-    const v4, 0x7f0a0204
+    const v4, 0x7f0a0207
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -944,7 +944,7 @@
     iput-object v4, p0, Lcom/android/systemui/qs/QSFragment;->mFooter:Lcom/android/systemui/qs/QSFooter;
 
     .line 81
-    const v4, 0x7f0a020a
+    const v4, 0x7f0a020d
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -973,7 +973,7 @@
     .line 85
     iget-object v4, p0, Lcom/android/systemui/qs/QSFragment;->mHeader:Lcom/android/systemui/qs/QuickStatusBarHeader;
 
-    const v6, 0x7f0a0209
+    const v6, 0x7f0a020c
 
     invoke-virtual {v4, v6}, Lcom/android/systemui/qs/QuickStatusBarHeader;->findViewById(I)Landroid/view/View;
 
@@ -989,7 +989,7 @@
     iput-object v5, p0, Lcom/android/systemui/qs/QSFragment;->mQSAnimator:Lcom/android/systemui/qs/QSAnimator;
 
     .line 87
-    const v4, 0x7f0a0200
+    const v4, 0x7f0a0203
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

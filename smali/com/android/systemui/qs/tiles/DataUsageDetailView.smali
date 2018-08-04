@@ -277,7 +277,7 @@
     invoke-virtual/range {v18 .. v19}, Landroid/widget/TextView;->setText(I)V
 
     .line 103
-    const v4, 0x7f0a02ba
+    const v4, 0x7f0a02bd
 
     move-object/from16 v0, p0
 
@@ -303,7 +303,7 @@
     invoke-virtual/range {v21 .. v22}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 106
-    const v4, 0x7f0a02b6
+    const v4, 0x7f0a02b9
 
     move-object/from16 v0, p0
 
@@ -330,7 +330,7 @@
     invoke-virtual/range {v3 .. v9}, Lcom/android/systemui/qs/DataUsageGraph;->setLevels(JJJ)V
 
     .line 108
-    const v4, 0x7f0a02b5
+    const v4, 0x7f0a02b8
 
     move-object/from16 v0, p0
 
@@ -349,7 +349,7 @@
     invoke-virtual {v12, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 110
-    const v4, 0x7f0a02b9
+    const v4, 0x7f0a02bc
 
     move-object/from16 v0, p0
 
@@ -368,7 +368,7 @@
     invoke-virtual {v15, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 112
-    const v4, 0x7f0a02b8
+    const v4, 0x7f0a02bb
 
     move-object/from16 v0, p0
 
@@ -393,7 +393,7 @@
     invoke-virtual {v14, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 115
-    const v4, 0x7f0a02b7
+    const v4, 0x7f0a02ba
 
     move-object/from16 v0, p0
 
@@ -709,29 +709,29 @@
     invoke-static {p0, v0, v2}, Lcom/android/systemui/FontSizeUtils;->updateFontSize(Landroid/view/View;II)V
 
     .line 55
-    const v0, 0x7f0a02ba
+    const v0, 0x7f0a02bd
 
     const v1, 0x7f070247
 
     invoke-static {p0, v0, v1}, Lcom/android/systemui/FontSizeUtils;->updateFontSize(Landroid/view/View;II)V
 
     .line 56
-    const v0, 0x7f0a02b5
-
-    invoke-static {p0, v0, v2}, Lcom/android/systemui/FontSizeUtils;->updateFontSize(Landroid/view/View;II)V
-
-    .line 58
     const v0, 0x7f0a02b8
 
     invoke-static {p0, v0, v2}, Lcom/android/systemui/FontSizeUtils;->updateFontSize(Landroid/view/View;II)V
 
+    .line 58
+    const v0, 0x7f0a02bb
+
+    invoke-static {p0, v0, v2}, Lcom/android/systemui/FontSizeUtils;->updateFontSize(Landroid/view/View;II)V
+
     .line 60
-    const v0, 0x7f0a02b9
+    const v0, 0x7f0a02bc
 
     invoke-static {p0, v0, v2}, Lcom/android/systemui/FontSizeUtils;->updateFontSize(Landroid/view/View;II)V
 
     .line 61
-    const v0, 0x7f0a02b7
+    const v0, 0x7f0a02ba
 
     invoke-static {p0, v0, v2}, Lcom/android/systemui/FontSizeUtils;->updateFontSize(Landroid/view/View;II)V
 

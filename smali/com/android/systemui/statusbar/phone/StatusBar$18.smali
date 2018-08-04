@@ -1,6 +1,9 @@
 .class Lcom/android/systemui/statusbar/phone/StatusBar$18;
-.super Landroid/service/vr/IVrStateCallbacks$Stub;
+.super Ljava/lang/Object;
 .source "StatusBar.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -27,8 +30,8 @@
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$18;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 6013
-    invoke-direct {p0}, Landroid/service/vr/IVrStateCallbacks$Stub;-><init>()V
+    .line 4396
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
     return-void
@@ -36,16 +39,45 @@
 
 
 # virtual methods
-.method public onVrStateChanged(Z)V
-    .locals 1
-    .param p1, "enabled"    # Z
+.method public run()V
+    .locals 4
 
     .prologue
-    .line 6016
+    .line 4399
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$18;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    iput-boolean p1, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mVrMode:Z
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->vibrate()V
 
-    .line 6017
+    .line 4400
+    const-wide/16 v0, 0xfa
+
+    invoke-static {v0, v1}, Landroid/os/SystemClock;->sleep(J)V
+
+    .line 4401
+    const-string/jumbo v0, "StatusBar"
+
+    const-string/jumbo v1, "startTracing"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 4402
+    const-string/jumbo v0, "/data/statusbar-traces/trace"
+
+    invoke-static {v0}, Landroid/os/Debug;->startMethodTracing(Ljava/lang/String;)V
+
+    .line 4403
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$18;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar;->mHandler:Lcom/android/systemui/statusbar/phone/StatusBar$H;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$18;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    iget-object v1, v1, Lcom/android/systemui/statusbar/phone/StatusBar;->mStopTracing:Ljava/lang/Runnable;
+
+    const-wide/16 v2, 0x2710
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/systemui/statusbar/phone/StatusBar$H;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 4404
     return-void
 .end method

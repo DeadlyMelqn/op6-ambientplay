@@ -52,7 +52,7 @@
     .locals 14
 
     .prologue
-    const v11, 0x7f08018b
+    const v11, 0x7f08018c
 
     const/4 v13, 0x1
 
@@ -158,7 +158,7 @@
 
     .line 306
     .local v6, "item":Lcom/android/systemui/qs/QSDetailItems$Item;
-    const v9, 0x7f08018c
+    const v9, 0x7f08018d
 
     iput v9, v6, Lcom/android/systemui/qs/QSDetailItems$Item;->icon:I
 
@@ -184,7 +184,7 @@
     if-ne v8, v9, :cond_5
 
     .line 311
-    const v9, 0x7f080189
+    const v9, 0x7f08018a
 
     iput v9, v6, Lcom/android/systemui/qs/QSDetailItems$Item;->icon:I
 
@@ -329,7 +329,7 @@
     if-ne v8, v13, :cond_6
 
     .line 325
-    const v9, 0x7f08018a
+    const v9, 0x7f08018b
 
     iput v9, v6, Lcom/android/systemui/qs/QSDetailItems$Item;->icon:I
 

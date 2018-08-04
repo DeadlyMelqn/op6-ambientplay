@@ -68,21 +68,21 @@
     .line 288
     iget-object v0, p0, Lcom/android/systemui/statusbar/stack/ExpandableViewState$2;->val$child:Lcom/android/systemui/statusbar/ExpandableView;
 
-    const v1, 0x7f0a0110
+    const v1, 0x7f0a0113
 
     invoke-virtual {v0, v1, v2}, Lcom/android/systemui/statusbar/ExpandableView;->setTag(ILjava/lang/Object;)V
 
     .line 289
     iget-object v0, p0, Lcom/android/systemui/statusbar/stack/ExpandableViewState$2;->val$child:Lcom/android/systemui/statusbar/ExpandableView;
 
-    const v1, 0x7f0a010f
+    const v1, 0x7f0a0112
 
     invoke-virtual {v0, v1, v2}, Lcom/android/systemui/statusbar/ExpandableView;->setTag(ILjava/lang/Object;)V
 
     .line 290
     iget-object v0, p0, Lcom/android/systemui/statusbar/stack/ExpandableViewState$2;->val$child:Lcom/android/systemui/statusbar/ExpandableView;
 
-    const v1, 0x7f0a010e
+    const v1, 0x7f0a0111
 
     invoke-virtual {v0, v1, v2}, Lcom/android/systemui/statusbar/ExpandableView;->setTag(ILjava/lang/Object;)V
 

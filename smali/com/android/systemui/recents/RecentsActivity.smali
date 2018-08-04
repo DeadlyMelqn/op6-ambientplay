@@ -1596,7 +1596,7 @@
     if-nez v0, :cond_0
 
     .line 803
-    const v0, 0x7f0a0120
+    const v0, 0x7f0a0123
 
     .line 802
     invoke-static {p0, v0}, Lcom/android/systemui/recents/misc/Utilities;->findViewStubById(Landroid/app/Activity;I)Landroid/view/ViewStub;
@@ -1962,7 +1962,7 @@
     invoke-virtual {p0, v2}, Lcom/android/systemui/recents/RecentsActivity;->setTheme(I)V
 
     .line 355
-    const v2, 0x7f0d00e4
+    const v2, 0x7f0d00e5
 
     invoke-virtual {p0, v2}, Lcom/android/systemui/recents/RecentsActivity;->setContentView(I)V
 
@@ -1970,7 +1970,7 @@
     invoke-virtual {p0, v4}, Lcom/android/systemui/recents/RecentsActivity;->takeKeyEvents(Z)V
 
     .line 357
-    const v2, 0x7f0a020f
+    const v2, 0x7f0a0212
 
     invoke-virtual {p0, v2}, Lcom/android/systemui/recents/RecentsActivity;->findViewById(I)Landroid/view/View;
 

@@ -34,7 +34,7 @@
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/egg/MLand$Scenery;-><init>(Lcom/android/systemui/egg/MLand;Landroid/content/Context;)V
 
     .line 1435
-    const v0, 0x7f0802dc
+    const v0, 0x7f0802dd
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/egg/MLand$Star;->setBackgroundResource(I)V
 

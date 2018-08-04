@@ -101,7 +101,7 @@
     .param p4, "eventManager"    # Lcom/android/settingslib/bluetooth/BluetoothEventManager;
 
     .prologue
-    const v2, 0x11200e4
+    const v2, 0x11200e5
 
     .line 100
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

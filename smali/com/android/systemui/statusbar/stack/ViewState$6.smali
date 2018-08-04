@@ -50,21 +50,21 @@
     .line 521
     iget-object v0, p0, Lcom/android/systemui/statusbar/stack/ViewState$6;->val$child:Landroid/view/View;
 
-    const v1, 0x7f0a02a4
+    const v1, 0x7f0a02a7
 
     invoke-virtual {v0, v1, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 522
     iget-object v0, p0, Lcom/android/systemui/statusbar/stack/ViewState$6;->val$child:Landroid/view/View;
 
-    const v1, 0x7f0a02a3
+    const v1, 0x7f0a02a6
 
     invoke-virtual {v0, v1, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 523
     iget-object v0, p0, Lcom/android/systemui/statusbar/stack/ViewState$6;->val$child:Landroid/view/View;
 
-    const v1, 0x7f0a02a2
+    const v1, 0x7f0a02a5
 
     invoke-virtual {v0, v1, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 

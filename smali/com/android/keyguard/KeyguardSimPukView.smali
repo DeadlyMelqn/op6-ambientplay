@@ -618,7 +618,7 @@
 
     .prologue
     .line 208
-    const v0, 0x7f0a01fe
+    const v0, 0x7f0a0201
 
     return v0
 .end method
@@ -703,7 +703,7 @@
 
     .line 218
     :cond_0
-    const v0, 0x7f0a014b
+    const v0, 0x7f0a014e
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardSimPukView;->findViewById(I)Landroid/view/View;
 

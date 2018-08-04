@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 627
+    .line 635
     invoke-direct {p0}, Landroid/media/session/MediaController$Callback;-><init>()V
 
     .line 1
@@ -43,20 +43,20 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 642
+    .line 650
     invoke-super {p0, p1}, Landroid/media/session/MediaController$Callback;->onMetadataChanged(Landroid/media/MediaMetadata;)V
 
-    .line 644
+    .line 652
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-static {v0, p1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-set5(Lcom/android/systemui/statusbar/phone/StatusBar;Landroid/media/MediaMetadata;)Landroid/media/MediaMetadata;
+    invoke-static {v0, p1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-set6(Lcom/android/systemui/statusbar/phone/StatusBar;Landroid/media/MediaMetadata;)Landroid/media/MediaMetadata;
 
-    .line 645
+    .line 653
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-virtual {v0, v1, v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->updateMediaMetaData(ZZ)V
 
-    .line 646
+    .line 654
     return-void
 .end method
 
@@ -67,13 +67,13 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 630
+    .line 638
     invoke-super {p0, p1}, Landroid/media/session/MediaController$Callback;->onPlaybackStateChanged(Landroid/media/session/PlaybackState;)V
 
-    .line 632
+    .line 640
     if-eqz p1, :cond_0
 
-    .line 633
+    .line 641
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-virtual {p1}, Landroid/media/session/PlaybackState;->getState()I
@@ -86,17 +86,17 @@
 
     if-nez v0, :cond_0
 
-    .line 634
+    .line 642
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap3(Lcom/android/systemui/statusbar/phone/StatusBar;)V
 
-    .line 635
+    .line 643
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-virtual {v0, v2, v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->updateMediaMetaData(ZZ)V
 
-    .line 638
+    .line 646
     :cond_0
     return-void
 .end method

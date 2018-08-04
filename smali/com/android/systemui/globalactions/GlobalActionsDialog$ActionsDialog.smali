@@ -117,7 +117,7 @@
     invoke-virtual {v0, v1}, Landroid/view/Window;->setType(I)V
 
     .line 1338
-    const v1, 0x7f0d0034
+    const v1, 0x7f0d0035
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/globalactions/GlobalActionsDialog$ActionsDialog;->setContentView(I)V
 

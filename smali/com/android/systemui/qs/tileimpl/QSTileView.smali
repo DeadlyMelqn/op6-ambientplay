@@ -98,7 +98,7 @@
     move-result-object v0
 
     .line 81
-    const v1, 0x7f0d00da
+    const v1, 0x7f0d00db
 
     .line 80
     invoke-virtual {v0, v1, p0, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
@@ -122,7 +122,7 @@
     .line 84
     iget-object v0, p0, Lcom/android/systemui/qs/tileimpl/QSTileView;->mLabelContainer:Landroid/view/ViewGroup;
 
-    const v1, 0x7f0a0289
+    const v1, 0x7f0a028c
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -135,7 +135,7 @@
     .line 85
     iget-object v0, p0, Lcom/android/systemui/qs/tileimpl/QSTileView;->mLabelContainer:Landroid/view/ViewGroup;
 
-    const v1, 0x7f0a0218
+    const v1, 0x7f0a021b
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -148,7 +148,7 @@
     .line 86
     iget-object v0, p0, Lcom/android/systemui/qs/tileimpl/QSTileView;->mLabelContainer:Landroid/view/ViewGroup;
 
-    const v1, 0x7f0a02b1
+    const v1, 0x7f0a02b4
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -159,7 +159,7 @@
     .line 87
     iget-object v0, p0, Lcom/android/systemui/qs/tileimpl/QSTileView;->mLabelContainer:Landroid/view/ViewGroup;
 
-    const v1, 0x7f0a00d8
+    const v1, 0x7f0a00db
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -170,7 +170,7 @@
     .line 88
     iget-object v0, p0, Lcom/android/systemui/qs/tileimpl/QSTileView;->mLabelContainer:Landroid/view/ViewGroup;
 
-    const v1, 0x7f0a00d9
+    const v1, 0x7f0a00dc
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 

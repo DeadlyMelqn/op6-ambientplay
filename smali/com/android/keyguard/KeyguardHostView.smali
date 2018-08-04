@@ -589,7 +589,7 @@
 
     .prologue
     .line 163
-    const v0, 0x7f0a0149
+    const v0, 0x7f0a014c
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardHostView;->findViewById(I)Landroid/view/View;
 

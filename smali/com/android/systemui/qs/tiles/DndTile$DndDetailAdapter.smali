@@ -407,7 +407,7 @@
     .line 337
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/DndTile$DndDetailAdapter;->mZenPanel:Lcom/android/systemui/volume/ZenModePanel;
 
-    const v1, 0x7f08019c
+    const v1, 0x7f08019d
 
     const v2, 0x7f1101d6
 
@@ -429,7 +429,7 @@
     move-result-object v0
 
     .line 332
-    const v1, 0x7f0d0124
+    const v1, 0x7f0d0125
 
     const/4 v2, 0x0
 

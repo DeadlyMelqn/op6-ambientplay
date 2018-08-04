@@ -970,7 +970,7 @@
 
     .prologue
     .line 226
-    const v0, 0x7f0a0284
+    const v0, 0x7f0a0287
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/recents/views/TaskView;->findViewById(I)Landroid/view/View;
 
@@ -981,7 +981,7 @@
     iput-object v0, p0, Lcom/android/systemui/recents/views/TaskView;->mHeaderView:Lcom/android/systemui/recents/views/TaskViewHeader;
 
     .line 227
-    const v0, 0x7f0a0285
+    const v0, 0x7f0a0288
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/recents/views/TaskView;->findViewById(I)Landroid/view/View;
 
@@ -999,7 +999,7 @@
     invoke-virtual {v0, v1}, Lcom/android/systemui/recents/views/TaskViewThumbnail;->updateClipToTaskBar(Landroid/view/View;)V
 
     .line 229
-    const v0, 0x7f0a017d
+    const v0, 0x7f0a0180
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/recents/views/TaskView;->findViewById(I)Landroid/view/View;
 
@@ -1739,7 +1739,7 @@
     if-nez v2, :cond_0
 
     .line 621
-    const v2, 0x7f0a0122
+    const v2, 0x7f0a0125
 
     .line 620
     invoke-static {p0, v2}, Lcom/android/systemui/recents/misc/Utilities;->findViewStubById(Landroid/view/View;I)Landroid/view/ViewStub;

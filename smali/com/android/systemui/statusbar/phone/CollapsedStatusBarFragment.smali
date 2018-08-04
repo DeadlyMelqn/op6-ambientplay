@@ -271,7 +271,7 @@
     .line 266
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/CollapsedStatusBarFragment;->mStatusBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
-    const v3, 0x7f0a00cb
+    const v3, 0x7f0a00ce
 
     invoke-virtual {v2, v3}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->findViewById(I)Landroid/view/View;
 
@@ -592,7 +592,7 @@
     .line 134
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/CollapsedStatusBarFragment;->mStatusBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
-    const v2, 0x7f0a01d0
+    const v2, 0x7f0a01d3
 
     invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->findViewById(I)Landroid/view/View;
 
@@ -705,7 +705,7 @@
 
     .prologue
     .line 83
-    const v0, 0x7f0d0107
+    const v0, 0x7f0d0108
 
     const/4 v1, 0x0
 
@@ -887,7 +887,7 @@
     :cond_0
     new-instance v1, Lcom/android/systemui/statusbar/phone/StatusBarIconController$DarkIconManager;
 
-    const v0, 0x7f0a0272
+    const v0, 0x7f0a0275
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -915,7 +915,7 @@
     .line 95
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/CollapsedStatusBarFragment;->mStatusBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
-    const v1, 0x7f0a027f
+    const v1, 0x7f0a0282
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->findViewById(I)Landroid/view/View;
 
@@ -928,7 +928,7 @@
     .line 96
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/CollapsedStatusBarFragment;->mStatusBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
-    const v1, 0x7f0a0264
+    const v1, 0x7f0a0267
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->findViewById(I)Landroid/view/View;
 
@@ -941,7 +941,7 @@
     .line 97
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/CollapsedStatusBarFragment;->mStatusBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
-    const v1, 0x7f0a007a
+    const v1, 0x7f0a007d
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->findViewById(I)Landroid/view/View;
 

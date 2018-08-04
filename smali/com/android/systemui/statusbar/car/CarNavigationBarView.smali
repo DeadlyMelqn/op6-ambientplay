@@ -58,7 +58,7 @@
 
     .prologue
     .line 43
-    const v0, 0x7f0a01bb
+    const v0, 0x7f0a01be
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/car/CarNavigationBarView;->findViewById(I)Landroid/view/View;
 
@@ -69,7 +69,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/car/CarNavigationBarView;->mNavButtons:Landroid/widget/LinearLayout;
 
     .line 44
-    const v0, 0x7f0a0177
+    const v0, 0x7f0a017a
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/car/CarNavigationBarView;->findViewById(I)Landroid/view/View;
 

@@ -28,7 +28,7 @@
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$2;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 551
+    .line 559
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     .line 1
@@ -46,12 +46,12 @@
 
     const/4 v3, 0x0
 
-    .line 554
+    .line 562
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$2;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-boolean v0, v1, Lcom/android/systemui/statusbar/phone/StatusBar;->mUseHeadsUp:Z
 
-    .line 555
+    .line 563
     .local v0, "wasUsing":Z
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/StatusBar$2;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
@@ -63,7 +63,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 557
+    .line 565
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$2;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
@@ -74,7 +74,7 @@
 
     const-string/jumbo v5, "heads_up_notifications_enabled"
 
-    .line 556
+    .line 564
     invoke-static {v1, v5, v3}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v1
@@ -83,11 +83,11 @@
 
     move v1, v2
 
-    .line 555
+    .line 563
     :goto_0
     iput-boolean v1, v4, Lcom/android/systemui/statusbar/phone/StatusBar;->mUseHeadsUp:Z
 
-    .line 559
+    .line 567
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$2;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/StatusBar$2;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
@@ -96,7 +96,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 560
+    .line 568
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/StatusBar$2;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v4, v4, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
@@ -107,7 +107,7 @@
 
     const-string/jumbo v5, "ticker_gets_heads_up"
 
-    .line 559
+    .line 567
     invoke-static {v4, v5, v3}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v4
@@ -119,7 +119,7 @@
     :cond_0
     iput-boolean v3, v1, Lcom/android/systemui/statusbar/phone/StatusBar;->mHeadsUpTicker:Z
 
-    .line 561
+    .line 569
     const-string/jumbo v2, "StatusBar"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -151,51 +151,51 @@
 
     invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 562
+    .line 570
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$2;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-boolean v1, v1, Lcom/android/systemui/statusbar/phone/StatusBar;->mUseHeadsUp:Z
 
     if-eq v0, v1, :cond_1
 
-    .line 563
+    .line 571
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$2;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-boolean v1, v1, Lcom/android/systemui/statusbar/phone/StatusBar;->mUseHeadsUp:Z
 
     if-nez v1, :cond_1
 
-    .line 564
+    .line 572
     const-string/jumbo v1, "StatusBar"
 
     const-string/jumbo v2, "dismissing any existing heads up notification on disable event"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 565
+    .line 573
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$2;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/phone/StatusBar;->mHeadsUpManager:Lcom/android/systemui/statusbar/policy/HeadsUpManager;
 
     invoke-virtual {v1}, Lcom/android/systemui/statusbar/policy/HeadsUpManager;->releaseAllImmediately()V
 
-    .line 568
+    .line 576
     :cond_1
     return-void
 
     :cond_2
     move v1, v3
 
-    .line 556
+    .line 564
     goto :goto_0
 
     :cond_3
     move v1, v3
 
-    .line 555
+    .line 563
     goto :goto_0
 
-    .line 561
+    .line 569
     :cond_4
     const-string/jumbo v1, "disabled"
 

@@ -163,7 +163,7 @@
 
     .line 283
     .local v6, "item":Lcom/android/systemui/qs/QSDetailItems$Item;
-    const v8, 0x7f080199
+    const v8, 0x7f08019a
 
     iput v8, v6, Lcom/android/systemui/qs/QSDetailItems$Item;->icon:I
 
@@ -304,7 +304,7 @@
 
     .line 303
     .restart local v6    # "item":Lcom/android/systemui/qs/QSDetailItems$Item;
-    const v8, 0x7f080198
+    const v8, 0x7f080199
 
     iput v8, v6, Lcom/android/systemui/qs/QSDetailItems$Item;->icon:I
 
@@ -428,7 +428,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/CastTile$CastDetailAdapter;->mItems:Lcom/android/systemui/qs/QSDetailItems;
 
-    const v1, 0x7f080197
+    const v1, 0x7f080198
 
     .line 268
     const v2, 0x7f1103b9

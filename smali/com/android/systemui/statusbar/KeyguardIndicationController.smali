@@ -305,7 +305,7 @@
     iput-object p2, p0, Lcom/android/systemui/statusbar/KeyguardIndicationController;->mIndicationArea:Landroid/view/ViewGroup;
 
     .line 117
-    const v1, 0x7f0a0144
+    const v1, 0x7f0a0147
 
     .line 116
     invoke-virtual {p2, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -331,7 +331,7 @@
     iput v1, p0, Lcom/android/systemui/statusbar/KeyguardIndicationController;->mInitialTextColor:I
 
     .line 120
-    const v1, 0x7f0a0143
+    const v1, 0x7f0a0146
 
     .line 119
     invoke-virtual {p2, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;

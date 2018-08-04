@@ -56,7 +56,7 @@
     .locals 7
 
     .prologue
-    const v6, 0x7f0a005a
+    const v6, 0x7f0a005d
 
     const/4 v5, 0x0
 
@@ -91,7 +91,7 @@
 
     .line 47
     .local v2, "tintArea":Landroid/graphics/Rect;
-    const v3, 0x7f0a0264
+    const v3, 0x7f0a0267
 
     invoke-direct {p0, v3, v2, v1, v0}, Lcom/android/systemui/qs/car/CarStatusBarHeader;->applyDarkness(ILandroid/graphics/Rect;FI)V
 
@@ -99,7 +99,7 @@
     invoke-direct {p0, v6, v2, v1, v0}, Lcom/android/systemui/qs/car/CarStatusBarHeader;->applyDarkness(ILandroid/graphics/Rect;FI)V
 
     .line 49
-    const v3, 0x7f0a0084
+    const v3, 0x7f0a0087
 
     invoke-direct {p0, v3, v2, v1, v0}, Lcom/android/systemui/qs/car/CarStatusBarHeader;->applyDarkness(ILandroid/graphics/Rect;FI)V
 

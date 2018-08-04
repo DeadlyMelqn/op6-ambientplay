@@ -604,9 +604,9 @@
     .param p2, "state"    # Lcom/android/systemui/plugins/qs/QSTile$State;
 
     .prologue
-    const v9, 0x7f0a0208
+    const v9, 0x7f0a020b
 
-    const v8, 0x7f0a0206
+    const v8, 0x7f0a0209
 
     const/4 v7, 0x0
 

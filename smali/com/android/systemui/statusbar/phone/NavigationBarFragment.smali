@@ -199,7 +199,7 @@
     move-result-object v1
 
     .line 685
-    const v2, 0x7f0d00a2
+    const v2, 0x7f0d00a3
 
     .line 684
     invoke-virtual {v1, v2, v9}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -248,7 +248,7 @@
     .line 694
     const-string/jumbo v2, "NavigationBar"
 
-    const v3, 0x7f0a01bc
+    const v3, 0x7f0a01bf
 
     .line 693
     invoke-virtual {v1, v3, v6, v2}, Landroid/app/FragmentTransaction;->replace(ILandroid/app/Fragment;Ljava/lang/String;)Landroid/app/FragmentTransaction;
@@ -1279,7 +1279,7 @@
 
     .prologue
     .line 182
-    const v0, 0x7f0d00a0
+    const v0, 0x7f0d00a1
 
     const/4 v1, 0x0
 

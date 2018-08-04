@@ -295,7 +295,7 @@
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
     .line 53
-    const v0, 0x7f0a004b
+    const v0, 0x7f0a004e
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/assist/AssistOrbContainer;->findViewById(I)Landroid/view/View;
 
@@ -304,7 +304,7 @@
     iput-object v0, p0, Lcom/android/systemui/assist/AssistOrbContainer;->mScrim:Landroid/view/View;
 
     .line 54
-    const v0, 0x7f0a004a
+    const v0, 0x7f0a004d
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/assist/AssistOrbContainer;->findViewById(I)Landroid/view/View;
 
@@ -313,7 +313,7 @@
     iput-object v0, p0, Lcom/android/systemui/assist/AssistOrbContainer;->mNavbarScrim:Landroid/view/View;
 
     .line 55
-    const v0, 0x7f0a0049
+    const v0, 0x7f0a004c
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/assist/AssistOrbContainer;->findViewById(I)Landroid/view/View;
 

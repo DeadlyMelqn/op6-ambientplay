@@ -27,7 +27,7 @@
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$8;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 817
+    .line 825
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardUpdateMonitorCallback;-><init>()V
 
     .line 1
@@ -41,15 +41,15 @@
     .param p1, "dreaming"    # Z
 
     .prologue
-    .line 820
+    .line 828
     if-eqz p1, :cond_0
 
-    .line 821
+    .line 829
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$8;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->maybeEscalateHeadsUp()V
 
-    .line 823
+    .line 831
     :cond_0
     return-void
 .end method

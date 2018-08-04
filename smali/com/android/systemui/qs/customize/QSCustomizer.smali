@@ -175,7 +175,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d00cc
+    const v4, 0x7f0d00cd
 
     invoke-virtual {v3, v4, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -590,7 +590,7 @@
     const/4 v2, 0x0
 
     .line 135
-    const v3, 0x7f0a01b9
+    const v3, 0x7f0a01bc
 
     invoke-virtual {p0, v3}, Lcom/android/systemui/qs/customize/QSCustomizer;->findViewById(I)Landroid/view/View;
 

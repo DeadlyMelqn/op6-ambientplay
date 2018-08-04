@@ -1453,7 +1453,7 @@
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
     .line 188
-    const v0, 0x7f0a01d9
+    const v0, 0x7f0a01dc
 
     .line 187
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->findViewById(I)Landroid/view/View;
@@ -1465,7 +1465,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->mStackScrollLayout:Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout;
 
     .line 189
-    const v0, 0x7f0a01d4
+    const v0, 0x7f0a01d7
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->findViewById(I)Landroid/view/View;
 
@@ -1476,7 +1476,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->mNotificationPanel:Lcom/android/systemui/statusbar/phone/NotificationPanelView;
 
     .line 190
-    const v0, 0x7f0a0063
+    const v0, 0x7f0a0066
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->findViewById(I)Landroid/view/View;
 
@@ -1759,7 +1759,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a0063
+    const v1, 0x7f0a0066
 
     if-ne v0, v1, :cond_0
 

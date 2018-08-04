@@ -281,7 +281,7 @@
     iget-object v2, p0, Lcom/android/systemui/statusbar/car/CarStatusBar;->mContext:Landroid/content/Context;
 
     .line 163
-    const v3, 0x7f0d00a2
+    const v3, 0x7f0d00a3
 
     .line 162
     invoke-static {v2, v3, v4}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -310,7 +310,7 @@
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/car/CarStatusBar;->mNavigationBarWindow:Landroid/view/ViewGroup;
 
-    const v4, 0x7f0d0024
+    const v4, 0x7f0d0025
 
     invoke-static {v2, v4, v3}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -424,7 +424,7 @@
     .line 329
     iget-object v1, p0, Lcom/android/systemui/statusbar/car/CarStatusBar;->mStatusBarWindow:Lcom/android/systemui/statusbar/phone/StatusBarWindowView;
 
-    const v3, 0x7f0a00e8
+    const v3, 0x7f0a00eb
 
     invoke-virtual {v1, v3}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->findViewById(I)Landroid/view/View;
 
@@ -849,7 +849,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a005a
+    const v3, 0x7f0a005d
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -871,7 +871,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a008c
+    const v3, 0x7f0a008f
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

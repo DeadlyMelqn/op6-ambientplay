@@ -35,7 +35,7 @@
 
     check-cast v0, Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_36469(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_36918(Landroid/view/View;)V
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     check-cast v0, Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_57088(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_58247(Landroid/view/View;)V
 
     return-void
 .end method

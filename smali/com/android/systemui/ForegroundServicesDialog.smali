@@ -133,7 +133,7 @@
     .line 91
     iget-object v1, p0, Lcom/android/systemui/ForegroundServicesDialog;->mInflater:Landroid/view/LayoutInflater;
 
-    const v2, 0x7f0d0032
+    const v2, 0x7f0d0033
 
     invoke-virtual {v1, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 

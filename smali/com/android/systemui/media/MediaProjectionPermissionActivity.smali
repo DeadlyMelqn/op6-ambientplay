@@ -699,7 +699,7 @@
     move-result-object v20
 
     .line 141
-    const v21, 0x7f0d00f1
+    const v21, 0x7f0d00f2
 
     .line 136
     invoke-virtual/range {v20 .. v21}, Landroid/app/AlertDialog$Builder;->setView(I)Landroid/app/AlertDialog$Builder;
@@ -757,7 +757,7 @@
 
     move-object/from16 v20, v0
 
-    const v21, 0x7f0a0211
+    const v21, 0x7f0a0214
 
     invoke-virtual/range {v20 .. v21}, Landroid/app/AlertDialog;->findViewById(I)Landroid/view/View;
 

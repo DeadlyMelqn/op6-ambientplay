@@ -36,7 +36,7 @@
 
     .prologue
     .line 77
-    const v0, 0x7f0a0226
+    const v0, 0x7f0a0229
 
     return v0
 .end method
@@ -46,7 +46,7 @@
 
     .prologue
     .line 72
-    const v0, 0x7f0a0227
+    const v0, 0x7f0a022a
 
     return v0
 .end method
@@ -56,7 +56,7 @@
 
     .prologue
     .line 82
-    const v0, 0x7f0a0228
+    const v0, 0x7f0a022b
 
     return v0
 .end method

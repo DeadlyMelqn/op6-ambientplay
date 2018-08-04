@@ -17,7 +17,7 @@
 
 .field private mGarbage:Z
 
-.field private mSize:I
+.field private mSize:Is
 
 
 # direct methods

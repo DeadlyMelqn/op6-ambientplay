@@ -275,7 +275,7 @@
     .line 120
     iget-object v0, p0, Lcom/android/systemui/pip/tv/PipControlsView;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d011a
+    const v1, 0x7f0d011b
 
     invoke-virtual {v0, v1, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -445,7 +445,7 @@
     iget-object v5, p0, Lcom/android/systemui/pip/tv/PipControlsView;->mLayoutInflater:Landroid/view/LayoutInflater;
 
     .line 212
-    const v6, 0x7f0d011b
+    const v6, 0x7f0d011c
 
     .line 211
     invoke-virtual {v5, v6, p0, v7}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
@@ -692,7 +692,7 @@
     .line 257
     iget-object v5, p0, Lcom/android/systemui/pip/tv/PipControlsView;->mPlayPauseButtonView:Lcom/android/systemui/pip/tv/PipControlButtonView;
 
-    const v6, 0x7f08017a
+    const v6, 0x7f08017b
 
     invoke-virtual {v5, v6}, Lcom/android/systemui/pip/tv/PipControlButtonView;->setImageResource(I)V
 
@@ -709,7 +709,7 @@
     :cond_9
     iget-object v5, p0, Lcom/android/systemui/pip/tv/PipControlsView;->mPlayPauseButtonView:Lcom/android/systemui/pip/tv/PipControlButtonView;
 
-    const v6, 0x7f08017d
+    const v6, 0x7f08017e
 
     invoke-virtual {v5, v6}, Lcom/android/systemui/pip/tv/PipControlButtonView;->setImageResource(I)V
 
@@ -785,7 +785,7 @@
     invoke-super {p0}, Landroid/widget/LinearLayout;->onFinishInflate()V
 
     .line 131
-    const v0, 0x7f0a00e7
+    const v0, 0x7f0a00ea
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/pip/tv/PipControlsView;->findViewById(I)Landroid/view/View;
 
@@ -812,7 +812,7 @@
     invoke-virtual {v0, v1}, Lcom/android/systemui/pip/tv/PipControlButtonView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 140
-    const v0, 0x7f0a0087
+    const v0, 0x7f0a008a
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/pip/tv/PipControlsView;->findViewById(I)Landroid/view/View;
 
@@ -839,7 +839,7 @@
     invoke-virtual {v0, v1}, Lcom/android/systemui/pip/tv/PipControlButtonView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 152
-    const v0, 0x7f0a01f1
+    const v0, 0x7f0a01f4
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/pip/tv/PipControlsView;->findViewById(I)Landroid/view/View;
 

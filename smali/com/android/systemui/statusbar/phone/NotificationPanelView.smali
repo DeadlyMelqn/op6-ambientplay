@@ -8066,7 +8066,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a00d8
+    const v1, 0x7f0a00db
 
     if-ne v0, v1, :cond_0
 
@@ -8331,7 +8331,7 @@
     invoke-super {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->onFinishInflate()V
 
     .line 284
-    const v0, 0x7f0a0140
+    const v0, 0x7f0a0143
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8342,7 +8342,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->mKeyguardStatusBar:Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;
 
     .line 285
-    const v0, 0x7f0a014f
+    const v0, 0x7f0a0152
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8353,7 +8353,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->mKeyguardStatusView:Lcom/android/keyguard/KeyguardStatusView;
 
     .line 288
-    const v0, 0x7f0a01cc
+    const v0, 0x7f0a01cf
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8365,7 +8365,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->mNotificationContainerParent:Lcom/android/systemui/statusbar/phone/NotificationsQuickSettingsContainer;
 
     .line 290
-    const v0, 0x7f0a01d9
+    const v0, 0x7f0a01dc
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8392,7 +8392,7 @@
     invoke-virtual {v0, p0}, Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout;->setOnEmptySpaceClickListener(Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout$OnEmptySpaceClickListener;)V
 
     .line 294
-    const v0, 0x7f0a013b
+    const v0, 0x7f0a013e
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8403,7 +8403,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->mKeyguardBottomArea:Lcom/android/systemui/statusbar/phone/KeyguardBottomAreaView;
 
     .line 295
-    const v0, 0x7f0a0207
+    const v0, 0x7f0a020a
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -8428,7 +8428,7 @@
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->initBottomArea()V
 
     .line 300
-    const v0, 0x7f0a0205
+    const v0, 0x7f0a0208
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->findViewById(I)Landroid/view/View;
 
@@ -9231,7 +9231,7 @@
     move-result-object v1
 
     .line 367
-    const v2, 0x7f0d0053
+    const v2, 0x7f0d0054
 
     .line 366
     invoke-virtual {v1, v2, p0, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
@@ -9267,7 +9267,7 @@
     move-result-object v1
 
     .line 376
-    const v2, 0x7f0d0041
+    const v2, 0x7f0d0042
 
     .line 375
     invoke-virtual {v1, v2, p0, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;

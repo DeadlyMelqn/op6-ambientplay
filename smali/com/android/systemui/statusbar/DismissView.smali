@@ -76,7 +76,7 @@
 
     .prologue
     .line 41
-    const v0, 0x7f0a00bf
+    const v0, 0x7f0a00c2
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/DismissView;->findViewById(I)Landroid/view/View;
 

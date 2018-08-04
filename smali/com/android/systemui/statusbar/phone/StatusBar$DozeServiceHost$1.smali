@@ -34,7 +34,7 @@
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost$1;->val$callback:Lcom/android/systemui/doze/DozeHost$PulseCallback;
 
-    .line 5754
+    .line 5950
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -59,7 +59,7 @@
 
     const/4 v2, 0x0
 
-    .line 5775
+    .line 5971
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost$1;->this$1:Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
@@ -68,7 +68,7 @@
 
     invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/stack/NotificationStackScrollLayout;->setPulsing(Ljava/util/Collection;)V
 
-    .line 5776
+    .line 5972
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost$1;->this$1:Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
@@ -82,7 +82,7 @@
     :goto_0
     invoke-virtual {v3, v0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->setPulsing(Z)V
 
-    .line 5777
+    .line 5973
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost$1;->this$1:Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
@@ -94,24 +94,24 @@
     :goto_1
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/notification/VisualStabilityManager;->setPulsing(Z)V
 
-    .line 5778
+    .line 5974
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost$1;->this$1:Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;
 
     invoke-static {v0, v2}, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->-set0(Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;Z)Z
 
-    .line 5779
+    .line 5975
     return-void
 
     :cond_0
     move v0, v2
 
-    .line 5776
+    .line 5972
     goto :goto_0
 
     :cond_1
     move v1, v2
 
-    .line 5777
+    .line 5973
     goto :goto_1
 .end method
 
@@ -121,17 +121,17 @@
     .locals 1
 
     .prologue
-    .line 5770
+    .line 5966
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost$1;->val$callback:Lcom/android/systemui/doze/DozeHost$PulseCallback;
 
     invoke-interface {v0}, Lcom/android/systemui/doze/DozeHost$PulseCallback;->onPulseFinished()V
 
-    .line 5771
+    .line 5967
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost$1;->setPulsing(Ljava/util/Collection;)V
 
-    .line 5772
+    .line 5968
     return-void
 .end method
 
@@ -139,12 +139,12 @@
     .locals 2
 
     .prologue
-    .line 5758
+    .line 5954
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost$1;->val$callback:Lcom/android/systemui/doze/DozeHost$PulseCallback;
 
     invoke-interface {v1}, Lcom/android/systemui/doze/DozeHost$PulseCallback;->onPulseStarted()V
 
-    .line 5760
+    .line 5956
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost$1;->this$1:Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
@@ -155,7 +155,7 @@
 
     move-result-object v0
 
-    .line 5761
+    .line 5957
     .local v0, "pulsingEntries":Ljava/util/Collection;, "Ljava/util/Collection<Lcom/android/systemui/statusbar/policy/HeadsUpManager$HeadsUpEntry;>;"
     invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
@@ -163,10 +163,10 @@
 
     if-nez v1, :cond_0
 
-    .line 5764
+    .line 5960
     invoke-direct {p0, v0}, Lcom/android/systemui/statusbar/phone/StatusBar$DozeServiceHost$1;->setPulsing(Ljava/util/Collection;)V
 
-    .line 5766
+    .line 5962
     :cond_0
     return-void
 .end method

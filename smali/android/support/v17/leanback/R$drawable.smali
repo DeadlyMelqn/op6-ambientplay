@@ -4,17 +4,17 @@
 
 
 # static fields
-.field public static final lb_ic_in_app_search:I = 0x7f080237
+.field public static final lb_ic_in_app_search:I = 0x7f080238
 
-.field public static final lb_ic_nav_arrow:I = 0x7f08023b
+.field public static final lb_ic_nav_arrow:I = 0x7f08023c
 
-.field public static final lb_ic_search_mic:I = 0x7f080243
+.field public static final lb_ic_search_mic:I = 0x7f080244
 
-.field public static final lb_ic_search_mic_out:I = 0x7f080244
+.field public static final lb_ic_search_mic_out:I = 0x7f080245
 
-.field public static final lb_text_dot_one:I = 0x7f080256
+.field public static final lb_text_dot_one:I = 0x7f080257
 
-.field public static final lb_text_dot_two:I = 0x7f080258
+.field public static final lb_text_dot_two:I = 0x7f080259
 
 
 # direct methods

@@ -382,7 +382,7 @@
     :cond_2
     iget-object v10, p0, Lcom/android/keyguard/KeyguardSimPukView$StateMachine;->this$0:Lcom/android/keyguard/KeyguardSimPukView;
 
-    const v11, 0x7f0a013f
+    const v11, 0x7f0a0142
 
     invoke-virtual {v10, v11}, Lcom/android/keyguard/KeyguardSimPukView;->findViewById(I)Landroid/view/View;
 

@@ -351,7 +351,7 @@
 
     .prologue
     .line 159
-    const v0, 0x7f0a0265
+    const v0, 0x7f0a0268
 
     return v0
 .end method
@@ -451,7 +451,7 @@
 
     .line 169
     :cond_0
-    const v0, 0x7f0a014b
+    const v0, 0x7f0a014e
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardSimPinView;->findViewById(I)Landroid/view/View;
 
@@ -622,7 +622,7 @@
     .end local v7    # "msg":Ljava/lang/String;
     .end local v8    # "rez":Landroid/content/res/Resources;
     :cond_2
-    const v10, 0x7f0a013f
+    const v10, 0x7f0a0142
 
     invoke-virtual {p0, v10}, Lcom/android/keyguard/KeyguardSimPinView;->findViewById(I)Landroid/view/View;
 

@@ -26,7 +26,7 @@
 
     check-cast v1, Lcom/android/systemui/qs/QSTileHost;
 
-    invoke-virtual {v0, v1, p1, p2}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_56457(Lcom/android/systemui/qs/QSTileHost;Ljava/lang/String;Landroid/app/Fragment;)V
+    invoke-virtual {v0, v1, p1, p2}, Lcom/android/systemui/statusbar/phone/StatusBar;->lambda$-com_android_systemui_statusbar_phone_StatusBar_57616(Lcom/android/systemui/qs/QSTileHost;Ljava/lang/String;Landroid/app/Fragment;)V
 
     return-void
 .end method

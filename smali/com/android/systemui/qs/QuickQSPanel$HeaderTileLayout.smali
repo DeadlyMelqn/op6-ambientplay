@@ -380,7 +380,7 @@
     iget-object v3, v3, Lcom/android/systemui/qs/QSPanel$TileRecord;->tileView:Lcom/android/systemui/plugins/qs/QSTileView;
 
     .line 253
-    const v4, 0x7f0a00d8
+    const v4, 0x7f0a00db
 
     .line 252
     invoke-virtual {v3, v4}, Lcom/android/systemui/plugins/qs/QSTileView;->setAccessibilityTraversalBefore(I)V

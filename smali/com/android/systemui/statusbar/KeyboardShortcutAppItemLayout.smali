@@ -47,7 +47,7 @@
     if-ne v5, v6, :cond_1
 
     .line 47
-    const v5, 0x7f0a0137
+    const v5, 0x7f0a013a
 
     invoke-virtual {p0, v5}, Lcom/android/systemui/statusbar/KeyboardShortcutAppItemLayout;->findViewById(I)Landroid/view/View;
 
@@ -57,7 +57,7 @@
 
     .line 48
     .local v1, "shortcutIcon":Landroid/widget/ImageView;
-    const v5, 0x7f0a0139
+    const v5, 0x7f0a013c
 
     invoke-virtual {p0, v5}, Lcom/android/systemui/statusbar/KeyboardShortcutAppItemLayout;->findViewById(I)Landroid/view/View;
 

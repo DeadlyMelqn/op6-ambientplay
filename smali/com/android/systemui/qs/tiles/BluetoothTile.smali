@@ -388,7 +388,7 @@
     .param p2, "arg"    # Ljava/lang/Object;
 
     .prologue
-    const v10, 0x7f08018c
+    const v10, 0x7f08018d
 
     const/4 v8, 0x0
 
@@ -476,7 +476,7 @@
     if-eqz v1, :cond_5
 
     .line 132
-    const v4, 0x7f080189
+    const v4, 0x7f08018a
 
     invoke-static {v4}, Lcom/android/systemui/qs/tileimpl/QSTileImpl$ResourceIcon;->get(I)Lcom/android/systemui/plugins/qs/QSTile$Icon;
 

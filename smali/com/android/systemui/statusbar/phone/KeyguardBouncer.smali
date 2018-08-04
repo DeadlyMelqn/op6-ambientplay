@@ -323,7 +323,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0043
+    const v2, 0x7f0d0044
 
     invoke-virtual {v1, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -336,7 +336,7 @@
     .line 254
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/KeyguardBouncer;->mRoot:Landroid/view/ViewGroup;
 
-    const v2, 0x7f0a0141
+    const v2, 0x7f0a0144
 
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 

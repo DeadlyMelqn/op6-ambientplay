@@ -414,7 +414,7 @@
     iget-object v2, p0, Lcom/android/systemui/statusbar/car/CarNavigationBarController;->mContext:Landroid/content/Context;
 
     .line 313
-    const v3, 0x7f0d0025
+    const v3, 0x7f0d0026
 
     const/4 v4, 0x0
 

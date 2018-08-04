@@ -80,7 +80,7 @@
 
     .prologue
     .line 46
-    const v3, 0x7f080295
+    const v3, 0x7f080296
 
     invoke-direct {p0, p1, v3}, Lcom/android/systemui/statusbar/phone/BarTransitions;-><init>(Landroid/view/View;I)V
 
@@ -221,7 +221,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a01bb
+    const v4, 0x7f0a01be
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

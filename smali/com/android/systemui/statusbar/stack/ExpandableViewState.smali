@@ -51,7 +51,7 @@
 
     .line 448
     :cond_0
-    const v1, 0x7f0a0110
+    const v1, 0x7f0a0113
 
     invoke-static {p0, v1}, Lcom/android/systemui/statusbar/stack/ExpandableViewState;->getChildTag(Landroid/view/View;I)Ljava/lang/Object;
 
@@ -72,7 +72,7 @@
 
     .line 452
     :cond_1
-    const v1, 0x7f0a010e
+    const v1, 0x7f0a0111
 
     invoke-static {p0, v1}, Lcom/android/systemui/statusbar/stack/ExpandableViewState;->getChildTag(Landroid/view/View;I)Ljava/lang/Object;
 
@@ -94,7 +94,7 @@
 
     .prologue
     .line 235
-    const v14, 0x7f0a010f
+    const v14, 0x7f0a0112
 
     move-object/from16 v0, p1
 
@@ -106,7 +106,7 @@
 
     .line 236
     .local v11, "previousStartValue":Ljava/lang/Integer;
-    const v14, 0x7f0a010e
+    const v14, 0x7f0a0111
 
     move-object/from16 v0, p1
 
@@ -137,7 +137,7 @@
 
     .line 241
     :cond_0
-    const v14, 0x7f0a0110
+    const v14, 0x7f0a0113
 
     move-object/from16 v0, p1
 
@@ -208,7 +208,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0a010f
+    const v15, 0x7f0a0112
 
     move-object/from16 v0, p1
 
@@ -219,7 +219,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0a010e
+    const v15, 0x7f0a0111
 
     move-object/from16 v0, p1
 
@@ -362,7 +362,7 @@
     invoke-static {v2, v4}, Lcom/android/systemui/statusbar/stack/ExpandableViewState;->startAnimator(Landroid/animation/Animator;Landroid/animation/AnimatorListenerAdapter;)V
 
     .line 309
-    const v14, 0x7f0a0110
+    const v14, 0x7f0a0113
 
     move-object/from16 v0, p1
 
@@ -377,7 +377,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0a010f
+    const v15, 0x7f0a0112
 
     move-object/from16 v0, p1
 
@@ -388,7 +388,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0a010e
+    const v15, 0x7f0a0111
 
     move-object/from16 v0, p1
 
@@ -412,7 +412,7 @@
 
     .prologue
     .line 379
-    const v14, 0x7f0a029a
+    const v14, 0x7f0a029d
 
     move-object/from16 v0, p1
 
@@ -424,7 +424,7 @@
 
     .line 380
     .local v11, "previousStartValue":Ljava/lang/Integer;
-    const v14, 0x7f0a0299
+    const v14, 0x7f0a029c
 
     move-object/from16 v0, p1
 
@@ -455,7 +455,7 @@
 
     .line 385
     :cond_0
-    const v14, 0x7f0a029b
+    const v14, 0x7f0a029e
 
     move-object/from16 v0, p1
 
@@ -526,7 +526,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0a029a
+    const v15, 0x7f0a029d
 
     move-object/from16 v0, p1
 
@@ -537,7 +537,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0a0299
+    const v15, 0x7f0a029c
 
     move-object/from16 v0, p1
 
@@ -678,7 +678,7 @@
     invoke-static {v2, v4}, Lcom/android/systemui/statusbar/stack/ExpandableViewState;->startAnimator(Landroid/animation/Animator;Landroid/animation/AnimatorListenerAdapter;)V
 
     .line 435
-    const v14, 0x7f0a029b
+    const v14, 0x7f0a029e
 
     move-object/from16 v0, p1
 
@@ -693,7 +693,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0a029a
+    const v15, 0x7f0a029d
 
     move-object/from16 v0, p1
 
@@ -704,7 +704,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0a0299
+    const v15, 0x7f0a029c
 
     move-object/from16 v0, p1
 
@@ -721,7 +721,7 @@
 
     .prologue
     .line 317
-    const v14, 0x7f0a025d
+    const v14, 0x7f0a0260
 
     move-object/from16 v0, p1
 
@@ -733,7 +733,7 @@
 
     .line 318
     .local v11, "previousStartValue":Ljava/lang/Float;
-    const v14, 0x7f0a025c
+    const v14, 0x7f0a025f
 
     move-object/from16 v0, p1
 
@@ -766,7 +766,7 @@
 
     .line 323
     :cond_0
-    const v14, 0x7f0a025e
+    const v14, 0x7f0a0261
 
     move-object/from16 v0, p1
 
@@ -837,7 +837,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0a025d
+    const v15, 0x7f0a0260
 
     move-object/from16 v0, p1
 
@@ -848,7 +848,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0a025c
+    const v15, 0x7f0a025f
 
     move-object/from16 v0, p1
 
@@ -989,7 +989,7 @@
     invoke-static {v2, v4}, Lcom/android/systemui/statusbar/stack/ExpandableViewState;->startAnimator(Landroid/animation/Animator;Landroid/animation/AnimatorListenerAdapter;)V
 
     .line 373
-    const v14, 0x7f0a025e
+    const v14, 0x7f0a0261
 
     move-object/from16 v0, p1
 
@@ -1004,7 +1004,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0a025d
+    const v15, 0x7f0a0260
 
     move-object/from16 v0, p1
 
@@ -1015,7 +1015,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0a025c
+    const v15, 0x7f0a025f
 
     move-object/from16 v0, p1
 
@@ -1180,7 +1180,7 @@
 
     .line 194
     :cond_3
-    const v2, 0x7f0a0110
+    const v2, 0x7f0a0113
 
     invoke-virtual {p0, p1, v2}, Lcom/android/systemui/statusbar/stack/ExpandableViewState;->abortAnimation(Landroid/view/View;I)V
 
@@ -1188,7 +1188,7 @@
 
     .line 201
     :cond_4
-    const v2, 0x7f0a025e
+    const v2, 0x7f0a0261
 
     invoke-virtual {p0, p1, v2}, Lcom/android/systemui/statusbar/stack/ExpandableViewState;->abortAnimation(Landroid/view/View;I)V
 
@@ -1196,7 +1196,7 @@
 
     .line 208
     :cond_5
-    const v2, 0x7f0a029b
+    const v2, 0x7f0a029e
 
     invoke-virtual {p0, p1, v2}, Lcom/android/systemui/statusbar/stack/ExpandableViewState;->abortAnimation(Landroid/view/View;I)V
 

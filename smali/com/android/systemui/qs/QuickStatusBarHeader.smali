@@ -120,7 +120,7 @@
     .locals 10
 
     .prologue
-    const v9, 0x7f0a005a
+    const v9, 0x7f0a005d
 
     const/4 v7, 0x1
 
@@ -136,7 +136,7 @@
 
     .line 60
     .local v3, "res":Landroid/content/res/Resources;
-    const v5, 0x7f0a0209
+    const v5, 0x7f0a020c
 
     invoke-virtual {p0, v5}, Lcom/android/systemui/qs/QuickStatusBarHeader;->findViewById(I)Landroid/view/View;
 
@@ -182,7 +182,7 @@
     invoke-direct {p0, v9, v4, v2, v1}, Lcom/android/systemui/qs/QuickStatusBarHeader;->applyDarkness(ILandroid/graphics/Rect;FI)V
 
     .line 73
-    const v5, 0x7f0a0084
+    const v5, 0x7f0a0087
 
     invoke-direct {p0, v5, v4, v2, v1}, Lcom/android/systemui/qs/QuickStatusBarHeader;->applyDarkness(ILandroid/graphics/Rect;FI)V
 

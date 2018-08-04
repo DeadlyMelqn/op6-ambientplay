@@ -301,7 +301,7 @@
 
     .line 299
     .local v3, "record":Lcom/android/systemui/statusbar/policy/UserSwitcherController$UserRecord;
-    const v5, 0x7f0d0021
+    const v5, 0x7f0d0022
 
     const/4 v6, 0x0
 
@@ -311,7 +311,7 @@
 
     .line 301
     .local v4, "view":Landroid/view/View;
-    const v5, 0x7f0a02be
+    const v5, 0x7f0a02c1
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -339,7 +339,7 @@
 
     .line 309
     :goto_0
-    const v5, 0x7f0a02bc
+    const v5, 0x7f0a02bf
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -525,7 +525,7 @@
 
     .line 237
     .local v3, "inflater":Landroid/view/LayoutInflater;
-    const v8, 0x7f0d0022
+    const v8, 0x7f0d0023
 
     const/4 v9, 0x0
 

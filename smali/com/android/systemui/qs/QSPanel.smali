@@ -200,7 +200,7 @@
     move-result-object v3
 
     .line 108
-    const v4, 0x7f0d00de
+    const v4, 0x7f0d00df
 
     .line 107
     invoke-virtual {v3, v4, p0, v7}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
@@ -212,7 +212,7 @@
     .line 110
     iget-object v3, p0, Lcom/android/systemui/qs/QSPanel;->mBrightnessView:Landroid/view/View;
 
-    const v4, 0x7f0a0061
+    const v4, 0x7f0a0064
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -231,7 +231,7 @@
     .line 114
     iget-object v3, p0, Lcom/android/systemui/qs/QSPanel;->mBrightnessView:Landroid/view/View;
 
-    const v6, 0x7f0a0065
+    const v6, 0x7f0a0068
 
     invoke-virtual {v3, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -247,7 +247,7 @@
     .line 116
     iget-object v3, p0, Lcom/android/systemui/qs/QSPanel;->mBrightnessView:Landroid/view/View;
 
-    const v4, 0x7f0a0062
+    const v4, 0x7f0a0065
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -273,7 +273,7 @@
     .line 148
     iget-object v3, p0, Lcom/android/systemui/qs/QSPanel;->mBrightnessView:Landroid/view/View;
 
-    const v4, 0x7f0a0064
+    const v4, 0x7f0a0067
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -305,7 +305,7 @@
     move-result-object v3
 
     .line 183
-    const v4, 0x7f0d00d6
+    const v4, 0x7f0d00d7
 
     .line 182
     invoke-virtual {v3, v4, p0, v7}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
@@ -930,7 +930,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d00d4
+    const v1, 0x7f0d00d5
 
     const/4 v2, 0x0
 
@@ -2151,7 +2151,7 @@
     move-result-object v0
 
     .line 220
-    const v1, 0x7f0d00d8
+    const v1, 0x7f0d00d9
 
     const/4 v2, 0x0
 
@@ -2323,7 +2323,7 @@
     .locals 4
 
     .prologue
-    const v3, 0x7f0a0065
+    const v3, 0x7f0a0068
 
     .line 359
     iget-object v2, p0, Lcom/android/systemui/qs/QSPanel;->mBrightnessMirrorController:Lcom/android/systemui/statusbar/policy/BrightnessMirrorController;

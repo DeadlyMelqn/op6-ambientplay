@@ -254,7 +254,7 @@
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarTransitions;->init()V
 
     .line 78
-    const v0, 0x7f0a005a
+    const v0, 0x7f0a005d
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->findViewById(I)Landroid/view/View;
 

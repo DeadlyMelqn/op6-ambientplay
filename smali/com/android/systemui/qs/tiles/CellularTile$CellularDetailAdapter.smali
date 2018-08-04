@@ -97,7 +97,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d002c
+    const v4, 0x7f0d002d
 
     invoke-virtual {v3, v4, p3, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -112,7 +112,7 @@
     invoke-virtual {v1, v0}, Lcom/android/systemui/qs/tiles/DataUsageDetailView;->bind(Lcom/android/settingslib/net/DataUsageController$DataUsageInfo;)V
 
     .line 352
-    const v3, 0x7f0a021a
+    const v3, 0x7f0a021d
 
     invoke-virtual {v1, v3}, Lcom/android/systemui/qs/tiles/DataUsageDetailView;->findViewById(I)Landroid/view/View;
 

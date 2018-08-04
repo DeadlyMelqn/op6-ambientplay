@@ -42,7 +42,7 @@
     iput v0, p0, Lcom/android/systemui/qs/customize/CustomizeTileView;->mLabelMinLines:I
 
     .line 38
-    const v0, 0x7f0a0043
+    const v0, 0x7f0a0046
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/customize/CustomizeTileView;->findViewById(I)Landroid/view/View;
 

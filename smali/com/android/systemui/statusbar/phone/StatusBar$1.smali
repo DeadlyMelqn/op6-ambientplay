@@ -30,7 +30,7 @@
     .line 1
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$1;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 530
+    .line 538
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -43,14 +43,14 @@
     .locals 3
 
     .prologue
-    .line 533
+    .line 541
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$1;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get4(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/systemui/statusbar/policy/DeviceProvisionedController;
 
     move-result-object v1
 
-    .line 534
+    .line 542
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$1;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get4(Lcom/android/systemui/statusbar/phone/StatusBar;)Lcom/android/systemui/statusbar/policy/DeviceProvisionedController;
@@ -61,30 +61,30 @@
 
     move-result v2
 
-    .line 533
+    .line 541
     invoke-interface {v1, v2}, Lcom/android/systemui/statusbar/policy/DeviceProvisionedController;->isUserSetup(I)Z
 
     move-result v0
 
-    .line 538
+    .line 546
     .local v0, "userSetup":Z
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$1;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get18(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
+    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get20(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
 
     move-result v1
 
     if-eq v0, v1, :cond_2
 
-    .line 539
+    .line 547
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$1;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-static {v1, v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-set8(Lcom/android/systemui/statusbar/phone/StatusBar;Z)Z
+    invoke-static {v1, v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->-set9(Lcom/android/systemui/statusbar/phone/StatusBar;Z)Z
 
-    .line 540
+    .line 548
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$1;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get18(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
+    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get20(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
 
     move-result v1
 
@@ -96,12 +96,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 541
+    .line 549
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$1;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-virtual {v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->animateCollapseQuickSettings()V
 
-    .line 542
+    .line 550
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$1;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
@@ -109,26 +109,26 @@
 
     if-eqz v1, :cond_1
 
-    .line 543
+    .line 551
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$1;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/phone/StatusBar;->mNotificationPanel:Lcom/android/systemui/statusbar/phone/NotificationPanelView;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$1;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-static {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get18(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
+    invoke-static {v2}, Lcom/android/systemui/statusbar/phone/StatusBar;->-get20(Lcom/android/systemui/statusbar/phone/StatusBar;)Z
 
     move-result v2
 
     invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->setUserSetupComplete(Z)V
 
-    .line 545
+    .line 553
     :cond_1
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$1;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap19(Lcom/android/systemui/statusbar/phone/StatusBar;)V
+    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/StatusBar;->-wrap21(Lcom/android/systemui/statusbar/phone/StatusBar;)V
 
-    .line 547
+    .line 555
     :cond_2
     return-void
 .end method

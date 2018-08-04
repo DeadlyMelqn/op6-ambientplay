@@ -225,7 +225,7 @@
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplayMatrix:Landroid/graphics/Matrix;
 
     .line 466
-    const v0, 0x7f0d0035
+    const v0, 0x7f0d0036
 
     const/4 v2, 0x0
 
@@ -238,7 +238,7 @@
     .line 467
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
-    const v2, 0x7f0a00ea
+    const v2, 0x7f0a00ed
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -251,7 +251,7 @@
     .line 468
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
-    const v2, 0x7f0a00e9
+    const v2, 0x7f0a00ec
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -264,7 +264,7 @@
     .line 469
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
-    const v2, 0x7f0a00eb
+    const v2, 0x7f0a00ee
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -278,7 +278,7 @@
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
     .line 471
-    const v2, 0x7f0a00ec
+    const v2, 0x7f0a00ef
 
     .line 470
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -804,7 +804,7 @@
     move-result-object v0
 
     .line 887
-    const v1, 0x7f0802de
+    const v1, 0x7f0802df
 
     .line 883
     invoke-virtual {v0, v1}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;

@@ -162,7 +162,7 @@
 
     .prologue
     .line 45
-    const v0, 0x7f0d0027
+    const v0, 0x7f0d0028
 
     const/4 v1, 0x0
 
@@ -186,7 +186,7 @@
     invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 51
-    const v0, 0x7f0a010b
+    const v0, 0x7f0a010e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -195,7 +195,7 @@
     iput-object v0, p0, Lcom/android/systemui/qs/car/CarQSFragment;->mHeader:Landroid/view/View;
 
     .line 52
-    const v0, 0x7f0a0204
+    const v0, 0x7f0a0207
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -206,7 +206,7 @@
     iput-object v0, p0, Lcom/android/systemui/qs/car/CarQSFragment;->mFooter:Lcom/android/systemui/qs/car/CarQSFooter;
 
     .line 54
-    const v0, 0x7f0a02bd
+    const v0, 0x7f0a02c0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

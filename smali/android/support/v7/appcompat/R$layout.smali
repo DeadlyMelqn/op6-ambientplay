@@ -42,9 +42,9 @@
 
 .field public static final abc_search_view:I = 0x7f0d0018
 
-.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0111
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0112
 
-.field public static final tooltip:I = 0x7f0d0114
+.field public static final tooltip:I = 0x7f0d0115
 
 
 # direct methods
@@ -52,7 +52,7 @@
     .locals 0
 
     .prologue
-    .line 10081
+    .line 10085
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

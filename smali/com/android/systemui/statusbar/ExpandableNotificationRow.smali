@@ -4595,7 +4595,7 @@
     move-result-object v5
 
     .line 890
-    const v7, 0x7f0d00a7
+    const v7, 0x7f0d00a8
 
     .line 889
     invoke-virtual {v5, v7, p0, v6}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
@@ -4770,7 +4770,7 @@
     invoke-super {p0}, Lcom/android/systemui/statusbar/ActivatableNotificationView;->onFinishInflate()V
 
     .line 1295
-    const v2, 0x7f0a00db
+    const v2, 0x7f0a00de
 
     invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->findViewById(I)Landroid/view/View;
 
@@ -4781,7 +4781,7 @@
     iput-object v2, p0, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->mPublicLayout:Lcom/android/systemui/statusbar/NotificationContentView;
 
     .line 1296
-    const v2, 0x7f0a00da
+    const v2, 0x7f0a00dd
 
     invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->findViewById(I)Landroid/view/View;
 
@@ -4837,7 +4837,7 @@
     .line 1303
     .end local v1    # "l":Lcom/android/systemui/statusbar/NotificationContentView;
     :cond_0
-    const v2, 0x7f0a01ce
+    const v2, 0x7f0a01d1
 
     invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->findViewById(I)Landroid/view/View;
 
@@ -4857,7 +4857,7 @@
     invoke-virtual {v2, v3}, Landroid/view/ViewStub;->setOnInflateListener(Landroid/view/ViewStub$OnInflateListener;)V
 
     .line 1313
-    const v2, 0x7f0a0080
+    const v2, 0x7f0a0083
 
     invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->findViewById(I)Landroid/view/View;
 
@@ -8437,7 +8437,7 @@
     .local v2, "expandedIcon":Lcom/android/systemui/statusbar/StatusBarIconView;
     sget-object v5, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    const v6, 0x7f0a011a
+    const v6, 0x7f0a011d
 
     invoke-virtual {v2, v6}, Lcom/android/systemui/statusbar/StatusBarIconView;->getTag(I)Ljava/lang/Object;
 

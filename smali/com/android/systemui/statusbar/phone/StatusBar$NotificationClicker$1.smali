@@ -34,7 +34,7 @@
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$1;->val$row:Lcom/android/systemui/statusbar/ExpandableNotificationRow;
 
-    .line 7244
+    .line 7472
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -47,13 +47,13 @@
     .locals 2
 
     .prologue
-    .line 7247
+    .line 7475
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$1;->val$row:Lcom/android/systemui/statusbar/ExpandableNotificationRow;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->setJustClicked(Z)V
 
-    .line 7248
+    .line 7476
     return-void
 .end method

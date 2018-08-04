@@ -658,7 +658,7 @@
     iput-object v1, p0, Lcom/android/keyguard/KeyguardPatternView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     .line 143
-    const v1, 0x7f0a017b
+    const v1, 0x7f0a017e
 
     invoke-virtual {p0, v1}, Lcom/android/keyguard/KeyguardPatternView;->findViewById(I)Landroid/view/View;
 
@@ -706,7 +706,7 @@
     iput-object v1, p0, Lcom/android/keyguard/KeyguardPatternView;->mSecurityMessageDisplay:Lcom/android/keyguard/KeyguardMessageArea;
 
     .line 152
-    const v1, 0x7f0a014a
+    const v1, 0x7f0a014d
 
     invoke-virtual {p0, v1}, Lcom/android/keyguard/KeyguardPatternView;->findViewById(I)Landroid/view/View;
 
@@ -715,7 +715,7 @@
     iput-object v1, p0, Lcom/android/keyguard/KeyguardPatternView;->mEcaView:Landroid/view/View;
 
     .line 153
-    const v1, 0x7f0a008d
+    const v1, 0x7f0a0090
 
     invoke-virtual {p0, v1}, Lcom/android/keyguard/KeyguardPatternView;->findViewById(I)Landroid/view/View;
 
@@ -726,7 +726,7 @@
     iput-object v1, p0, Lcom/android/keyguard/KeyguardPatternView;->mContainer:Landroid/view/ViewGroup;
 
     .line 155
-    const v1, 0x7f0a00ca
+    const v1, 0x7f0a00cd
 
     invoke-virtual {p0, v1}, Lcom/android/keyguard/KeyguardPatternView;->findViewById(I)Landroid/view/View;
 

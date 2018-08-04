@@ -25,13 +25,13 @@
     .param p2, "handler"    # Landroid/os/Handler;
 
     .prologue
-    .line 6058
+    .line 6254
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$ThemeSettingsObserver;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
-    .line 6059
+    .line 6255
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 6060
+    .line 6256
     return-void
 .end method
 
@@ -45,7 +45,7 @@
 
     const/4 v2, -0x1
 
-    .line 6063
+    .line 6259
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$ThemeSettingsObserver;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/phone/StatusBar;->mContext:Landroid/content/Context;
@@ -54,28 +54,28 @@
 
     move-result-object v0
 
-    .line 6065
+    .line 6261
     .local v0, "resolver":Landroid/content/ContentResolver;
     const-string/jumbo v1, "device_theme"
 
-    .line 6064
+    .line 6260
     invoke-static {v1}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
     invoke-virtual {v0, v1, v3, p0, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
-    .line 6068
+    .line 6264
     const-string/jumbo v1, "device_accent"
 
-    .line 6067
+    .line 6263
     invoke-static {v1}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
     invoke-virtual {v0, v1, v3, p0, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
-    .line 6070
+    .line 6266
     return-void
 .end method
 
@@ -85,10 +85,10 @@
     .param p2, "uri"    # Landroid/net/Uri;
 
     .prologue
-    .line 6074
+    .line 6270
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/StatusBar$ThemeSettingsObserver;->update()V
 
-    .line 6075
+    .line 6271
     return-void
 .end method
 
@@ -96,16 +96,16 @@
     .locals 1
 
     .prologue
-    .line 6078
+    .line 6274
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$ThemeSettingsObserver;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->updateTheme()V
 
-    .line 6079
+    .line 6275
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar$ThemeSettingsObserver;->this$0:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->updateAccent()V
 
-    .line 6080
+    .line 6276
     return-void
 .end method

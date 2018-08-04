@@ -758,7 +758,7 @@
     invoke-super {p0}, Landroid/widget/GridLayout;->onFinishInflate()V
 
     .line 151
-    const v1, 0x7f0a013d
+    const v1, 0x7f0a0140
 
     invoke-virtual {p0, v1}, Lcom/android/keyguard/KeyguardStatusView;->findViewById(I)Landroid/view/View;
 
@@ -780,7 +780,7 @@
     iput-object v1, p0, Lcom/android/keyguard/KeyguardStatusView;->mAlarmStatusView:Landroid/widget/TextView;
 
     .line 153
-    const v1, 0x7f0a00a5
+    const v1, 0x7f0a00a8
 
     invoke-virtual {p0, v1}, Lcom/android/keyguard/KeyguardStatusView;->findViewById(I)Landroid/view/View;
 
@@ -791,7 +791,7 @@
     iput-object v1, p0, Lcom/android/keyguard/KeyguardStatusView;->mDateView:Lcom/android/systemui/statusbar/policy/DateView;
 
     .line 154
-    const v1, 0x7f0a0085
+    const v1, 0x7f0a0088
 
     invoke-virtual {p0, v1}, Lcom/android/keyguard/KeyguardStatusView;->findViewById(I)Landroid/view/View;
 
@@ -828,7 +828,7 @@
 
     .line 159
     :cond_0
-    const v1, 0x7f0a01e0
+    const v1, 0x7f0a01e3
 
     invoke-virtual {p0, v1}, Lcom/android/keyguard/KeyguardStatusView;->findViewById(I)Landroid/view/View;
 
@@ -839,7 +839,7 @@
     iput-object v1, p0, Lcom/android/keyguard/KeyguardStatusView;->mOwnerInfo:Landroid/widget/TextView;
 
     .line 160
-    const v1, 0x7f0a005b
+    const v1, 0x7f0a005e
 
     invoke-virtual {p0, v1}, Lcom/android/keyguard/KeyguardStatusView;->findViewById(I)Landroid/view/View;
 
@@ -850,7 +850,7 @@
     iput-object v1, p0, Lcom/android/keyguard/KeyguardStatusView;->mBatteryDoze:Lcom/android/systemui/ChargingView;
 
     .line 161
-    const v1, 0x7f0a014e
+    const v1, 0x7f0a0151
 
     invoke-virtual {p0, v1}, Lcom/android/keyguard/KeyguardStatusView;->findViewById(I)Landroid/view/View;
 

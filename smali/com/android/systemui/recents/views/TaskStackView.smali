@@ -827,7 +827,7 @@
     move-result-object v3
 
     .line 321
-    const v4, 0x7f0802bc
+    const v4, 0x7f0802bd
 
     .line 320
     invoke-virtual {v3, v4}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -3341,7 +3341,7 @@
     .line 1601
     iget-object v0, p0, Lcom/android/systemui/recents/views/TaskStackView;->mInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d00e6
+    const v1, 0x7f0d00e7
 
     invoke-virtual {v0, v1, p0, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -3355,7 +3355,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/recents/views/TaskStackView;->mInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d00eb
+    const v1, 0x7f0d00ec
 
     invoke-virtual {v0, v1, p0, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 

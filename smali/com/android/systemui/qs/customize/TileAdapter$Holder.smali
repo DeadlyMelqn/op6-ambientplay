@@ -89,7 +89,7 @@
     .locals 2
 
     .prologue
-    const v1, 0x7f0a0289
+    const v1, 0x7f0a028c
 
     .line 433
     iget-object v0, p0, Lcom/android/systemui/qs/customize/TileAdapter$Holder;->itemView:Landroid/view/View;
@@ -170,7 +170,7 @@
     .line 445
     iget-object v0, p0, Lcom/android/systemui/qs/customize/TileAdapter$Holder;->mTileView:Lcom/android/systemui/qs/customize/CustomizeTileView;
 
-    const v1, 0x7f0a0289
+    const v1, 0x7f0a028c
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/qs/customize/CustomizeTileView;->findViewById(I)Landroid/view/View;
 
@@ -235,7 +235,7 @@
     .line 458
     iget-object v0, p0, Lcom/android/systemui/qs/customize/TileAdapter$Holder;->mTileView:Lcom/android/systemui/qs/customize/CustomizeTileView;
 
-    const v1, 0x7f0a0289
+    const v1, 0x7f0a028c
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/qs/customize/CustomizeTileView;->findViewById(I)Landroid/view/View;
 

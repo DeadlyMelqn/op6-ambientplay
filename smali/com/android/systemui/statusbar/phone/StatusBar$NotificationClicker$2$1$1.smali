@@ -34,7 +34,7 @@
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1$1;->val$parentToCancelFinal:Landroid/service/notification/StatusBarNotification;
 
-    .line 7329
+    .line 7557
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -47,14 +47,14 @@
     .locals 2
 
     .prologue
-    .line 7332
+    .line 7560
     new-instance v0, Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1$1$1;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1$1;->val$parentToCancelFinal:Landroid/service/notification/StatusBarNotification;
 
     invoke-direct {v0, p0, v1}, Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1$1$1;-><init>(Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1$1;Landroid/service/notification/StatusBarNotification;)V
 
-    .line 7338
+    .line 7566
     .local v0, "removeRunnable":Ljava/lang/Runnable;
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1$1;->this$3:Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1;
 
@@ -70,7 +70,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 7341
+    .line 7569
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1$1;->this$3:Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2$1;->this$2:Lcom/android/systemui/statusbar/phone/StatusBar$NotificationClicker$2;
@@ -81,11 +81,11 @@
 
     invoke-virtual {v1, v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->addPostCollapseAction(Ljava/lang/Runnable;)V
 
-    .line 7345
+    .line 7573
     :goto_0
     return-void
 
-    .line 7343
+    .line 7571
     :cond_0
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
